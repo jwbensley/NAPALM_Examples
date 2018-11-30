@@ -1,0 +1,7 @@
+#set cli timestamp
+
+
+Nov 07 11:47:47
+CLI timestamp set to: %b %d %T
+
+

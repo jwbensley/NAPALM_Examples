@@ -1,0 +1,5 @@
+#show system alarms | no-more
+
+No alarms currently active
+
+

@@ -1,0 +1,3 @@
+#show system resource-monitor summary
+invalid command: show system resource-monitor summary: RpcError(severity: error, bad_element: None, message: command is not valid on the vmx)
+

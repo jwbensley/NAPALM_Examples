@@ -1,0 +1,241 @@
+*** "logs/before/R2-Junos/show bgp summary  no-more.txt"	2018-11-07 11:47:53.503956700 +0000
+--- "logs/after/R2-Junos/show bgp summary  no-more.txt"	2018-11-07 11:54:55.913891000 +0000
+***************
+*** 5,11 ****
+  inet.0               
+                         0          0          0          0          0          0
+  Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn State|#Active/Received/Accepted/Damped...
+! 10.0.0.1                  1          0          0       0       0       28:34 Active
+! 10.0.0.3                  1         59         61       0       0       26:22 0/0/0/0              0/0/0/0
+  
+  
+--- 5,11 ----
+  inet.0               
+                         0          0          0          0          0          0
+  Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn State|#Active/Received/Accepted/Damped...
+! 10.0.0.1                  1          0          0       0       0       35:37 Active
+! 10.0.0.3                  1         74         77       0       0       33:25 0/0/0/0              0/0/0/0
+  
+  
+*** "logs/before/R2-Junos/show chassis routing-engine  no-more.txt"	2018-11-07 11:47:52.238905400 +0000
+--- "logs/after/R2-Junos/show chassis routing-engine  no-more.txt"	2018-11-07 11:54:54.639509300 +0000
+***************
+*** 2,19 ****
+  
+  Routing Engine status:
+      DRAM                       768 MB (1024 MB installed)
+!     Memory utilization          93 percent
+      CPU utilization:
+!       User                       2 percent
+        Background                 0 percent
+!       Kernel                    11 percent
+        Interrupt                  2 percent
+!       Idle                      84 percent
+      Model                          RE-VMX
+      Start time                     2018-11-07 11:18:39 UTC
+!     Uptime                         29 minutes, 5 seconds
+      Last reboot reason             Router rebooted after a normal shutdown.
+      Load averages:                 1 minute   5 minute  15 minute
+!                                        0.03       0.09       0.12
+  
+  
+--- 2,19 ----
+  
+  Routing Engine status:
+      DRAM                       768 MB (1024 MB installed)
+!     Memory utilization          96 percent
+      CPU utilization:
+!       User                      16 percent
+        Background                 0 percent
+!       Kernel                    30 percent
+        Interrupt                  2 percent
+!       Idle                      52 percent
+      Model                          RE-VMX
+      Start time                     2018-11-07 11:18:39 UTC
+!     Uptime                         36 minutes, 12 seconds
+      Last reboot reason             Router rebooted after a normal shutdown.
+      Load averages:                 1 minute   5 minute  15 minute
+!                                        0.12       0.05       0.08
+  
+  
+*** "logs/before/R2-Junos/show isis adjacency  no-more.txt"	2018-11-07 11:47:54.811911200 +0000
+--- "logs/after/R2-Junos/show isis adjacency  no-more.txt"	2018-11-07 11:54:56.923327500 +0000
+***************
+*** 1,6 ****
+  #show isis adjacency | no-more
+  
+  Interface             System         L State        Hold (secs) SNPA
+! ge-0/0/2.0            R3             3  Up                   27
+  
+  
+--- 1,6 ----
+  #show isis adjacency | no-more
+  
+  Interface             System         L State        Hold (secs) SNPA
+! ge-0/0/2.0            R3             3  Up                   28
+  
+  
+*** "logs/before/R2-Junos/show ldp session  no-more.txt"	2018-11-07 11:47:55.116169300 +0000
+--- "logs/after/R2-Junos/show ldp session  no-more.txt"	2018-11-07 11:54:57.227199200 +0000
+***************
+*** 1,6 ****
+  #show ldp session | no-more
+  
+    Address           State        Connection     Hold time  Adv. Mode
+! 10.0.0.3            Operational  Open             29         DU
+  
+  
+--- 1,6 ----
+  #show ldp session | no-more
+  
+    Address           State        Connection     Hold time  Adv. Mode
+! 10.0.0.3            Operational  Open             24         DU
+  
+  
+*** "logs/before/R2-Junos/show log messages  last 200  no-more.txt"	2018-11-07 11:47:49.929064700 +0000
+--- "logs/after/R2-Junos/show log messages  last 200  no-more.txt"	2018-11-07 11:54:52.109525600 +0000
+***************
+*** 911,915 ****
+--- 911,993 ----
+  Nov  7 11:47:47  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3769, status 0: Bad file descriptor
+  Nov  7 11:47:47  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3770, status 0: Unknown error: 0
+  Nov  7 11:47:47  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3771, status 0: Invalid argument
++ Nov  7 11:47:47  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3772, status 0: Invalid argument
++ Nov  7 11:47:48  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3775, status 0: Invalid argument
++ Nov  7 11:47:48  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3776, status 0: Bad file descriptor
++ Nov  7 11:47:48  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3777, status 0: Bad file descriptor
++ Nov  7 11:47:48  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3778, status 0: Bad file descriptor
++ Nov  7 11:47:48  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3780, status 0: Bad file descriptor
++ Nov  7 11:47:48  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3781, status 0: Bad file descriptor
++ Nov  7 11:47:49  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3784, status 0: Bad file descriptor
++ Nov  7 11:47:49  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3785, status 0: Bad file descriptor
++ Nov  7 11:47:49  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3787, status 0: Bad file descriptor
++ Nov  7 11:47:49  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3788, status 0: Bad file descriptor
++ Nov  7 11:47:49  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3790, status 0: Bad file descriptor
++ Nov  7 11:47:49  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3791, status 0: No such file or directory
++ Nov  7 11:47:49  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3793, status 0: No such file or directory
++ Nov  7 11:47:49  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3794, status 0: Bad file descriptor
++ Nov  7 11:47:50  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3795, status 0: Unknown error: 0
++ Nov  7 11:47:50  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3796, status 0: Bad file descriptor
++ Nov  7 11:47:50  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3800, status 0: Bad file descriptor
++ Nov  7 11:47:50  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3801, status 0: Bad file descriptor
++ Nov  7 11:47:50  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3802, status 0: Unknown error: 0
++ Nov  7 11:47:50  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3803, status 0: Unknown error: 0
++ Nov  7 11:47:50  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3806, status 0: Invalid argument
++ Nov  7 11:47:50  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3807, status 0: Invalid argument
++ Nov  7 11:47:50  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3809, status 0: Invalid argument
++ Nov  7 11:47:50  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3810, status 0: No such file or directory
++ Nov  7 11:47:51  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3811, status 0: Unknown error: 0
++ Nov  7 11:47:51  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3812, status 0: Unknown error: 0
++ Nov  7 11:47:51  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3814, status 0: Unknown error: 0
++ Nov  7 11:47:51  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3815, status 0: Unknown error: 0
++ Nov  7 11:47:51  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3817, status 0: Invalid argument
++ Nov  7 11:47:51  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3818, status 0: Bad file descriptor
++ Nov  7 11:47:51  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3819, status 0: Bad file descriptor
++ Nov  7 11:47:51  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3820, status 0: Bad file descriptor
++ Nov  7 11:47:51  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3821, status 0: Bad file descriptor
++ Nov  7 11:47:52  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3822, status 0: Bad file descriptor
++ Nov  7 11:47:52  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3823, status 0: Bad file descriptor
++ Nov  7 11:47:52  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3824, status 0: Bad file descriptor
++ Nov  7 11:47:52  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3825, status 0: Bad file descriptor
++ Nov  7 11:47:52  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3826, status 0: Bad file descriptor
++ Nov  7 11:47:52  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3827, status 0: Bad file descriptor
++ Nov  7 11:47:52  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3828, status 0: Bad file descriptor
++ Nov  7 11:47:53  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3829, status 0: Bad file descriptor
++ Nov  7 11:47:53  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3830, status 0: Bad file descriptor
++ Nov  7 11:47:53  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3831, status 0: Bad file descriptor
++ Nov  7 11:47:53  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3832, status 0: Bad file descriptor
++ Nov  7 11:47:53  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3833, status 0: Unknown error: 0
++ Nov  7 11:47:53  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3834, status 0: Bad file descriptor
++ Nov  7 11:47:53  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3835, status 0: Bad file descriptor
++ Nov  7 11:47:53  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3836, status 0: Bad file descriptor
++ Nov  7 11:47:54  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3837, status 0: Bad file descriptor
++ Nov  7 11:47:54  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3838, status 0: Bad file descriptor
++ Nov  7 11:47:54  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3839, status 0: Bad file descriptor
++ Nov  7 11:47:54  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3840, status 0: Bad file descriptor
++ Nov  7 11:47:54  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3842, status 0: Unknown error: 0
++ Nov  7 11:47:54  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3843, status 0: Unknown error: 0
++ Nov  7 11:47:54  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3845, status 0: Unknown error: 0
++ Nov  7 11:47:54  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3846, status 0: Unknown error: 0
++ Nov  7 11:47:55  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3848, status 0: Invalid argument
++ Nov  7 11:47:55  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3849, status 0: No such file or directory
++ Nov  7 11:47:55  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3850, status 0: No such file or directory
++ Nov  7 11:47:55  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3851, status 0: Unknown error: 0
++ Nov  7 11:47:55  vMX-NAPALM file[3763]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3852, status 0: Invalid argument
++ Nov  7 11:48:25  vMX-NAPALM rpd[2521]: BGP_CONNECT_FAILED: bgp_connect_start: connect 10.0.0.1 (Internal AS 1): No route to host
++ Nov  7 11:48:25  vMX-NAPALM rpd[2521]: : No route to host
++ Nov  7 11:50:53  vMX-NAPALM rpd[2521]: BGP_CONNECT_FAILED: bgp_connect_start: connect 10.0.0.1 (Internal AS 1): No route to host
++ Nov  7 11:50:53  vMX-NAPALM rpd[2521]: : No route to host
++ Nov  7 11:53:21  vMX-NAPALM rpd[2521]: BGP_CONNECT_FAILED: bgp_connect_start: connect 10.0.0.1 (Internal AS 1): No route to host
++ Nov  7 11:53:21  vMX-NAPALM rpd[2521]: : No route to host
++ Nov  7 11:54:48  vMX-NAPALM sshd[3896]: Accepted password for napalm from 192.168.223.1 port 60710 ssh2
++ Nov  7 11:54:48  vMX-NAPALM sshd[3896]: subsystem request for netconf by user napalm
++ Nov  7 11:54:48  vMX-NAPALM sshd[3896]: subsystem request for netconf failed, subsystem not found
++ Nov  7 11:54:49  vMX-NAPALM file[3898]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3900, status 0: Message too long
++ Nov  7 11:54:49  vMX-NAPALM file[3898]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3901, status 0: Message too long
++ Nov  7 11:54:49  vMX-NAPALM file[3898]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3902, status 0: Bad file descriptor
++ Nov  7 11:54:49  vMX-NAPALM file[3898]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3903, status 0: Bad file descriptor
++ Nov  7 11:54:49  vMX-NAPALM file[3898]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3904, status 0: Bad file descriptor
++ Nov  7 11:54:49  vMX-NAPALM file[3898]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3905, status 0: Unknown error: 0
++ Nov  7 11:54:49  vMX-NAPALM file[3898]: UI_CHILD_WAITPID: waitpid failed: PID 0, rc 3906, status 0: Invalid argument
+  
+  
+*** "logs/before/R2-Junos/show ospf neighbor  no-more.txt"	2018-11-07 11:47:53.716088400 +0000
+--- "logs/after/R2-Junos/show ospf neighbor  no-more.txt"	2018-11-07 11:54:56.118131300 +0000
+***************
+*** 1,6 ****
+  #show ospf neighbor | no-more
+  
+  Address          Interface              State     ID               Pri  Dead
+! 10.0.23.3        ge-0/0/2.0             Full      10.0.0.3           1    36
+  
+  
+--- 1,6 ----
+  #show ospf neighbor | no-more
+  
+  Address          Interface              State     ID               Pri  Dead
+! 10.0.23.3        ge-0/0/2.0             Full      10.0.0.3           1    33
+  
+  
+*** "logs/before/R2-Junos/show system memory  no-more.txt.tmp"	2018-11-26 16:09:27.640060100 +0000
+--- "logs/after/R2-Junos/show system memory  no-more.txt.tmp"	2018-11-26 16:09:27.675607200 +0000
+***************
+*** 3,8 ****
+  System memory usage distribution:
+         Total memory:  769440 Kbytes (100%)
+      Reserved memory:   14072 Kbytes (  1%)
+!        Wired memory:   79628 Kbytes ( 10%)
+!       Active memory:  401520 Kbytes ( 52%)
+!     Inactive memory:  233480 Kbytes ( 30%)
+--- 3,8 ----
+  System memory usage distribution:
+         Total memory:  769440 Kbytes (100%)
+      Reserved memory:   14072 Kbytes (  1%)
+!        Wired memory:   79712 Kbytes ( 10%)
+!       Active memory:  401452 Kbytes ( 52%)
+!     Inactive memory:  228896 Kbytes ( 29%)
+*** "logs/before/R2-Junos/show system processes brief  no-more.txt"	2018-11-07 11:47:52.683965800 +0000
+--- "logs/after/R2-Junos/show system processes brief  no-more.txt"	2018-11-07 11:54:55.050084500 +0000
+***************
+*** 1,10 ****
+  #show system processes brief | no-more
+  
+! last pid:  3808;  load averages:  0.02,  0.09,  0.12  up 0+00:29:41    11:47:50
+! 502 processes: 210 running, 272 sleeping, 1 zombie, 19 waiting
+  
+! Mem: 396M Active, 228M Inact, 78M Wired, 19M Cache, 69M Buf, 17M Free
+! Swap: 6756M Total, 15M Used, 6741M Free
+  
+  
+  
+--- 1,10 ----
+  #show system processes brief | no-more
+  
+! last pid:  3943;  load averages:  0.12,  0.05,  0.08  up 0+00:36:44    11:54:53
+! 502 processes: 4 running, 478 sleeping, 1 zombie, 19 waiting
+  
+! Mem: 394M Active, 224M Inact, 78M Wired, 23M Cache, 69M Buf, 18M Free
+! Swap: 6756M Total, 17M Used, 6739M Free
+  
+  
+  

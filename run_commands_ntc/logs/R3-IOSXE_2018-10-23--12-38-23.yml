@@ -1,0 +1,1299 @@
+show bfd neighbors: No time source, *12:38:41.462 UTC Tue Oct 23 2018
+show bfd summary: No time source, *12:38:40.849 UTC Tue Oct 23 2018
+show bgp all summary: 'No time source, *12:38:37.833 UTC Tue Oct 23 2018
+
+  For address family: IPv4 Unicast
+
+  BGP router identifier 10.0.0.3, local AS number 1
+
+  BGP table version is 1, main routing table version 1
+
+
+  Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+
+  10.0.0.1        4            1       6       4        1    0    0 00:02:44        0
+
+  10.0.0.2        4            1     101     101        1    0    0 00:44:43        0'
+show bridge-domain: No time source, *12:38:47.481 UTC Tue Oct 23 2018
+show clns interface: "No time source, *12:38:40.253 UTC Tue Oct 23 2018\n\nGigabitEthernet1\
+  \ is up, line protocol is up\n  Checksums enabled, MTU 1497, Encapsulation SAP\n\
+  \  ERPDUs enabled, min. interval 10 msec.\n  CLNS fast switching enabled\n  CLNS\
+  \ SSE switching disabled\n  DEC compatibility mode OFF for this interface\n  Next\
+  \ ESH/ISH in 51 seconds\n  Routing Protocol: IS-IS (1)\n    Circuit Type: level-1-2\n\
+  \    Interface number 0x1, local circuit ID 0x101\n    Neighbor System-ID: R1\n\
+  \    Level-1 Metric: 10, Priority: 64, Circuit ID: R3.01\n    Level-1 IPv6 Metric:\
+  \ 10\n    Number of active level-1 adjacencies: 1\n    Level-2 Metric: 10, Priority:\
+  \ 64, Circuit ID: R3.01\n    Level-2 IPv6 Metric: 10\n    Number of active level-2\
+  \ adjacencies: 1\n    Next IS-IS Hello in 3 seconds\n    if state UP\nGigabitEthernet2\
+  \ is up, line protocol is up\n  Checksums enabled, MTU 1497, Encapsulation SAP\n\
+  \  ERPDUs enabled, min. interval 10 msec.\n  CLNS fast switching enabled\n  CLNS\
+  \ SSE switching disabled\n  DEC compatibility mode OFF for this interface\n  Next\
+  \ ESH/ISH in 0 seconds\n  Routing Protocol: IS-IS (1)\n    Circuit Type: level-1-2\n\
+  \    Interface number 0x2, local circuit ID 0x102\n    Neighbor System-ID: vMX-NAPALM\n\
+  \    Level-1 Metric: 10, Priority: 64, Circuit ID: R3.02\n    Level-1 IPv6 Metric:\
+  \ 10\n    Number of active level-1 adjacencies: 1\n    Level-2 Metric: 10, Priority:\
+  \ 64, Circuit ID: R3.02\n    Level-2 IPv6 Metric: 10\n    Number of active level-2\
+  \ adjacencies: 1\n    Next IS-IS Hello in 488 milliseconds\n    if state UP\nGigabitEthernet3\
+  \ is up, line protocol is up\n  CLNS protocol processing disabled\nGigabitEthernet4\
+  \ is up, line protocol is up\n  CLNS protocol processing disabled\nLoopback0 is\
+  \ up, line protocol is up\n  Checksums enabled, MTU 1514, Encapsulation LOOPBACK\n\
+  \  ERPDUs enabled, min. interval 10 msec.\n  CLNS fast switching disabled\n  CLNS\
+  \ SSE switching disabled\n  DEC compatibility mode OFF for this interface\n  Next\
+  \ ESH/ISH in 6 seconds\n  Routing Protocol: IS-IS (1)\n    Circuit Type: level-1-2\n\
+  \    Interface number 0x0, local circuit ID 0x100\n    Level-1 Metric: 10, Priority:\
+  \ 64, Circuit ID: R3.00\n    Level-1 IPv6 Metric: 10\n    Number of active level-1\
+  \ adjacencies: 0\n    Level-2 Metric: 10, Priority: 64, Circuit ID: R3.00\n    Level-2\
+  \ IPv6 Metric: 10\n    Number of active level-2 adjacencies: 0\n    Next IS-IS Hello\
+  \ in 0 seconds\n    if state DOWN"
+show environment: null
+show int desc: 'No time source, *12:38:37.232 UTC Tue Oct 23 2018
+
+
+  Interface                      Status         Protocol Description
+
+  Gi1                            up             up       CSR1000v-Gi1:R1-Fa0/1
+
+  Gi2                            up             up       CSR1000v-Gi2:vMX-ge-0/0/2
+
+  Gi3                            up             up       csr1000v-gi3:vmx-ge-0/0/2
+
+  Gi4                            up             up       MGMT
+
+  Lo0                            up             up'
+show inventory:
+- descr: Cisco CSR1000V Chassis
+  name: Chassis
+  pid: CSR1000V
+  sn: 9FRKD2WR7R7
+  vid: V00
+- descr: Cisco CSR1000V Route Processor
+  name: module R0
+  pid: CSR1000V
+  sn: JAB1303001C
+  vid: V00
+- descr: Cisco CSR1000V Embedded Services Processor
+  name: module F0
+  pid: CSR1000V
+  sn: ''
+  vid: ''
+show ip ospf interface brief:
+- area: '0'
+  cost: '1'
+  interface: Lo0
+  ip_address_mask: 10.0.0.3/32
+  neighbors_fc: 0/0
+  state: LOOP
+- area: '0'
+  cost: '1'
+  interface: Gi2
+  ip_address_mask: 10.0.23.3/24
+  neighbors_fc: 1/1
+  state: P2P
+- area: '0'
+  cost: '1'
+  interface: Gi1
+  ip_address_mask: 10.0.13.3/24
+  neighbors_fc: 1/1
+  state: P2P
+show ip ospf neighbor:
+- address: 10.0.23.2
+  dead_time: 00:00:36
+  interface: GigabitEthernet2
+  neighbor_id: 10.0.0.2
+  priority: '0'
+  state: FULL/  -
+- address: 10.0.13.1
+  dead_time: 00:00:37
+  interface: GigabitEthernet1
+  neighbor_id: 10.0.0.1
+  priority: '0'
+  state: FULL/  -
+show ip pim interface: "No time source, *12:38:45.078 UTC Tue Oct 23 2018\n\n\nAddress\
+  \          Interface                Ver/   Nbr    Query  DR         DR\n       \
+  \                                   Mode   Count  Intvl  Prior"
+show ip pim neighbor: "No time source, *12:38:44.477 UTC Tue Oct 23 2018\nPIM Neighbor\
+  \ Table\nMode: B - Bidir Capable, DR - Designated Router, N - Default DR Priority,\n\
+  \      P - Proxy Capable, S - State Refresh Capable, G - GenID Capable,\n      L\
+  \ - DR Load-balancing Capable\nNeighbor          Interface                Uptime/Expires\
+  \    Ver   DR\nAddress                                                         \
+  \   Prio/Mode"
+show ip rsvp interface: 'No time source, *12:38:43.273 UTC Tue Oct 23 2018
+
+
+  interface    rsvp       allocated  i/f max  flow max sub max  VRF'
+show ip rsvp neighbor: "No time source, *12:38:43.875 UTC Tue Oct 23 2018\n\nNeighbor\
+  \        Encapsulation  Time since msg rcvd/sent\n\n* Neighbors inactive for more\
+  \ than one hour are not shown.\n  Use the \"inactive\" keyword to display them."
+show isis neighbors: 'No time source, *12:38:39.651 UTC Tue Oct 23 2018
+
+
+
+  Tag 1:
+
+  System Id       Type Interface     IP Address      State Holdtime Circuit Id
+
+  R1              L1L2 Gi1           10.0.13.1       UP    28       02
+
+  vMX-NAPALM      L1L2 Gi2           10.0.23.2       UP    19       01
+
+
+  Tag null:'
+show l2vpn service all: "No time source, *12:38:46.894 UTC Tue Oct 23 2018\n\nLegend:\
+  \ St=State    XC St=State in the L2VPN Service      Prio=Priority\n        UP=Up\
+  \       DN=Down            AD=Admin Down      IA=Inactive\n        SB=Standby  HS=Hot\
+  \ Standby     RV=Recovering      NH=No Hardware\n        m=manually selected\n\n\
+  \  Interface          Group       Encapsulation                   Prio  St  XC St\n\
+  \  ---------          -----       -------------                   ----  --  -----"
+show logging: "No time source, *12:38:36.627 UTC Tue Oct 23 2018\n\nSyslog logging:\
+  \ enabled (0 messages dropped, 4 messages rate-limited, 0 flushes, 0 overruns, xml\
+  \ disabled, filtering disabled)\n\nNo Active Message Discriminator.\n\n\n\nNo Inactive\
+  \ Message Discriminator.\n\n\n    Console logging: level debugging, 110 messages\
+  \ logged, xml disabled,\n                     filtering disabled\n    Monitor logging:\
+  \ level debugging, 1 messages logged, xml disabled,\n                     filtering\
+  \ disabled\n        Logging to: vty1(0)\n    Buffer logging:  level debugging, 112\
+  \ messages logged, xml disabled,\n                    filtering disabled\n    Exception\
+  \ Logging: size (4096 bytes)\n    Count and timestamp logging messages: disabled\n\
+  \    Persistent logging: disabled\n\nNo active filter modules.\n\n    Trap logging:\
+  \ level informational, 114 message lines logged\n        Logging Source-Interface:\
+  \       VRF Name:\n\nLog Buffer (4096 bytes):\n: sent to neighbor 10.0.0.2 4/0 (hold\
+  \ time expired) 0 bytes \n*Oct 23 11:11:39.321: %BGP-5-NBR_RESET: Neighbor 10.0.0.2\
+  \ reset (BGP Notification sent)\n*Oct 23 11:11:39.322: %BGP-5-ADJCHANGE: neighbor\
+  \ 10.0.0.2 Down BGP Notification sent\n*Oct 23 11:11:39.322: %BGP_SESSION-5-ADJCHANGE:\
+  \ neighbor 10.0.0.2 IPv4 Unicast topology base removed from session  BGP Notification\
+  \ sent\n*Oct 23 11:11:45.568: %AAA-3-BADSERVERTYPEERROR: Cannot process accounting\
+  \ server type tacacs+ (UNKNOWN)\n*Oct 23 11:12:04.655: %SYS-5-CONFIG_I: Configured\
+  \ from console by napalm on console\n*Oct 23 11:27:05.874: %AAA-3-BADSERVERTYPEERROR:\
+  \ Cannot process accounting server type tacacs+ (UNKNOWN)\n*Oct 23 11:49:26.670:\
+  \ %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)\n\
+  *Oct 23 11:53:49.096: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet2\
+  \ from DOWN to INIT, Received Hello\n*Oct 23 11:53:49.105: %OSPF-5-ADJCHG: Process\
+  \ 1, Nbr 10.0.0.2 on GigabitEthernet2 from INIT to 2WAY, 2-Way Received\n*Oct 23\
+  \ 11:53:49.105: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet2 from\
+  \ 2WAY to EXSTART, AdjOK?\n*Oct 23 11:53:49.109: %CLNS-5-ADJCHANGE: ISIS (1): Adjacency\
+  \ to vMX-NAPALM (GigabitEthernet2) Up, new adjacency\n*Oct 23 11:53:49.154: %OSPF-5-ADJCHG:\
+  \ Process 1, Nbr 10.0.0.2 on GigabitEthernet2 from EXSTART to EXCHANGE, Negotiation\
+  \ Done\n*Oct 23 11:53:49.205: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet2\
+  \ from EXCHANGE to LOADING, Exchange Done\n*Oct 23 11:53:49.205: %OSPF-5-ADJCHG:\
+  \ Process 1, Nbr 10.0.0.2 on GigabitEthernet2 from LOADING to FULL, Loading Done\n\
+  *Oct 23 11:53:50.078: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server\
+  \ type tacacs+ (UNKNOWN)\n*Oct 23 11:53:54.242: %BGP-5-ADJCHANGE: neighbor 10.0.0.2\
+  \ Up \n*Oct 23 11:53:56.428: %LDP-5-NBRCHG: LDP Neighbor 10.0.0.2:0 (1) is UP\n\
+  *Oct 23 11:54:12.730: %SYS-5-CONFIG_I: Configured from console by napalm on vty0\
+  \ (192.168.223.1)\n*Oct 23 11:54:24.851: %SYS-5-CONFIG_I: Configured from console\
+  \ by napalm on vty0 (192.168.223.1)\n*Oct 23 11:54:37.129: %SYS-5-CONFIG_I: Configured\
+  \ from console by napalm on vty0 (192.168.223.1)\n*Oct 23 11:54:39.993: %PARSER-4-BADCFG:\
+  \ Unexpected end of configuration file.\n\n*Oct 23 11:54:47.483: %LINEPROTO-5-UPDOWN:\
+  \ Line protocol on Interface GigabitEthernet3, changed state to up\n*Oct 23 11:54:49.226:\
+  \ %SYS-5-CONFIG_I: Configured from console by napalm on vty0 (192.168.223.1)\n*Oct\
+  \ 23 11:54:52.013: %AAA-3-BADSERVERTYPEERROR: Cannot process accounting server type\
+  \ tacacs+ (UNKNOWN)\n*Oct 23 11:55:01.717: %SYS-5-CONFIG_I: Configured from console\
+  \ by napalm on vty0 (192.168.223.1)\n*Oct 23 11:55:14.811: %SYS-5-CONFIG_I: Configured\
+  \ from console by napalm on vty0 (192.168.223.1)\n*Oct 23 12:29:35.472: %AAA-3-BADSERVERTYPEERROR:\
+  \ Cannot process authentication server type tacacs+ (UNKNOWN)\n*Oct 23 12:31:23.414:\
+  \ %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)\n\
+  *Oct 23 12:35:07.265: %AAA-3-BADSERVERTYPEERROR: Cannot process accounting server\
+  \ type tacacs+ (UNKNOWN)\n*Oct 23 12:35:45.748: %CLNS-5-ADJCHANGE: ISIS (1): Adjacency\
+  \ to 1000.0001.0000 (GigabitEthernet1) Up, new adjacency\n*Oct 23 12:35:50.324:\
+  \ %LDP-5-NBRCHG: LDP Neighbor 10.0.0.1:0 (2) is UP\n*Oct 23 12:35:53.012: %BGP-5-ADJCHANGE:\
+  \ neighbor 10.0.0.1 Up \n*Oct 23 12:35:53.719: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.1\
+  \ on GigabitEthernet1 from DOWN to INIT, Received Hello\n*Oct 23 12:35:53.719: %OSPF-5-ADJCHG:\
+  \ Process 1, Nbr 10.0.0.1 on GigabitEthernet1 from INIT to 2WAY, 2-Way Received\n\
+  *Oct 23 12:35:53.719: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.1 on GigabitEthernet1\
+  \ from 2WAY to EXSTART, AdjOK?\n*Oct 23 12:35:53.740: %OSPF-5-ADJCHG: Process 1,\
+  \ Nbr 10.0.0.1 on GigabitEthernet1 from EXSTART to EXCHANGE, Negotiation Done\n\
+  *Oct 23 12:35:53.750: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.1 on GigabitEthernet1\
+  \ from EXCHANGE to LOADING, Exchange Done\n*Oct 23 12:35:53.783: %OSPF-5-ADJCHG:\
+  \ Process 1, Nbr 10.0.0.1 on GigabitEthernet1 from LOADING to FULL, Loading Done\n\
+  *Oct 23 12:38:22.192: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server\
+  \ type tacacs+ (UNKNOWN)"
+show mpls ldp discovery: "No time source, *12:38:42.683 UTC Tue Oct 23 2018\n Local\
+  \ LDP Identifier:\n    10.0.0.3:0\n    Discovery Sources:\n    Interfaces:\n\tGigabitEthernet1\
+  \ (ldp): xmit/recv\n\t    LDP Id: 10.0.0.1:0\n\tGigabitEthernet2 (ldp): xmit/recv\n\
+  \t    LDP Id: 10.0.0.2:0\n\tGigabitEthernet3 (ldp): xmit"
+show mpls ldp neighbor: "No time source, *12:38:42.060 UTC Tue Oct 23 2018\n    Peer\
+  \ LDP Ident: 10.0.0.2:0; Local LDP Ident 10.0.0.3:0\n\tTCP connection: 10.0.0.2.646\
+  \ - 10.0.0.3.36441\n\tState: Oper; Msgs sent/rcvd: 315/272; Downstream\n\tUp time:\
+  \ 00:44:45\n\tLDP discovery sources:\n\t  GigabitEthernet2, Src IP addr: 10.0.23.2\n\
+  \        Addresses bound to peer LDP Ident:\n          10.0.12.2       10.0.23.2\
+  \       \n    Peer LDP Ident: 10.0.0.1:0; Local LDP Ident 10.0.0.3:0\n\tTCP connection:\
+  \ 10.0.0.1.646 - 10.0.0.3.38778\n\tState: Oper; Msgs sent/rcvd: 12/12; Downstream\n\
+  \tUp time: 00:02:51\n\tLDP discovery sources:\n\t  GigabitEthernet1, Src IP addr:\
+  \ 10.0.13.1\n        Addresses bound to peer LDP Ident:\n          10.0.12.1   \
+  \    10.0.0.1        10.0.13.1"
+show platform resources: "No time source, *12:38:34.620 UTC Tue Oct 23 2018\n**State\
+  \ Acronym: H - Healthy, W - Warning, C - Critical                              \
+  \               \nResource                 Usage                 Max           \
+  \  Warning         Critical        State\n----------------------------------------------------------------------------------------------------\n\
+  RP0 (ok, active)                                                               \
+  \                C    \n Control Processor       1.22%                 100%    \
+  \        90%             95%             H    \n  DRAM                   2392MB(97%)\
+  \           2447MB          90%             95%             C    \nESP0(ok, active)\
+  \                                                                              \
+  \ H    \n QFP                                                                  \
+  \                         H    \n  DRAM                   26639KB(10%)         \
+  \ 262144KB        80%             90%             H    \n  IRAM                \
+  \   213KB(10%)            2048KB          80%             90%             H"
+show proc cpu hist: "No time source, *12:38:30.399 UTC Tue Oct 23 2018\n         \
+  \                                                         \n                   \
+  \                                               \n                             \
+  \                                     \n                                       \
+  \                           \n      1122222                                    \
+  \                 \n  100                                                      \
+  \     \n   90                                                           \n   80\
+  \                                                           \n   70            \
+  \                                               \n   60                        \
+  \                                   \n   50                                    \
+  \                       \n   40                                                \
+  \           \n   30                                                           \n\
+  \   20                                                           \n   10       \
+  \                                                    \n     0....5....1....1....2....2....3....3....4....4....5....5....6\n\
+  \               0    5    0    5    0    5    0    5    0    5    0\n          \
+  \     CPU% per second (last 60 seconds)\n\n                                    \
+  \                              \n                                              \
+  \                    \n                                                        \
+  \          \n                                                                  \n\
+  \      111   212 1     11   1     1  1           63  1 2   1  1    \n  100     \
+  \                                                      \n   90                 \
+  \                                          \n   80                             \
+  \                              \n   70                                         \
+  \                  \n   60                                                     \
+  \      \n   50                                                           \n   40\
+  \                                                           \n   30            \
+  \                                               \n   20                        \
+  \                                   \n   10                                    \
+  \       *               \n     0....5....1....1....2....2....3....3....4....4....5....5....6\n\
+  \               0    5    0    5    0    5    0    5    0    5    0\n          \
+  \     CPU% per minute (last 60 minutes)\n              * = maximum CPU%   # = average\
+  \ CPU%\n\n                                                                     \
+  \         \n                                                                   \
+  \           \n                                                                 \
+  \             \n       2                                                       \
+  \               \n      68                                                     \
+  \                 \n  100                                                      \
+  \                 \n   90                                                      \
+  \                 \n   80                                                      \
+  \                 \n   70                                                      \
+  \                 \n   60                                                      \
+  \                 \n   50                                                      \
+  \                 \n   40                                                      \
+  \                 \n   30  *                                                   \
+  \                 \n   20  *                                                   \
+  \                 \n   10 **                                                   \
+  \                 \n     0....5....1....1....2....2....3....3....4....4....5....5....6....6....7..\n\
+  \               0    5    0    5    0    5    0    5    0    5    0    5    0  \n\
+  \                   CPU% per hour (last 72 hours)\n                  * = maximum\
+  \ CPU%   # = average CPU%"
+show proc cpu sort:
+- cpu_1_min: '0'
+  cpu_5_min: '0'
+  cpu_5_sec: '1'
+  interrupts: '0'
+show proc mem sort: "No time source, *12:38:30.999 UTC Tue Oct 23 2018\n\nProcessor\
+  \ Pool Total:  705990864 Used:  323129440 Free:  382861424\n lsmpi_io Pool Total:\
+  \    6295128 Used:    6294296 Free:        832\n\n PID TTY  Allocated      Freed\
+  \    Holding    Getbufs    Retbufs Process\n   0   0 2905109552 2642598712  241790504\
+  \          0          0 *Init*          \n 572   0   34447616      51776   34771840\
+  \          0          0 SBC main process\n  75   0    5911728          0    5073616\
+  \          0          0 IOSD ipc task   \n 142   0    6626824      18056    4654888\
+  \          0          0 CWAN OIR Handler\n 455   0    3946472       5160    3983176\
+  \     849828          0 EEM ED Syslog   \n   0   0   73372720   69737816    3946000\
+  \    9024279          0 *Dead*          \n  15   0    2502768      28120    2233792\
+  \          0          0 LCON Main       \n 479   0    1445512      27680    1459696\
+  \          0          0 EEM Server      \n   1   0     854832          0     884696\
+  \          0          0 Chunk Manager   \n 438   0     647480          0     689344\
+  \          0          0 QOS_MODULE_MAIN \n 442   0     555192       2968     552952\
+  \          0          0 OSPF-1 Router   \n 468   0    1097296       7912     538296\
+  \          0          0 IOSXE-RP Virtual\n 456   0     382208       5728     418912\
+  \      72316          0 EEM ED Generic  \n   6   0     453128      25832     398120\
+  \          0          0 RF Slave Main Th\n   0   0          0          0     395360\
+  \          0          0 *MallocLite*    \n 420   0     292784        144     346504\
+  \          0          0 Crypto IKEv2    \n 588   0    5826080    5568824     312400\
+  \          0          0 ISIS Upd 1      \n 407   0     232656        448     262072\
+  \          0          0 FLEX DSPRM MAIN \n 148   0     284784      82488     256160\
+  \          0          0 IPRM            \n 194   0     615632     340160     250896\
+  \          0          0 mDNS            \n 441   0       1808          0     247672\
+  \          0          0 http client proc\n 320   0       1808          0     247672\
+  \          0          0 COPS            \n 573   0     167600        448     221016\
+  \          0          0 MRIB Process    \n 446   0     467552        888     209256\
+  \          0          0 BGP Router      \n 480   0     247160     185104     209224\
+  \          0          0 Call Home proces\n 302   1    7241296    7102920     181784\
+  \          0          0 SSH Process     \n 255   0      75640        448     177056\
+  \          0          0 AN              \n 589   0     131208          0     173072\
+  \          0          0 BGP Task        \n 290   0     139960        200     169496\
+  \          0          0 L2FIB Event Disp\n   7   0      65632          0     167496\
+  \          0          0 EDDRI_MAIN      \n 232   0      65632          0     167496\
+  \          0          0 st_pw_oam       \n 405   0      58088        448     159504\
+  \          0          0 STUN_APP        \n 188   0      98736          0     152600\
+  \          0          0 IPAM Manager    \n 343   0      48792       2520     150768\
+  \          0          0 LICENSE AGENT   \n 411   0     697040     601816     149232\
+  \          0          0 Crypto CA       \n 587   0    2342296    2259328     147648\
+  \          0          0 ISIS Adj 1      \n 403   0     102176          0     132040\
+  \          0          0 MMA DB TIMER    \n 169   0      98736          0     128736\
+  \          0          0 ACCT Periodic Pr\n 398   0      99184        448     128600\
+  \          0          0 Timer Library   \n 375   0      98736          0     128600\
+  \          0          0 AAA HA cleanup  \n 577   0      97520        448     126224\
+  \          0          0 mLDP Process    \n  10   0    9360560    9337280     121800\
+  \    8949204    8940504 Pool Manager    \n 295   0      65576          0     119440\
+  \          0          0 ATM HA          \n 585   0     146568     379816     119160\
+  \          0          0 LDP Main        \n 261   0      67064       1824     107104\
+  \          0          0 IP Connected Rou\n 151   0       2592        448     104008\
+  \          0          0 Ethernet CFM    \n 406   0       1808          0     103672\
+  \          0          0 STUN_TEST       \n 313   0       1808          0     103672\
+  \          0          0 HTTP CORE       \n 179   0      73016        528     102352\
+  \          0          0 VRRS Main thread\n 440   0        432          0     102296\
+  \          0          0 RPMS_PROC_MAIN  \n 259   0      91992      35408     102128\
+  \          0          0 IP RIB Update   \n 257   0          0          0     101864\
+  \          0          0 AN CONFIG DOWNLO\n 439   0          0          0     101864\
+  \          0          0 VoIP AAA        \n  76   0      13920      13920     101864\
+  \          0          0 IOSD chasfs task\n 256   0          0          0     101864\
+  \          0          0 AN HELPER       \n 428   0          0          0     101864\
+  \          0          0 Crypto ACL      \n 324   0      67976          0      97840\
+  \          0          0 DHCP SIP        \n 190   0      54992      12880      95976\
+  \          0          0 IP ARP Adjacency\n 191   0      66064          0      95928\
+  \          0          0 IP ARP Retry Age\n 425   0      41112        448      94528\
+  \          0          0 Crypto IKMP     \n 427   0     107536       5808      89256\
+  \          0          0 IPSEC key engine\n 341   0      55912        448      85328\
+  \          0          0 HTTP Process    \n 283   0      42192       4320      84424\
+  \          0          0 CEF: IPv4 proces\n 605   0      73328       1280      84088\
+  \          0          0 ONEP Network Ele\n 470   0      26960        896      79928\
+  \          0          0 RBM CORE        \n 144   0      42120        144      70336\
+  \          0          0 ACE event       \n 337   0     104800        448      68328\
+  \          0          0 SCTP Main Proces\n 250   0      14720       2648      67448\
+  \          0          0 CEF background p\n 583   0     186536          0      66808\
+  \          0          0 LDP Background  \n 437   0      12992        448      66408\
+  \          0          0 Sip MPA         \n  68   0     179248      11392      65632\
+  \          0          0 Net Background  \n 192   0      10096          0      63960\
+  \          0          0 IP Input        \n 364   0      17128        448      58544\
+  \          0          0 CLNS Input      \n 393   0       8680       4032      58512\
+  \          0          0 LOCAL AAA       \n 231   0       4392          0      58256\
+  \          0          0 MPLS Auto-Tunnel\n 603   0       3728          0      57592\
+  \          0          0 ONEP Dispatch XD\n 581   0      33824        712      57112\
+  \          0          0 LSP Verification\n 604   0       3208          0      57072\
+  \          0          0 XOS async sync X\n  73   0       2448          0      56312\
+  \          0          0 CTS CORE        \n 279   0     505120          0      56056\
+  \          0          0 TCP Protocols   \n 500   0      19280       5160      55984\
+  \          0          0 EEM ED CRASH    \n 499   0      19280       5160      55984\
+  \          0          0 EEM ED DS       \n 395   0       2464        448      55880\
+  \          0          0 TPLUS           \n 389   0       2256        448      55672\
+  \          0          0 LDAP process    \n 414   0       1808          0      55672\
+  \          0          0 PKI OCSP        \n 483   0      15368       1808      55424\
+  \          0          0 EEM Policy Direc\n 596   0       1336        328      55200\
+  \          0          0 ONEP Dispatch po\n 599   0        856          0      54720\
+  \          0          0 ONEP Dispatch po\n 601   0        832          0      54696\
+  \          0          0 ONEP Dispatch po\n 598   0        776          0      54640\
+  \          0          0 ONEP Dispatch po\n 304   0        776          0      54640\
+  \          0          0 MRIB RP Proxy   \n 597   0        752          0      54616\
+  \          0          0 ONEP Dispatch po\n 600   0        736          0      54600\
+  \          0          0 ONEP Dispatch po\n 602   0        736          0      54600\
+  \          0          0 ONEP Dispatch po\n   3   0        736          0      54600\
+  \          0          0 ONEP Dispatch po\n 452   0      31304       7000      54488\
+  \          0          0 DCM Core Thread \n 284   0        504          0      54368\
+  \          0          0 ADJ background  \n  69   0       3120       2624      54360\
+  \          0          0 IDB Work        \n 575   0        464          0      54328\
+  \          0          0 LSD Main Proc   \n 433   0        896        448      54312\
+  \          0          0 MMON PROCESS    \n 285   0        408          0      54272\
+  \          0          0 Collection proce\n 251   0        408          0      54272\
+  \          0          0 fib_fib_bfd_sb e\n 172   0        408          0      54272\
+  \          0          0 CEF switching ba\n 350   0        408          0      54272\
+  \          0          0 FRR Manager     \n 301   0        408          0      54272\
+  \          0          0 MFIB Master back\n 319   0        408          0      54272\
+  \          0          0 ADJ resolve proc\n 130   0     263568     263224      54208\
+  \          0          0 FPDB Timer Proce\n 571   0    6292520    6292376      54008\
+  \          0          0 mdns Timer Proce\n 197   0        448        448      54000\
+  \          0          0 KRB5 AAA        \n 214   0          0          0      54000\
+  \          0          0 LONG TO SHORT NA\n 246   0          0          0      53976\
+  \          0          0 XDR receive     \n 413   0          0          0      53864\
+  \          0          0 Crypto PKI-Rev-P\n 412   0        448        448      53864\
+  \          0          0 Crypto PKI-CRL  \n  61   0        448        448      53864\
+  \          0          0 XML Proxy Client\n 410   0          0          0      53864\
+  \          0          0 RSA background p\n 415   0          0          0      53864\
+  \          0          0 PKI Revocation  \n 579   0          0          0      53864\
+  \          0          0 MFI LFD Timer Pr\n 419   0          0          0      53864\
+  \          0          0 encrypt proc    \n 423   0          0          0      53864\
+  \          0          0 Crypto INT      \n 402   0          0          0      53864\
+  \          0          0 MPLS Auto Mesh P\n 424   0        448        952      53864\
+  \          0          0 Crypto IKE Dispa\n 118   0          0          0      53864\
+  \          0          0 Crypto PKI-HA   \n 119   0          0          0      53864\
+  \          0          0 Metadata HA     \n 120   0          0          0      53864\
+  \          0          0 FMD HA IPC flow \n 502   0      53432      53432      53864\
+  \          0          0 Syslog          \n 235   0        448        448      53864\
+  \          0          0 SSS Mobility mes\n 234   0        448        448      53864\
+  \          0          0 ATM OAM TIMER   \n 233   0        448        448      53864\
+  \          0          0 ATM OAM Input   \n 230   0          0          0      53864\
+  \          0          0 LSP Tunnel FRR  \n 258   0          0          0      53864\
+  \          0          0 Routing Topology\n 263   0        448        448      53864\
+  \          0          0 NGCP SCHEDULER P\n 264   0        448        448      53864\
+  \          0          0 STILE PERIODIC T\n 390   0          0          0      53864\
+  \          0          0 Opaque Database \n 436   0          0          0      53864\
+  \          0          0 CCSIP_EVENT_TRAC\n 265   0        448        448      53864\
+  \          0          0 UV AUTO CUSTOM P\n 273   0          0          0      53864\
+  \          0          0 Ethernet PM Moni\n 278   0          0       4864      53864\
+  \          0          0 TCP Timer       \n 454   0          0          0      53864\
+  \          0          0 Test AAA Client \n 135   0          0          0      53864\
+  \          0          0 IPSec background\n  45   0          0          0      53864\
+  \          0          0 Policy Manager  \n 137   0          0          0      53864\
+  \          0          0 BFD HW EVENT    \n 138   0          0          0      53864\
+  \          0          0 BFD IPV6 ADDR CH\n 213   0          0          0      53864\
+  \          0          0 SSS PM SHIM QOS \n 282   0        448        448      53864\
+  \          0          0 Tunnel          \n 357   0          0          0      53864\
+  \          0          0 RSVP HA Services\n 353   0          0          0      53864\
+  \          0          0 LFD Label Block \n 352   0          0          0      53864\
+  \          0          0 Path set broker \n 210   0          0          0      53864\
+  \          0          0 SSS Policy Manag\n 209   0          0          0      53864\
+  \          0          0 SSS Manager     \n 344   0        448        448      53864\
+  \          0          0 Auth Manager    \n 208   0        448        448      53864\
+  \          0          0 SSM connection m\n 461   0          0          0      53864\
+  \          0          0 IKEv2 FlexVPN Pr\n 149   0        448        448      53864\
+  \          0          0 Ethernet LMI    \n 288   0        448        672      53864\
+  \          0          0 Flow Exporter Ti\n 204   0        448        448      53864\
+  \          0          0 PPP IP Route    \n 339   0          0          0      53864\
+  \          0          0 SSL background p\n 338   0          0          0      53864\
+  \          0          0 VPDN call manage\n  72   0        448       3824      53864\
+  \          0          0 SXP CORE        \n 289   0        448        448      53864\
+  \          0          0 Flow Exporter Pa\n 334   0        448        448      53864\
+  \          0          0 X.25 Background \n 201   0          0          0      53864\
+  \          0          0 DM Proc         \n 607   0          0          0      53864\
+  \          0          0 AToM LDP manager\n  53   0          0          0      53864\
+  \          0          0 License IPC stat\n  54   0          0          0      53864\
+  \          0          0 License IPC serv\n 161   0        448        448      53864\
+  \          0          0 RG Faults Timer \n 326   0        448        448      53864\
+  \          0          0 IP Inband Sessio\n 325   0        448        448      53864\
+  \          0          0 IP SIP Process  \n 164   0        448        448      53864\
+  \          0          0 RG Protocol Time\n 165   0        448        448      53864\
+  \          0          0 RG Transport Tim\n 465   0        448        448      53864\
+  \          0          0 ISG MIB jobs Man\n 189   0        448        448      53864\
+  \          0          0 IPAM Events     \n 308   0          0          0      53864\
+  \          0          0 RG If-Mgr Timer \n  70   0        448        448      53864\
+  \          0          0 Logger          \n 185   0        448        448      53864\
+  \          0          0 DVLAN Config Pro\n 184   0        448        448      53864\
+  \          0          0 IP Static Sessio\n 309   0        448        448      53864\
+  \          0          0 RG Media Timer  \n 311   0        448        448      53864\
+  \          0          0 MCPRP RG Timer  \n 181   0          0          0      53864\
+  \          0          0 IEDGE ACCT TIMER\n  58   0        448        448      53864\
+  \          0          0 Dialer event    \n 133   0      16112      31176      52816\
+  \          0          0 EEM ED ND       \n 260   0      17856      19672      52496\
+  \          0          0 IP Background   \n 487   0      15568       5208      52224\
+  \          0          0 EEM ED Interface\n 506   0      14456       5728      51160\
+  \          0          0 EEM ED Ipsla    \n 459   0      14376       5224      51016\
+  \          0          0 EEM ED Resource \n 491   0      14592       5160      50800\
+  \          0          0 EEM ED RF       \n 495   0      13808       5160      50512\
+  \          0          0 EEM ED Timer    \n 457   0      13728       5160      50432\
+  \          0          0 EEM ED Track    \n 494   0      13696       5160      50400\
+  \          0          0 EEM ED SNMP Noti\n 458   0      13768       5232      50400\
+  \          0          0 EEM ED Routing  \n 486   0      13640       5160      50344\
+  \          0          0 EEM ED Counter  \n 485   0      13720       5296      50288\
+  \          0          0 EEM ED CLI      \n 488   0      13576       5160      50280\
+  \          0          0 EEM ED IOSWD    \n 496   0      13504       5160      50208\
+  \          0          0 EEM ED Test     \n 489   0      13504       5160      50208\
+  \          0          0 EEM ED None     \n 497   0      13504       5160      50208\
+  \          0          0 EEM ED Config   \n 498   0      13504       5160      50208\
+  \          0          0 EEM ED Env      \n 501   0      13504       5160      50208\
+  \          0          0 EM ED GOLD      \n 505   0      13504       5160      50208\
+  \          0          0 EEM ED RPC      \n 493   0      13504       5160      50208\
+  \          0          0 EEM ED SNMP Obje\n 490   0      13504       5160      50208\
+  \          0          0 EEM ED OIR      \n 492   0      13504       5160      50208\
+  \          0          0 EEM ED SNMP     \n 178   0      19992          0      49856\
+  \          0          0 VRRP Main thread\n 122   0      35424      56400      49624\
+  \          0          0 RF Master Main T\n 167   0      17128        448      46544\
+  \          0          0 AAA Server      \n 478   0      16952        464      46088\
+  \          0          0 dcm_expression_p\n 606   0       2976          0      44840\
+  \          0          0 AToM manager    \n 323   0      20440       5608      44696\
+  \          0          0 SR CapMan Proces\n 484   0       3480        448      43936\
+  \          0          0 ES-IS Routing   \n 396   0       6680        896      43648\
+  \          0          0 EST Client      \n 475   0      17264       3192      43568\
+  \          0          0 DCM snmp dp Thre\n 582   0       6448       4992      43320\
+  \          0          0 MPLS IFMIB Proce\n 327   0       1840        448      43256\
+  \          0          0 MVPN Mgr Process\n 328   0        896        448      42312\
+  \          0          0 Multicast Offloa\n 262   0        408          0      42272\
+  \          0          0 Tunnel FIB      \n 127   0        408          0      42272\
+  \          0          0 IP MPLS Service \n 170   0          0          0      41984\
+  \          0          0 cdp init process\n 140   0          0          0      41864\
+  \          0          0 BGP I/O         \n 198   0          0          0      41864\
+  \          0          0 BGP Scanner     \n 330   0        448        448      41864\
+  \          0          0 static          \n 445   0          0          0      41864\
+  \          0          0 Licensing MIB pr\n 294   0          0          0      41864\
+  \          0          0 IPv6 RIB Event H\n 272   0          0          0      41864\
+  \          0          0 EPM MAIN PROCESS\n 271   0        448        448      41864\
+  \          0          0 Ethernet PM Soft\n 384   0      11200      11200      41864\
+  \          0          0 DynCmd Package P\n  78   0          0          0      41864\
+  \          0          0 REDUNDANCY FSM  \n 432   0          0          0      41864\
+  \          0          0 SEGMENT ROUTING \n 292   0        448        448      41864\
+  \          0          0 App Route Proces\n 331   0          0          0      41864\
+  \          0          0 IPv6 Static Hand\n 336   0     136792     136792      41864\
+  \          0          0 QoS stats proces\n  74   0          0          0      41864\
+  \          0          0 BGP Scheduler   \n 590   0          0          0      41864\
+  \          0          0 BGP BMP Server  \n 126   0          0          0      41864\
+  \          0          0 Per-Second Jobs \n 293   0          0          0      41864\
+  \          0          0 IPv6 RIB Cleanup\n 394   0          0          0      41864\
+  \          0          0 BGP Consistency \n  17   0        448        448      41864\
+  \          0          0 ATM AutoVC Perio\n 469   0          0          0      41864\
+  \          0          0 BGP Event       \n 426   0          0          0      41864\
+  \          0          0 IPSEC manual key\n 270   0          0          0      41864\
+  \          0          0 Ethernet PM Proc\n  89   0          0          0      41864\
+  \          0          0 CONSOLE helper p\n 121   0        448        448      41864\
+  \          0          0 SISF HA Process \n 150   0        448        448      41864\
+  \          0          0 Ethernet OAM Pro\n 418   0          0          0      41864\
+  \          0          0 QOS PERUSER     \n 252   0          0          0      41864\
+  \          0          0 IP IRDP         \n 180   0          0          0      41864\
+  \          0          0 HQF TARGET DYNAM\n 253   0      11896          0      41760\
+  \          0          0 LSD HA Proc     \n 477   0      16648      20368      41408\
+  \          0          0 Bulkstat-Client \n 106   0      10096          0      39960\
+  \          0          0 CHKPT Test clien\n 306   0      10544        448      39960\
+  \          0          0 RBSCP Background\n 525   0      10096          0      39960\
+  \          0          0 IPC ISSU Version\n 380   0      10096          0      39960\
+  \          0          0 BFD HA          \n 451   0       9624        520      39160\
+  \          0          0 dcm_cli_provider\n  47   0      13072       3856      39080\
+  \          0          0 Entity MIB API  \n 303   0       8920          0      38496\
+  \          0          0 SSH Event handle\n 574   0       9064        528      38400\
+  \          0          0 EEM Helper Threa\n 586   0       8424          0      38288\
+  \          0          0 LDP Hello       \n 114   0     211112      22280      37552\
+  \          0          0 IOSXE-RP Punt Se\n 354   0       6296          0      36160\
+  \          0          0 LDP HA          \n   9   0       6240        448      35656\
+  \          0          0 Check heaps     \n 476   0       6912        792      35592\
+  \          0          0 snmp dcm ma shim\n 125   0       5648          0      35512\
+  \          0          0 Per-minute Jobs \n 471   0       6424        896      35392\
+  \          0          0 CTS credentials \n 360   0       5520       2288      35384\
+  \          0          0 VPWS Thread     \n 450   0       4464          0      34328\
+  \          0          0 dcm_cli_engine  \n 481   0      35616        936      33688\
+  \          0          0 Call Home DS    \n 175   0       3488          0      33352\
+  \          0          0 FHRP Main thread\n 176   0       3312          0      33176\
+  \          0          0 TRACK Main threa\n 177   0       3312          0      33176\
+  \          0          0 TRACK Client thr\n  57   0       3264          0      33128\
+  \          0          0 RF SCTPthread   \n 153   0       3208          0      33072\
+  \          0          0 L2FIB Timer Disp\n 171   0      72200          0      33064\
+  \          0          0 Call Home Timer \n 482   0       3152          0      33016\
+  \          0          0 Call Home DSfile\n 205   0       3120        784      32984\
+  \          0          0 LCON Addr       \n 123   0       3120          0      32984\
+  \          0          0 RF Master Status\n 156   0       3120          0      32984\
+  \          0          0 MLRIB L2 Msg Thr\n 145   0       4200       2104      32960\
+  \          0          0 ACE HAPI        \n 504   0       3080          0      32944\
+  \          0          0 qos_mon_periodic\n  30   0       2192          0      32056\
+  \          0          0 IPC Seat Manager\n 408   0       3408       1392      31880\
+  \          0          0 Manet Infra Back\n 224   0       1856          0      31720\
+  \          0          0 Auth-proxy HTTP \n 592   0       9592       7744      31712\
+  \          0          0 OSPF-1 Hello    \n 346   0       2256        448      31672\
+  \          0          0 URL filter proc \n 462   0       1808          0      31672\
+  \          0          0 IKEv2 Cluster Lo\n  81   0       1776          0      31640\
+  \          0          0 IF-MGR control p\n 397   0      90560      88888      31536\
+  \          0          0 NIST rng proc   \n 363   0       2376        880      31360\
+  \          0          0 LFDp Input Proc \n  60   0     359744     397768      30728\
+  \          0          0 crypto sw pk pro\n 243   0        408          0      30392\
+  \          0          0 XDR background p\n 322   0        792        200      30328\
+  \          0          0 Service Routing \n 580   0        464          0      30328\
+  \          0          0 MFI LFD Main Pro\n 219   0        896        448      30312\
+  \          0          0 Spanning Tree   \n 417   0        896        448      30312\
+  \          0          0 PIM HA          \n 593   0        448          0      30312\
+  \          0          0 MPLS TE OAM Clie\n 443   0        896        448      30312\
+  \          0          0 Lawful Intercept\n 444   0        896        448      30312\
+  \          0          0 LI messaging    \n 359   0        896        448      30312\
+  \          0          0 MPLS TP HA      \n 136   0        448          0      30312\
+  \          0          0 Src Fltr backgro\n 431   0        432          0      30296\
+  \          0          0 GKM KS PROCESS  \n 287   0        408          0      30272\
+  \          0          0 XDR FOF process \n 473   0        408          0      30272\
+  \          0          0 Online Diag CNS \n 254   0        408          0      30272\
+  \          0          0 CEF RP Backgroun\n 448   0        408          0      30272\
+  \          0          0 Online Diag EEM \n 474   0        408          0      30272\
+  \          0          0 Online Diag CNS \n 143   0          0          0      30000\
+  \          0          0 TP CUTOVER EVENT\n 238   0          0          0      29984\
+  \          0          0 CCM             \n 300   0          0          0      29864\
+  \          0          0 HSRP HA         \n 195   0        448        448      29864\
+  \          0          0 PIM register asy\n  18   0        448        448      29864\
+  \          0          0 ATM VC Auto Crea\n 286   0          0          0      29864\
+  \          0          0 RETRY_REPOPULATE\n 305   0          0          0      29864\
+  \          0          0 IPv6 ACL RP Proc\n  19   0          0          0      29864\
+  \          0          0 IPC Apps Task   \n 298   0          0          0      29864\
+  \          0          0 GLBP HA         \n 299   0          0          0      29864\
+  \          0          0 Probe Input     \n 183   0        448        448      29864\
+  \          0          0 IP PORTBUNDLE   \n 297   0          0          0      29864\
+  \          0          0 FR HA           \n 182   0          0          0      29864\
+  \          0          0 ISG CMD HANDLER \n 186   0          0          0      29864\
+  \          0          0 IP Lite session \n 207   0          0          0      29864\
+  \          0          0 RIB LM VALIDATE \n 211   0          0          0      29864\
+  \          0          0 SSS Feature Mana\n 296   0          0          0      29864\
+  \          0          0 ATM HA IPC flow \n 193   0          0          0      29864\
+  \          0          0 ICMP event handl\n 187   0        448        448      29864\
+  \          0          0 IPAM/ODAP Events\n 310   0          0          0      29864\
+  \          0          0 VRRP HA         \n 174   0        448        448      29864\
+  \          0          0 AAA Dictionary R\n 215   0          0          0      29864\
+  \          0          0 Timer handler fo\n 321   0        448        448      29864\
+  \          0          0 Dialer Forwarder\n 281   0          0          0      29864\
+  \          0          0 BGP HA SSO      \n 168   0      82656      83920      29864\
+  \          0          0 AAA ACCT Proc   \n 312   0          0          0      29864\
+  \          0          0 Socket Timers   \n 163   0        448        448      29864\
+  \          0          0 RG AR           \n 162   0          0          0      29864\
+  \          0          0 RG VP           \n 160   0          0          0      29864\
+  \          0          0 RABAPOL HA IPC f\n 159   0          0          0      29864\
+  \          0          0 RABAPOL HA      \n 212   0          0          0      29864\
+  \          0          0 SSS Feature Time\n 158   0          0          0      29864\
+  \          0          0 DVLAN HA        \n 157   0          0          0      29864\
+  \          0          0 TEMPLATE HA     \n 332   0        448        448      29864\
+  \          0          0 DHCPv6 LQ client\n 333   0          0          0      29864\
+  \          0          0 PAD InCall      \n 316   0          0          0      29864\
+  \          0          0 AAA System Acct \n 335   0          0          0      29864\
+  \          0          0 X.25 Encaps Mana\n 155   0          0          0      29864\
+  \          0          0 IGMP Route Rx Pr\n 317   0        448        448      29864\
+  \          0          0 PPP Compress Inp\n 216   0          0          0      29864\
+  \          0          0 Prepaid response\n 318   0        448        448      29864\
+  \          0          0 PPP Compress Res\n 166   0          0          0      29864\
+  \          0          0 HDLC HA         \n  20   0          0          0      29864\
+  \          0          0 ifIndex Receive \n 342   0        448        448      29864\
+  \          0          0 Inspect process \n 147   0          0          0      29864\
+  \          0          0 RTTYS Process   \n 146   0          0          0      29864\
+  \          0          0 ACE policy loade\n 345   0          0          0      29864\
+  \          0          0 SVM UT Process  \n 217   0          0          0      29864\
+  \          0          0 Timed Policy act\n 347   0          0          0      29864\
+  \          0          0 Critical Auth   \n 348   0          0          0      29864\
+  \          0          0 DCT Bkgd Process\n 349   0          0          0      29864\
+  \          0          0 Timer Handler Pr\n 277   0          0          0      29864\
+  \          0          0 IGMPSN          \n 351   0          0          0      29864\
+  \          0          0 MFI Comm RP Proc\n 329   0          0          0      29864\
+  \          0          0 RARP Input      \n  21   0          0          0      29864\
+  \          0          0 IPC Event Notifi\n 276   0          0          0      29864\
+  \          0          0 IGMPSN MRD      \n 355   0        448        448      29864\
+  \          0          0 MPLS VPN HA Clie\n 356   0        448        448      29864\
+  \          0          0 TSPTUN HA       \n 141   0          0          0      29864\
+  \          0          0 vNIC stats Proce\n 358   0        448        448      29864\
+  \          0          0 TE NSR OOS DB Pr\n 196   0          0          0      29864\
+  \          0          0 IPv6 ping proces\n 275   0          0          0      29864\
+  \          0          0 IGMPSN L2MCM    \n 361   0          0          0      29864\
+  \          0          0 AToM HA Bulk Syn\n 362   0          0          0      29864\
+  \          0          0 AToM MGR HA IPC \n 280   0          0          0      29864\
+  \          0          0 TCP HA PROC     \n 139   0        448        448      29864\
+  \          0          0 VMI Background  \n 365   0        448        448      29864\
+  \          0          0 PPP NBF         \n 199   0          0          0      29864\
+  \          0          0 AAA EPD HANDLER \n 367   0          0          0      29864\
+  \          0          0 XC RIB MGR      \n 368   0        448        448      29864\
+  \          0          0 ATIP_UDP_TSK    \n 369   0          0          0      29864\
+  \          0          0 BD Route Msg Hol\n 370   0          0          0      29864\
+  \          0          0 BD Route Rx Proc\n 371   0        448        448      29864\
+  \          0          0 BD MACSEC HA    \n 154   0          0          0      29864\
+  \          0          0 IGMP Route Msg H\n 373   0          0          0      29864\
+  \          0          0 STP HA IPC flow \n 374   0          0          0      29864\
+  \          0          0 AAA HA          \n 134   0          0          0      29864\
+  \          0          0 SSLVPN Register \n 376   0          0          0      29864\
+  \          0          0 ac_atm_state_eve\n 377   0          0          0      29864\
+  \          0          0 ac_atm_mraps_hsp\n 152   0          0          0      29864\
+  \          0          0 PPCP RP Stats Ba\n 379   0          0          0      29864\
+  \          0          0 ATM HA AC       \n 200   0          0          0      29864\
+  \          0          0 PM EPD API      \n 381   0        448        448      29864\
+  \          0          0 PPPoE VRRS EVT M\n 382   0          0          0      29864\
+  \          0          0 VFI HA Bulk Sync\n 340   0          0          0      29864\
+  \          0          0 Select Timers   \n 274   0          0          0      29864\
+  \          0          0 IP Traceroute   \n 385   0        448        448      29864\
+  \          0          0 AAA Cached Serve\n 386   0        448        448      29864\
+  \          0          0 ENABLE AAA      \n 387   0          0          0      29864\
+  \          0          0 EM Background Pr\n 388   0          0          0      29864\
+  \          0          0 IDMGR CORE      \n 131   0          0          0      29864\
+  \          0          0 fanrp_l2fib     \n 129   0          0          0      29864\
+  \          0          0 IOSXE-RP FastPat\n 391   0          0          0      29864\
+  \          0          0 Key chain liveke\n 392   0        448        448      29864\
+  \          0          0 LINE AAA        \n 128   0          0          0      29864\
+  \          0          0 Transport Port A\n 220   0          0          0      29864\
+  \          0          0 VRRS            \n 124   0        448        448      29864\
+  \          0          0 Compute load avg\n 221   0        448        448      29864\
+  \          0          0 MOP Protocols   \n 269   0          0          0      29864\
+  \          0          0 CFM HA IPC messa\n 117   0          0          0      29864\
+  \          0          0 IPSEC HA Mgr    \n 399   0          0          0      29864\
+  \          0          0 EAP Process     \n 400   0        448        448      29864\
+  \          0          0 Crypto Support  \n 401   0          0          0      29864\
+  \          0          0 IPSECv6 PS Proc \n 116   0          0          0      29864\
+  \          0          0 IKE HA Mgr      \n 115   0          0          0      29864\
+  \          0          0 IOSXE-RP Punt IP\n 404   0        448        448      29864\
+  \          0          0 VSP_MGR         \n 268   0        448        448      29864\
+  \          0          0 Ether Infra RP  \n 112   0          0          0      29864\
+  \          0          0 ARP HA          \n  16   0          0          0      29864\
+  \          0          0 VACS Background \n 267   0        448        448      29864\
+  \          0          0 Ether EFP Proces\n 266   0        448        448      29864\
+  \          0          0 EFP Errd        \n 222   0        448        448      29864\
+  \          0          0 Dot1x Mgr Proces\n 110   0          0          0      29864\
+  \          0          0 DHCPv6 Server HA\n 223   0          0          0      29864\
+  \          0          0 Webauth client  \n 108   0          0          0      29864\
+  \          0          0 DHCPD HA        \n 107   0          0          0      29864\
+  \          0          0 DHCPC HA        \n 225   0          0          0      29864\
+  \          0          0 IP Admin SM Proc\n 226   0          0          0      29864\
+  \          0          0 EAP Framework   \n 227   0          0          0      29864\
+  \          0          0 EAP Test        \n 104   0          0          0      29864\
+  \          0          0 CHKPT Test clien\n 103   0          0          0      29864\
+  \          0          0 CHKPT Test clien\n  14   0          0          0      29864\
+  \          0          0 IOSXE heartbeat \n 421   0          0          0      29864\
+  \          0          0 IKEv2 AAA handle\n 422   0        448        896      29864\
+  \          0          0 CRYPTO MAP FREE \n 102   0          0          0      29864\
+  \          0          0 CHKPT Test clien\n 101   0          0          0      29864\
+  \          0          0 CHKPT Test clien\n 100   0          0          0      29864\
+  \          0          0 CHKPT Test clien\n  99   0          0          0      29864\
+  \          0          0 CHKPT Test clien\n  98   0          0          0      29864\
+  \          0          0 CHKPT Test clien\n  97   0          0          0      29864\
+  \          0          0 CHKPT Test clien\n 429   0          0          0      29864\
+  \          0          0 Crypto PAS Proc \n 372   0        448        448      29864\
+  \          0          0 BD MACSEC HA CHK\n 202   0        448        448      29864\
+  \          0          0 PPP SIP         \n  96   0          0          0      29864\
+  \          0          0 CHKPT Test clien\n  95   0          0          0      29864\
+  \          0          0 QoS HA ID RETAIN\n  94   0          0          0      29864\
+  \          0          0 ANCP HA IPC flow\n 435   0          0          0      29864\
+  \          0          0 IP TRUST Registe\n  93   0          0          0      29864\
+  \          0          0 ANCP HA         \n  92   0          0          0      29864\
+  \          0          0 100ms check     \n  91   0          0          0      29864\
+  \          0          0 REDUNDANCY peer \n  88   0          0          0      29864\
+  \          0          0 RP HA Periodic  \n  87   0          0          0      29864\
+  \          0          0 Environmental Mo\n  12   0        448        448      29864\
+  \          0          0 Timers          \n  11   0          0          0      29864\
+  \          0          0 DiscardQ Backgro\n 291   0          0          0      29864\
+  \          0          0 IGMPQR          \n 203   0        448        448      29864\
+  \          0          0 PPP Bind        \n  86   0          0          0      29864\
+  \          0          0 cpf_process_tpQ \n  85   0          0          0      29864\
+  \          0          0 cpf_msg_rcvq_pro\n 447   0        448        448      29864\
+  \          0          0 ICRM            \n 378   0          0          0      29864\
+  \          0          0 AC HA Bulk Sync \n 449   0          0          0      29864\
+  \          0          0 SPA ENTITY Proce\n 228   0        448        448      29864\
+  \          0          0 OCE punted Pkts \n 229   0          0          0      29864\
+  \          0          0 O-UNI Client Msg\n  84   0          0          0      29864\
+  \          0          0 cpf_msg_holdq_pr\n 453   0       7352      22392      29864\
+  \          0          0 AAA SEND STOP EV\n  83   0          0          0      29864\
+  \          0          0 SBC IPC Hold Que\n 236   0          0          0      29864\
+  \          0          0 Appnav auto disc\n   8   0          0          0      29864\
+  \          0          0 RO Notify Timers\n  82   0          0          0      29864\
+  \          0          0 IF-MGR event pro\n 237   0          0          0      29864\
+  \          0          0 Spanning Tree St\n  77   0        448        448      29864\
+  \          0          0 CTS HA          \n  22   0          0          0      29864\
+  \          0          0 IPC Mcast Pendin\n 383   0          0          0      29864\
+  \          0          0 VPDN CCM Backgro\n 463   0        448        448      29864\
+  \          0          0 MCPRP UTD Timer \n 464   0          0          0      29864\
+  \          0          0 Syslog Traps    \n  71   0     109488        768      29864\
+  \          0          0 TTY Background  \n 466   0          0          0      29864\
+  \          0          0 Policy HA Timer \n 467   0          0          0      29864\
+  \          0          0 ISSU Utility Pro\n  67   0          0          0      29864\
+  \          0          0 Critical Bkgnd  \n  66   0          0          0      29864\
+  \          0          0 Token Daemon    \n  65   0          0          0      29864\
+  \          0          0 Image License br\n 132   0        448        448      29864\
+  \          0          0 FEC_Link_event_h\n 472   0          0          0      29864\
+  \          0          0 IP SLAs Ethernet\n 218   0          0          0      29864\
+  \          0          0 AAA response han\n 206   0          0          0      29864\
+  \          0          0 RADIUS Proxy    \n  64   0          0          0      29864\
+  \          0          0 License HA Consi\n 239   0          0          0      29864\
+  \          0          0 CCM IPC flow con\n  63   0   34284184   34284184      29864\
+  \          0          0 Licensing Auto U\n  62   0        288       1280      29864\
+  \          0          0 License Client N\n   5   0          0          0      29864\
+  \          0          0 IPC ISSU Dispatc\n   4   0          0          0      29864\
+  \          0          0 Retransmission o\n 240   0          0          0      29864\
+  \          0          0 SVM HA          \n 241   0          0          0      29864\
+  \          0          0 AC Switch       \n 249   0          0          0      29864\
+  \          0          0 FRR Background P\n  59   0          0          0      29864\
+  \          0          0 SERIAL A'detect \n 248   0          0          0      29864\
+  \          0          0 XDR RP Test Back\n  56   0          0          0      29864\
+  \          0          0 client_entity_se\n  55   0          0          0      29864\
+  \          0          0 Net Input       \n  52   0        448        448      29864\
+  \          0          0 GraphIt         \n  51   0          0          0      29864\
+  \          0          0 IOSXE signals IO\n  49   0        448        448      29864\
+  \          0          0 Serial Backgroun\n  48   0       5376       5376      29864\
+  \          0          0 PrstVbl         \n 247   0          0          0      29864\
+  \          0          0 IPC LC Message H\n  46   0        448        448      29864\
+  \          0          0 DDR Timers      \n  44   0          0          0      29864\
+  \          0          0 AAA_SERVER_DEADT\n  43   0          0          0      29864\
+  \          0          0 CEF MIB API     \n  42   0          0          0      29864\
+  \          0          0 ATM ASYNC PROC  \n  41   0        448        448      29864\
+  \          0          0 ATM Idle Timer  \n  40   0      19128      19128      29864\
+  \          0          0 ARP Background  \n  39   0      13024      13024      29864\
+  \          0          0 ARP Input       \n  38   0          0          0      29864\
+  \          0          0 MEMLEAK PROCESS \n  37   0          0          0      29864\
+  \          0          0 SENSOR-MGR event\n  36   0          0          0      29864\
+  \          0          0 IPC Session Deta\n 503   0        448       1496      29864\
+  \          0          0 Inter Chassis Pr\n 244   0          0          0      29864\
+  \          0          0 XDR mcast       \n  35   0          0          0      29864\
+  \          0          0 IPC Loadometer  \n  34   0          0          0      29864\
+  \          0          0 IPC Keep Alive M\n 507   0          0          0      29864\
+  \          0          0 VDC process     \n 508   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 509   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 510   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 511   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 512   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 513   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 514   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 515   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 516   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 517   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 518   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 519   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 520   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 521   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 522   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 523   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 524   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 409   0          0          0      29864\
+  \          0          0 crypto engine pr\n 526   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 527   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 528   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 529   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 530   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 531   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 532   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 533   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 534   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 535   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 536   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 537   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 538   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 539   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 540   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 541   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 542   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 543   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 544   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 545   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 546   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 547   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 548   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 549   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 550   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 551   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 552   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 553   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 554   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 555   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 556   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 557   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 558   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 559   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 560   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 561   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 562   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 563   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 564   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 565   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 566   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 567   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 568   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 569   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n 570   0          0          0      29864\
+  \          0          0 IPC ISSU Version\n  33   0          0          0      29864\
+  \          0          0 IPC Seat TX Cont\n  32   0          0          0      29864\
+  \          0          0 IPC Seat RX Cont\n 430   0        448        448      29864\
+  \          0          0 GKM GM Process  \n 111   0          0          0      29864\
+  \          0          0 Network-rf Notif\n  31   0          0          0      29864\
+  \          0          0 IPC Check Queue \n 576   0          0          0      29864\
+  \          0          0 SBC Msg Ack Time\n 109   0          0          0      29864\
+  \          0          0 DHCPv6 Relay HA \n 578   0          0          0      29864\
+  \          0          0 MFI LFD Stats Pr\n  29   0          0          0      29864\
+  \          0          0 IPC Process leve\n 105   0          0          0      29864\
+  \          0          0 CHKPT Test clien\n  28   0          0          0      29864\
+  \          0          0 IPC Deferred Por\n  27   0          0          0      29864\
+  \          0          0 IPC Periodic Tim\n  26   0          0          0      29864\
+  \          0          0 IPC Zone Manager\n 584   0          0          0      29864\
+  \          0          0 BGP VA          \n  25   0          0          0      29864\
+  \          0          0 IPC Service NonC\n 416   0          0          0      29864\
+  \          0          0 COND_DEBUG HA IP\n  24   0          0          0      29864\
+  \          0          0 IPC Dynamic Cach\n 245   0          0          0      29864\
+  \          0          0 XDR RP Ping Back\n  23   0          0          0      29864\
+  \          0          0 ASR1000 appsess \n 307   0          0          0      29864\
+  \          0          0 SNMP Timers     \n 591   0          0          0      29864\
+  \          0          0 TCP Listener    \n 315   0          0          0      29864\
+  \          0          0 VTEMPLATE IPC fl\n 595   0        296        296      29864\
+  \          0          0 DiagCard2/-1    \n 594   0    1434808    1707296      29864\
+  \          0          0 DiagCard1/-1    \n 242   0     410656        152      22504\
+  \          0          0 SBC initializer \n 366   0        896        448      18312\
+  \          0          0 PfR BR Learn    \n 173   0        408          0      18272\
+  \          0          0 ADJ NSF process \n  90   0          0          0      18000\
+  \          0          0 CEF RRP RF waite\n 113   0          0          0      17992\
+  \          0          0 XDR RRP RF waite\n  13   0          0          0      17864\
+  \          0          0 WATCH_AFS       \n   2   0        448        448      17864\
+  \          0          0 Load Meter      \n 434   0        448        448      17864\
+  \          0          0 RSCMSM VOLUME MO\n 314   0        448        448      17864\
+  \          0          0 L2X Switching Ev\n  79   0          0          0      17864\
+  \          0          0 Punt FP Stats Du\n  80   0        448        448      17864\
+  \          0          0 PuntInject Keepa\n  50   0          0          0      17864\
+  \          0          0 RMI RM Notify Wa\n   0   0        288    1529056       \
+  \ 288          0          0 *Sched*         \n                                329421800\
+  \ Total"
+show processes cpu platform sorted: "No time source, *12:38:32.225 UTC Tue Oct 23\
+  \ 2018\nCPU utilization for five seconds:  1%, one minute:  1%, five minutes:  1%\n\
+  Core 0: CPU utilization for five seconds:  6%, one minute:  1%, five minutes:  1%\n\
+  Core 1: CPU utilization for five seconds:  2%, one minute:  0%, five minutes:  0%\n\
+  \   Pid    PPid    5Sec    1Min    5Min  Status        Size  Name              \
+  \    \n--------------------------------------------------------------------------------\n\
+  \ 20202   19679      3%      3%      3%  S        769544192  qfp-ucode-csr     \
+  \    \n 14690   14325      1%      1%      1%  S       2469199872  linux_iosd-imag\
+  \       \n 32654   20847      0%      0%      0%  S          1929216  sleep    \
+  \             \n 32628   20857      0%      0%      0%  S          1929216  sleep\
+  \                 \n 32622   13006      0%      0%      0%  S          1757184 \
+  \ inotifywait           \n 32580   17439      0%      0%      0%  S          1757184\
+  \  inotifywait           \n 32497   15221      0%      0%      0%  S          1929216\
+  \  sleep                 \n 31523   16620      0%      0%      0%  S          1929216\
+  \  sleep                 \n 23285   23161      0%      0%      0%  S          8921088\
+  \  bshell                \n 23161   23160      0%      0%      0%  S          4460544\
+  \  bshell.sh             \n 23160   23036      0%      0%      0%  S          6803456\
+  \  blogin                \n 23036    7242      0%      0%      0%  S          3928064\
+  \  blogin.sh             \n 21274   20837      0%      0%      0%  S          1757184\
+  \  inotifywait           \n 21257       1      0%      0%      0%  S          4997120\
+  \  rotee                 \n 21255   20849      0%      0%      0%  S          1757184\
+  \  inotifywait           \n 21251   20841      0%      0%      0%  S          1929216\
+  \  sleep                 \n 21215       1      0%      0%      0%  S          4997120\
+  \  rotee                 \n 21209       1      0%      0%      0%  S          4997120\
+  \  rotee                 \n 21185       1      0%      0%      0%  S          4997120\
+  \  rotee                 \n 20871   20856      0%      0%      0%  S         37941248\
+  \  libvirtd              \n 20857       1      0%      0%      0%  S          3301376\
+  \  uuidd.sh              \n 20856       1      0%      0%      0%  S          2547712\
+  \  libvirtd.sh           \n 20849       1      0%      0%      0%  S          3698688\
+  \  iptbl.sh              \n 20847       1      0%      0%      0%  S          4014080\
+  \  chasync.sh            \n 20841       1      0%      0%      0%  S          3022848\
+  \  oom.sh                \n 20839   20833      0%      0%      0%  S          2187264\
+  \  xinetd                \n 20838   20832      0%      0%      0%  S          2187264\
+  \  xinetd                \n 20837       1      0%      0%      0%  S          3059712\
+  \  rollback_timer.       \n 20835       1      0%      0%      0%  S          1867776\
+  \  sntp                  \n 20833       1      0%      0%      0%  S          2560000\
+  \  mcp_chvrf.sh          \n 20832       1      0%      0%      0%  S          2560000\
+  \  mcp_chvrf.sh          \n 19970       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 19926   19350      0%      0%      0%  S         14430208\
+  \  plogd                 \n 19679   15716      0%      0%      0%  S          4333568\
+  \  pman.sh               \n 19620   19012      0%      0%      0%  S       2009800704\
+  \  fman_fp_image         \n 19617       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 19350   15716      0%      0%      0%  S          4333568\
+  \  pman.sh               \n 19296   18738      0%      0%      0%  S        927563776\
+  \  cpp_sp_svr            \n 19285       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 19012   15716      0%      0%      0%  S          4333568\
+  \  pman.sh               \n 18975       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 18947   18420      0%      0%      0%  S        899432448\
+  \  cpp_ha_top_leve       \n 18738   15716      0%      0%      0%  S          4333568\
+  \  pman.sh               \n 18653   17914      0%      0%      0%  S        882225152\
+  \  cpp_driver            \n 18638       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 18420   15716      0%      0%      0%  S          4333568\
+  \  pman.sh               \n 18308       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 18296   17540      0%      0%      0%  S       1522053120\
+  \  cpp_cp_svr            \n 17914   15716      0%      0%      0%  S          4333568\
+  \  pman.sh               \n 17842   17078      0%      0%      0%  S        434774016\
+  \  cman_fp               \n 17808       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 17754       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 17540   15716      0%      0%      0%  S          4333568\
+  \  pman.sh               \n 17498   16662      0%      0%      0%  S        197509120\
+  \  vman                  \n 17439   16603      0%      0%      0%  S          3612672\
+  \  btrace_rotate.s       \n 17397       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 17078   15716      0%      0%      0%  S          4333568\
+  \  pman.sh               \n 17021       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 17019       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 16662   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 16620   16107      0%      0%      0%  S          2600960\
+  \  sort_files_by_i       \n 16603   15716      0%      0%      0%  S          4333568\
+  \  pman.sh               \n 16417   15716      0%      0%      0%  S          1761280\
+  \  inotifywait           \n 16351   15721      0%      0%      0%  S        104706048\
+  \  smand                 \n 16339       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 16107   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 16015       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 16011       1      0%      0%      0%  S          4997120\
+  \  rotee                 \n 15859   15298      0%      0%      0%  S         17686528\
+  \  psd                   \n 15721   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 15716       1      0%      0%      0%  S          4395008\
+  \  pvp.sh                \n 15614   15013      0%      0%      0%  S         14655488\
+  \  plogd                 \n 15515       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 15501       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 15298   12363      0%      0%      0%  S          4386816\
+  \  pman.sh               \n 15234       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 15221   14806      0%      0%      0%  S          5197824\
+  \  periodic.sh           \n 15071   14620      0%      0%      0%  S         16449536\
+  \  lman                  \n 15013   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 14977       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 14806   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 14768       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 14620   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 14486       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 14325   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 14257   13865      0%      0%      0%  R         42393600\
+  \  hman                  \n 14056       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 13928   13411      0%      0%      0%  S       1085026304\
+  \  fman_rp               \n 13865   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 13678   13001      0%      0%      0%  S         21082112\
+  \  emd                   \n 13632       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 13411   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 13318   12770      0%      0%      0%  S         37617664\
+  \  cmand                 \n 13272       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 13253       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 13006   12621      0%      0%      0%  S          3645440\
+  \  btrace_rotate.s       \n 13001   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 12940       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 12770   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 12740       1      0%      0%      0%  S          5001216\
+  \  rotee                 \n 12621   12363      0%      0%      0%  S          4382720\
+  \  pman.sh               \n 12552   12363      0%      0%      0%  S          1761280\
+  \  inotifywait           \n 12437       1      0%      0%      0%  S          4997120\
+  \  rotee                 \n 12363       1      0%      0%      0%  S          4456448\
+  \  pvp.sh                \n 12358   12284      0%      0%      0%  S          1761280\
+  \  inotifywait           \n 12349       1      0%      0%      0%  S          4997120\
+  \  rotee                 \n 12284       1      0%      0%      0%  S          3960832\
+  \  psvp.sh               \n 12118       1      0%      0%      0%  S          1654784\
+  \  klogd                 \n  9936       1      0%      0%      0%  S          2187264\
+  \  xinetd                \n  9934       1      0%      0%      0%  S          2187264\
+  \  xinetd                \n  8639    7264      0%      0%      0%  S          1761280\
+  \  inotifywait           \n  8633    7253      0%      0%      0%  S          1761280\
+  \  inotifywait           \n  8593       1      0%      0%      0%  S          4997120\
+  \  rotee                 \n  8583       1      0%      0%      0%  S          4997120\
+  \  rotee                 \n  7867       1      0%      0%      0%  S          1650688\
+  \  acpid                 \n  7686       2      0%      0%      0%  S           \
+  \     0  lsmpi-rx              \n  7685       2      0%      0%      0%  S     \
+  \           0  lsmpi-xmit            \n  7684       2      0%      0%      0%  S\
+  \                0  lsmpi-refill          \n  7660       2      0%      0%     \
+  \ 0%  S                0  loop0                 \n  7472       1      0%      0%\
+  \      0%  S          1789952  rpc.mountd            \n  7470       2      0%  \
+  \    0%      0%  S                0  nfsd                  \n  7469       2    \
+  \  0%      0%      0%  S                0  nfsd                  \n  7468      \
+  \ 2      0%      0%      0%  S                0  nfsd                  \n  7467\
+  \       2      0%      0%      0%  S                0  nfsd                  \n\
+  \  7466       2      0%      0%      0%  S                0  nfsd              \
+  \    \n  7465       2      0%      0%      0%  S                0  nfsd        \
+  \          \n  7464       2      0%      0%      0%  S                0  nfsd  \
+  \                \n  7463       2      0%      0%      0%  S                0  nfsd\
+  \                  \n  7462       2      0%      0%      0%  S                0\
+  \  lockd                 \n  7456       2      0%      0%      0%  S           \
+  \     0  rpciod/1              \n  7455       2      0%      0%      0%  S     \
+  \           0  rpciod/0              \n  7411       1      0%      0%      0%  S\
+  \         21905408  automount             \n  7264       1      0%      0%     \
+  \ 0%  S          4661248  droputil.sh           \n  7258       1      0%      0%\
+  \      0%  S          5083136  bhytoolsd             \n  7253       1      0%  \
+  \    0%      0%  S          4648960  reflector.sh          \n  7242       1    \
+  \  0%      0%      0%  S          2560000  auxinit.sh            \n  7235      \
+  \ 1      0%      0%      0%  S          4157440  sshd                  \n  6437\
+  \       2      0%      0%      0%  S                0  kcryptd               \n\
+  \  6436       2      0%      0%      0%  S                0  kcryptd_io        \
+  \    \n  6435       2      0%      0%      0%  S                0  kdmflush    \
+  \          \n  6434       2      0%      0%      0%  S                0  flush-254:0\
+  \           \n  6381       2      0%      0%      0%  S                0  kcryptd\
+  \               \n  6380       2      0%      0%      0%  S                0  kcryptd_io\
+  \            \n  6379       2      0%      0%      0%  S                0  kdmflush\
+  \              \n  6377       2      0%      0%      0%  S                0  kcryptd\
+  \               \n  6376       2      0%      0%      0%  S                0  kcryptd_io\
+  \            \n  6375       2      0%      0%      0%  S                0  kdmflush\
+  \              \n  6373       2      0%      0%      0%  S                0  kcryptd\
+  \               \n  6372       2      0%      0%      0%  S                0  kcryptd_io\
+  \            \n  6370       2      0%      0%      0%  S                0  kdmflush\
+  \              \n  6341       2      0%      0%      0%  S                0  kcryptd\
+  \               \n  6340       2      0%      0%      0%  S                0  kcryptd_io\
+  \            \n  6337       2      0%      0%      0%  S                0  kdmflush\
+  \              \n  5178       1      0%      0%      0%  S          1773568  udevd\
+  \                 \n  3406       2      0%      0%      0%  S                0 \
+  \ loop1                 \n  3297       1      0%      0%      0%  S          1810432\
+  \  portmap               \n  3295       1      0%      0%      0%  S          1810432\
+  \  portmap               \n  2582       2      0%      0%      0%  S           \
+  \     0  flush-8:0             \n  2521       2      0%      0%      0%  S     \
+  \           0  scsi_eh_2             \n  2500       2      0%      0%      0%  S\
+  \                0  mpt/0                 \n  2490       2      0%      0%     \
+  \ 0%  S                0  mpt_poll_0            \n  2088       2      0%      0%\
+  \      0%  S                0  scsi_eh_1             \n  2084       2      0%  \
+  \    0%      0%  S                0  scsi_eh_0             \n  1266       2    \
+  \  0%      0%      0%  S                0  deferwq               \n  1253      \
+  \ 2      0%      0%      0%  S                0  usbhid_resumer        \n  1221\
+  \       2      0%      0%      0%  S                0  kstriped              \n\
+  \   386       2      0%      0%      0%  S                0  crypto/1          \
+  \    \n   385       2      0%      0%      0%  S                0  crypto/0    \
+  \          \n   362       2      0%      0%      0%  S                0  aio/1 \
+  \                \n   361       2      0%      0%      0%  S                0  aio/0\
+  \                 \n   306       2      0%      0%      0%  S                0 \
+  \ kswapd0               \n   305       2      0%      0%      0%  S            \
+  \    0  khungtaskd            \n   249       2      0%      0%      0%  S      \
+  \          0  kseriod               \n   246       2      0%      0%      0%  S\
+  \                0  khubd                 \n   242       2      0%      0%     \
+  \ 0%  S                0  ata_aux               \n   241       2      0%      0%\
+  \      0%  S                0  ata/1                 \n   240       2      0%  \
+  \    0%      0%  S                0  ata/0                 \n   191       2    \
+  \  0%      0%      0%  S                0  kacpi_hotplug         \n   190      \
+  \ 2      0%      0%      0%  S                0  kacpi_notify          \n   189\
+  \       2      0%      0%      0%  S                0  kacpid                \n\
+  \   187       2      0%      0%      0%  S                0  kblockd/1         \
+  \    \n   186       2      0%      0%      0%  S                0  kblockd/0   \
+  \          \n   185       2      0%      0%      0%  S                0  bdi-default\
+  \           \n   183       2      0%      0%      0%  S                0  sync_supers\
+  \           \n    61       2      0%      0%      0%  S                0  async/mgr\
+  \             \n    58       2      0%      0%      0%  S                0  netns\
+  \                 \n    34       2      0%      0%      0%  S                0 \
+  \ khelper               \n    33       2      0%      0%      0%  S            \
+  \    0  cpuset                \n    32       2      0%      0%      0%  S      \
+  \          0  events/1              \n    31       2      0%      0%      0%  S\
+  \                0  events/0              \n    30       2      0%      0%     \
+  \ 0%  S                0  desched/1             \n    29       2      0%      0%\
+  \      0%  S                0  watchdog/1            \n    28       2      0%  \
+  \    0%      0%  S                0  sirq-rcu/1            \n    27       2    \
+  \  0%      0%      0%  S                0  sirq-hrtimer/1        \n    26      \
+  \ 2      0%      0%      0%  S                0  sirq-sched/1          \n    25\
+  \       2      0%      0%      0%  S                0  sirq-tasklet/1        \n\
+  \    24       2      0%      0%      0%  S                0  sirq-block-iopo   \
+  \    \n    23       2      0%      0%      0%  S                0  sirq-block/1\
+  \          \n    22       2      0%      0%      0%  S                0  sirq-net-rx/1\
+  \         \n    21       2      0%      0%      0%  S                0  sirq-net-tx/1\
+  \         \n    20       2      0%      0%      0%  S                0  sirq-timer/1\
+  \          \n    19       2      0%      0%      0%  S                0  sirq-high/1\
+  \           \n    18       2      0%      0%      0%  S                0  stopper/1\
+  \             \n    17       2      0%      0%      0%  S                0  migration/1\
+  \           \n    16       2      0%      0%      0%  S                0  desched/0\
+  \             \n    15       2      0%      0%      0%  S                0  watchdog/0\
+  \            \n    14       2      0%      0%      0%  S                0  stopper/0\
+  \             \n    13       2      0%      0%      0%  S                0  sirq-rcu/0\
+  \            \n    12       2      0%      0%      0%  S                0  sirq-hrtimer/0\
+  \        \n    11       2      0%      0%      0%  S                0  sirq-sched/0\
+  \          \n    10       2      0%      0%      0%  S                0  sirq-tasklet/0\
+  \        \n     9       2      0%      0%      0%  S                0  sirq-block-iopo\
+  \       \n     8       2      0%      0%      0%  S                0  sirq-block/0\
+  \          \n     7       2      0%      0%      0%  S                0  sirq-net-rx/0\
+  \         \n     6       2      0%      0%      0%  S                0  sirq-net-tx/0\
+  \         \n     5       2      0%      0%      0%  S                0  sirq-timer/0\
+  \          \n     4       2      0%      0%      0%  S                0  sirq-high/0\
+  \           \n     3       2      0%      0%      0%  S                0  migration/0\
+  \           \n     2       0      0%      0%      0%  S                0  kthreadd\
+  \              \n     1       0      0%      0%      0%  S          1863680  init"
+show processes memory platform sorted: "No time source, *12:38:33.434 UTC Tue Oct\
+  \ 23 2018\nSystem memory: 2505972K total, 2055320K used, 450652K free\nLowest: 55684K\n\
+  \   Pid    Text      Data   Stack   Dynamic       RSS     Total              Name\
+  \  \n--------------------------------------------------------------------------------\n\
+  \ 14690  348566    753360     220        56    753812   2411332   linux_iosd-imag\
+  \  \n 19620   11406    144920     204     19444    144924   1962700     fman_fp_image\
+  \  \n 18296      77    133092     128     18292    133096   1486384        cpp_cp_svr\
+  \  \n 13928    6413     80160     184      1712     80160   1059600           fman_rp\
+  \  \n 19296      62     58480      84      2064     58484    905828        cpp_sp_svr\
+  \  \n 18947     323     48880      84      3036     48884    878356   cpp_ha_top_leve\
+  \  \n 18653     143     63848      84      2480     63856    861552        cpp_driver\
+  \  \n 20202   16281    449808      84       820    662656    751508     qfp-ucode-csr\
+  \  \n 17842     287     21136      84      3272     21148    424584           cman_fp\
+  \  \n 17498     749     19008      84     12044     19008    192884            \
+  \  vman  \n 16351     385     93840     100     83728     93848    102252      \
+  \       smand  \n 14257     303      8472      84      1068      8504     41400\
+  \              hman  \n 20871     892      3120      84       820      3120    \
+  \ 37056          libvirtd  \n 13318    1053     14852      84      3552     14868\
+  \     36736             cmand  \n  7411     101      1300     412       132    \
+  \  1300     21392         automount  \n 13678      65      6716      84       680\
+  \      6716     20588               emd  \n 15859      29      6340      84    \
+  \   676      6340     17272               psd  \n 15071     103      6000      84\
+  \      1232      6008     16064              lman  \n 15614      33      5560  \
+  \    84      1516      5568     14312             plogd  \n 19926      33      5312\
+  \      84      1296      5320     14092             plogd  \n 23285     105    \
+  \  3896      84       540      3896      8712            bshell  \n 23160      \
+  \ 8      2084      84       132      2084      6644            blogin  \n 15221\
+  \     635      3816      84      2632      3816      5076       periodic.sh  \n\
+  \  7258       6      1700      84       132      1700      4964         bhytoolsd\
+  \  \n 19970       4      1676      84       132      1676      4884            \
+  \ rotee  \n 19617       4      1676      84       132      1676      4884      \
+  \       rotee  \n 19285       4      1676      84       132      1676      4884\
+  \             rotee  \n 18975       4      1676      84       132      1676    \
+  \  4884             rotee  \n 18638       4      1676      84       132      1676\
+  \      4884             rotee  \n 18308       4      1676      84       132    \
+  \  1676      4884             rotee  \n 17808       4      1676      84       132\
+  \      1676      4884             rotee  \n 17754       4      1676      84    \
+  \   132      1676      4884             rotee  \n 17397       4      1676      84\
+  \       132      1676      4884             rotee  \n 17021       4      1676  \
+  \    84       132      1676      4884             rotee  \n 17019       4      1676\
+  \      84       132      1676      4884             rotee  \n 16339       4    \
+  \  1676      84       132      1676      4884             rotee  \n 16015      \
+  \ 4      1676      84       132      1676      4884             rotee  \n 15515\
+  \       4      1668      84       132      1668      4884             rotee  \n\
+  \ 15501       4      1672      84       132      1672      4884             rotee\
+  \  \n 15234       4      1672      84       132      1672      4884            \
+  \ rotee  \n 14977       4      1676      84       132      1676      4884      \
+  \       rotee  \n 14768       4      1676      84       132      1676      4884\
+  \             rotee  \n 14486       4      1676      84       132      1676    \
+  \  4884             rotee  \n 14056       4      1676      84       132      1676\
+  \      4884             rotee  \n 13632       4      1676      84       132    \
+  \  1676      4884             rotee  \n 13272       4      1676      84       132\
+  \      1676      4884             rotee  \n 13253       4      1676      84    \
+  \   132      1676      4884             rotee  \n 12940       4      1676      84\
+  \       132      1676      4884             rotee  \n 12740       4      1676  \
+  \    84       132      1676      4884             rotee  \n 21257       4      1664\
+  \      84       132      1664      4880             rotee  \n 21215       4    \
+  \  1668      84       132      1668      4880             rotee  \n 21209      \
+  \ 4      1668      84       132      1668      4880             rotee  \n 21185\
+  \       4      1672      84       132      1672      4880             rotee  \n\
+  \ 16011       4      1672      84       132      1672      4880             rotee\
+  \  \n 12437       4      1668      84       132      1668      4880            \
+  \ rotee  \n 12349       4      1668      84       132      1668      4880      \
+  \       rotee  \n  8593       4      1668      84       132      1668      4880\
+  \             rotee  \n  8583       4      1668      84       132      1668    \
+  \  4880             rotee  \n  7264     635      3352      84      2108      3352\
+  \      4552       droputil.sh  \n  7253     635      3340      84      2096    \
+  \  3340      4540      reflector.sh  \n 23161     635      2852      84      1912\
+  \      2852      4356         bshell.sh  \n 12363     635      3132      84    \
+  \  1908      3132      4352            pvp.sh  \n 15716     635      3072      84\
+  \      1848      3072      4292            pvp.sh  \n 15298     635      3036  \
+  \    84      1840      3036      4284           pman.sh  \n 16662     635      3028\
+  \      84      1836      3028      4280           pman.sh  \n 16107     635    \
+  \  3032      84      1836      3032      4280           pman.sh  \n 15721     635\
+  \      3032      84      1836      3032      4280           pman.sh  \n 15013  \
+  \   635      3032      84      1836      3032      4280           pman.sh  \n 14806\
+  \     635      3032      84      1836      3032      4280           pman.sh  \n\
+  \ 14620     635      3032      84      1836      3032      4280           pman.sh\
+  \  \n 14325     635      3032      84      1836      3032      4280           pman.sh\
+  \  \n 13865     635      3032      84      1836      3032      4280           pman.sh\
+  \  \n 13411     635      3032      84      1836      3032      4280           pman.sh\
+  \  \n 13001     635      3032      84      1836      3032      4280           pman.sh\
+  \  \n 12770     635      3036      84      1836      3036      4280           pman.sh\
+  \  \n 12621     635      3032      84      1836      3032      4280           pman.sh\
+  \  \n 19679     635      2984      84      1788      2984      4232           pman.sh\
+  \  \n 19350     635      2988      84      1788      2988      4232           pman.sh\
+  \  \n 19012     635      2980      84      1788      2980      4232           pman.sh\
+  \  \n 18738     635      2984      84      1788      2984      4232           pman.sh\
+  \  \n 18420     635      2984      84      1788      2984      4232           pman.sh\
+  \  \n 17914     635      2984      84      1788      2984      4232           pman.sh\
+  \  \n 17540     635      2980      84      1788      2980      4232           pman.sh\
+  \  \n 17078     635      2984      84      1788      2984      4232           pman.sh\
+  \  \n 16603     635      2980      84      1788      2980      4232           pman.sh\
+  \  \n  7235     191      1092      84       132      1092      4060            \
+  \  sshd  \n 20847     635      2664      84      1476      2664      3920      \
+  \  chasync.sh  \n 12284     635      2604      84      1424      2604      3868\
+  \           psvp.sh  \n 23036     635      2580      84      1392      2580    \
+  \  3836         blogin.sh  \n 20849     635      2344      84      1168      2344\
+  \      3612          iptbl.sh  \n 13006     635      2308      84      1116    \
+  \  2308      3560   btrace_rotate.s  \n 17439     635      2272      84      1084\
+  \      2272      3528   btrace_rotate.s  \n 20857     635      1924      84    \
+  \   780      1924      3224          uuidd.sh  \n 20837     635      1728      84\
+  \       544      1728      2988   rollback_timer.  \n 20841     635      1688  \
+  \    84       508      1688      2952            oom.sh  \n 16620     635      1248\
+  \      84        96      1248      2540   sort_files_by_i  \n 20833     635    \
+  \  1192      84        56      1192      2500      mcp_chvrf.sh  \n 20832     635\
+  \      1192      84        56      1192      2500      mcp_chvrf.sh  \n  7242  \
+  \   635      1204      84        56      1204      2500        auxinit.sh  \n 20856\
+  \     635      1132      84        44      1132      2488       libvirtd.sh  \n\
+  \ 20839     147       804      84       132       804      2136            xinetd\
+  \  \n 20838     147       804      84       132       804      2136            xinetd\
+  \  \n  9936     147       708      84       132       708      2136            xinetd\
+  \  \n  9934     147       748      84       132       748      2136            xinetd\
+  \  \n 32678      11       508      84       132       508      1884            \
+  \ sleep  \n 32628      11       508      84       132       508      1884      \
+  \       sleep  \n 32497      11       512      84       132       512      1884\
+  \             sleep  \n 31523      11       508      84       132       508    \
+  \  1884             sleep  \n 21251      11       504      84       132       504\
+  \      1884             sleep  \n 20835      37       540      84       132    \
+  \   540      1824              sntp  \n     1      24       532      84       132\
+  \       532      1820              init  \n  3297       9       600      84    \
+  \   132       600      1768           portmap  \n  3295       9       616      84\
+  \       132       620      1768           portmap  \n  7472      19       292  \
+  \    84       132       292      1748        rpc.mountd  \n  5178      17      \
+  \ 476      84       136       476      1732             udevd  \n 16417      14\
+  \       504      84       132       504      1720       inotifywait  \n 12552  \
+  \    14       508      84       132       508      1720       inotifywait  \n 12358\
+  \      14       508      84       132       508      1720       inotifywait  \n\
+  \  8639      14       520      84       132       520      1720       inotifywait\
+  \  \n  8633      14       524      84       132       524      1720       inotifywait\
+  \  \n 32622      14       464      84       132       464      1716       inotifywait\
+  \  \n 32580      14       464      84       132       464      1716       inotifywait\
+  \  \n 21274      14       504      84       132       504      1716       inotifywait\
+  \  \n 21255      14       512      84       132       512      1716       inotifywait\
+  \  \n 12118      17       420      84       132       420      1616            \
+  \ klogd  \n  7867      16       512      84       132       512      1612      \
+  \       acpid"
+show standby brief: No time source, *12:38:48.098 UTC Tue Oct 23 2018
+show standby | inc last: ''
+show ver:
+- config_register: '0x2102'
+  hardware:
+  - CSR1000V
+  hostname: R3
+  reload_reason: <NULL>
+  rommon: IOS-XE
+  running_image: packages.conf
+  serial:
+  - 9FRKD2WR7R7
+  uptime: 2 hours, 17 minutes
+  version: 15.5(3)S7b
+show vfi: 'No time source, *12:38:46.272 UTC Tue Oct 23 2018
+
+
+  Legend: RT=Route-target, S=Split-horizon, Y=Yes, N=No'
+show xconnect all: "No time source, *12:38:45.678 UTC Tue Oct 23 2018\n\nLegend: \
+  \   XC ST=Xconnect State  S1=Segment1 State  S2=Segment2 State\n  UP=Up       DN=Down\
+  \            AD=Admin Down      IA=Inactive\n  SB=Standby  HS=Hot Standby     RV=Recovering\
+  \      NH=No Hardware\n\nXC ST  Segment 1                         S1 Segment 2 \
+  \                        S2\n------+---------------------------------+--+---------------------------------+--"
+term exec prompt timestamp: ''
+term len 0: ''
+term mon: ''

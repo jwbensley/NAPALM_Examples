@@ -1,0 +1,10 @@
+#show proc mem sort
+No time source, *11:55:28.665 UTC Wed Nov 7 2018
+
+Processor Pool Total:  705990864 Used:  321304632 Free:  384686232
+ lsmpi_io Pool Total:    6295128 Used:    6294296 Free:        832
+
+ PID TTY  Allocated      Freed    Holding    Getbufs    Retbufs Process
+   0   0 2905089792 2642995664  241785504          0          0 *Init*          
+ 572   0   34448104      52088   34772016          0          0 SBC main process
+  75   0    5282176          0    5073344          0          0 IOSD ipc task   

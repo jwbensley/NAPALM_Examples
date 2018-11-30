@@ -1,0 +1,10 @@
+#show bgp all summary
+No time source, *11:55:36.348 UTC Wed Nov 7 2018
+For address family: IPv4 Unicast
+BGP router identifier 10.0.0.3, local AS number 1
+BGP table version is 1, main routing table version 1
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.0.0.1        4            1       0       0        1    0    0 never    Idle
+10.0.0.2        4            1      79      76        1    0    0 00:34:06        0
+

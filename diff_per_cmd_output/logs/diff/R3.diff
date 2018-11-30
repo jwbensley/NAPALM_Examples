@@ -1,0 +1,380 @@
+*** "logs/before/R3-IOSXE/show bgp ipv4 unicast summary  begin Neighbor.txt"	2018-11-07 11:47:33.378515200 +0000
+--- "logs/after/R3-IOSXE/show bgp ipv4 unicast summary  begin Neighbor.txt"	2018-11-07 11:55:38.407425600 +0000
+***************
+*** 1,5 ****
+  #show bgp ipv4 unicast summary | begin Neighbor
+  Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+  10.0.0.1        4            1       0       0        1    0    0 never    Idle
+! 10.0.0.2        4            1      60      59        1    0    0 00:26:01        0
+  
+--- 1,5 ----
+  #show bgp ipv4 unicast summary | begin Neighbor
+  Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+  10.0.0.1        4            1       0       0        1    0    0 never    Idle
+! 10.0.0.2        4            1      79      76        1    0    0 00:34:06        0
+  
+*** "logs/before/R3-IOSXE/show clns interface.txt"	2018-11-07 11:47:37.007143700 +0000
+--- "logs/after/R3-IOSXE/show clns interface.txt"	2018-11-07 11:55:42.034660700 +0000
+***************
+*** 1,5 ****
+  #show clns interface
+! No time source, *11:47:35.535 UTC Wed Nov 7 2018
+  
+  GigabitEthernet1 is up, line protocol is up
+    Checksums enabled, MTU 1497, Encapsulation SAP
+--- 1,5 ----
+  #show clns interface
+! No time source, *11:55:40.577 UTC Wed Nov 7 2018
+  
+  GigabitEthernet1 is up, line protocol is up
+    Checksums enabled, MTU 1497, Encapsulation SAP
+***************
+*** 7,13 ****
+    CLNS fast switching enabled
+    CLNS SSE switching disabled
+    DEC compatibility mode OFF for this interface
+!   Next ESH/ISH in 28 seconds
+    Routing Protocol: IS-IS (1)
+      Circuit Type: level-1-2
+      Interface number 0x1, local circuit ID 0x101
+--- 7,13 ----
+    CLNS fast switching enabled
+    CLNS SSE switching disabled
+    DEC compatibility mode OFF for this interface
+!   Next ESH/ISH in 24 seconds
+    Routing Protocol: IS-IS (1)
+      Circuit Type: level-1-2
+      Interface number 0x1, local circuit ID 0x101
+***************
+*** 25,31 ****
+    CLNS fast switching enabled
+    CLNS SSE switching disabled
+    DEC compatibility mode OFF for this interface
+!   Next ESH/ISH in 57 seconds
+    Routing Protocol: IS-IS (1)
+      Circuit Type: level-1-2
+      Interface number 0x2, local circuit ID 0x102
+--- 25,31 ----
+    CLNS fast switching enabled
+    CLNS SSE switching disabled
+    DEC compatibility mode OFF for this interface
+!   Next ESH/ISH in 1 seconds
+    Routing Protocol: IS-IS (1)
+      Circuit Type: level-1-2
+      Interface number 0x2, local circuit ID 0x102
+***************
+*** 36,42 ****
+      Level-2 Metric: 10, Priority: 64, Circuit ID: R3.02
+      Level-2 IPv6 Metric: 10
+      Number of active level-2 adjacencies: 1
+!     Next IS-IS Hello in 5 seconds
+      if state UP
+  GigabitEthernet3 is up, line protocol is up
+    CLNS protocol processing disabled
+--- 36,42 ----
+      Level-2 Metric: 10, Priority: 64, Circuit ID: R3.02
+      Level-2 IPv6 Metric: 10
+      Number of active level-2 adjacencies: 1
+!     Next IS-IS Hello in 8 seconds
+      if state UP
+  GigabitEthernet3 is up, line protocol is up
+    CLNS protocol processing disabled
+***************
+*** 48,54 ****
+    CLNS fast switching disabled
+    CLNS SSE switching disabled
+    DEC compatibility mode OFF for this interface
+!   Next ESH/ISH in 14 seconds
+    Routing Protocol: IS-IS (1)
+      Circuit Type: level-1-2
+      Interface number 0x0, local circuit ID 0x100
+--- 48,54 ----
+    CLNS fast switching disabled
+    CLNS SSE switching disabled
+    DEC compatibility mode OFF for this interface
+!   Next ESH/ISH in 1 seconds
+    Routing Protocol: IS-IS (1)
+      Circuit Type: level-1-2
+      Interface number 0x0, local circuit ID 0x100
+*** "logs/before/R3-IOSXE/show ip ospf neighbor.txt"	2018-11-07 11:47:35.193238700 +0000
+--- "logs/after/R3-IOSXE/show ip ospf neighbor.txt"	2018-11-07 11:55:40.222689500 +0000
+***************
+*** 1,7 ****
+  #show ip ospf neighbor
+! No time source, *11:47:33.728 UTC Wed Nov 7 2018
+  
+  
+  Neighbor ID     Pri   State           Dead Time   Address         Interface
+! 10.0.0.2          0   FULL/  -        00:00:36    10.0.23.2       GigabitEthernet2
+  
+--- 1,7 ----
+  #show ip ospf neighbor
+! No time source, *11:55:38.728 UTC Wed Nov 7 2018
+  
+  
+  Neighbor ID     Pri   State           Dead Time   Address         Interface
+! 10.0.0.2          0   FULL/  -        00:00:38    10.0.23.2       GigabitEthernet2
+  
+*** "logs/before/R3-IOSXE/show isis neighbors.txt"	2018-11-07 11:47:36.403100600 +0000
+--- "logs/after/R3-IOSXE/show isis neighbors.txt"	2018-11-07 11:55:41.430972500 +0000
+***************
+*** 1,10 ****
+  #show isis neighbors
+! No time source, *11:47:34.981 UTC Wed Nov 7 2018
+  
+  
+  Tag 1:
+  System Id       Type Interface     IP Address      State Holdtime Circuit Id
+! vMX-NAPALM      L1L2 Gi2           10.0.23.2       UP    20       01
+  
+  Tag null:
+  
+--- 1,10 ----
+  #show isis neighbors
+! No time source, *11:55:39.979 UTC Wed Nov 7 2018
+  
+  
+  Tag 1:
+  System Id       Type Interface     IP Address      State Holdtime Circuit Id
+! vMX-NAPALM      L1L2 Gi2           10.0.23.2       UP    24       01
+  
+  Tag null:
+  
+*** "logs/before/R3-IOSXE/show logging.txt"	2018-11-07 11:47:31.563586200 +0000
+--- "logs/after/R3-IOSXE/show logging.txt"	2018-11-07 11:55:36.592175400 +0000
+***************
+*** 1,5 ****
+  #show logging
+! No time source, *11:47:30.088 UTC Wed Nov 7 2018
+  
+  Syslog logging: enabled (0 messages dropped, 7 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+  
+--- 1,5 ----
+  #show logging
+! No time source, *11:55:35.095 UTC Wed Nov 7 2018
+  
+  Syslog logging: enabled (0 messages dropped, 7 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+  
+***************
+*** 10,21 ****
+  No Inactive Message Discriminator.
+  
+  
+!     Console logging: level debugging, 71 messages logged, xml disabled,
+                       filtering disabled
+      Monitor logging: level debugging, 0 messages logged, xml disabled,
+                       filtering disabled
+          Logging to: vty1(0)
+!     Buffer logging:  level debugging, 76 messages logged, xml disabled,
+                      filtering disabled
+      Exception Logging: size (4096 bytes)
+      Count and timestamp logging messages: disabled
+--- 10,21 ----
+  No Inactive Message Discriminator.
+  
+  
+!     Console logging: level debugging, 72 messages logged, xml disabled,
+                       filtering disabled
+      Monitor logging: level debugging, 0 messages logged, xml disabled,
+                       filtering disabled
+          Logging to: vty1(0)
+!     Buffer logging:  level debugging, 77 messages logged, xml disabled,
+                      filtering disabled
+      Exception Logging: size (4096 bytes)
+      Count and timestamp logging messages: disabled
+***************
+*** 23,35 ****
+  
+  No active filter modules.
+  
+!     Trap logging: level informational, 78 message lines logged
+          Logging Source-Interface:       VRF Name:
+  
+  Log Buffer (4096 bytes):
+! s fdda1
+! *Nov  7 11:20:25.243: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+! *Nov  7 11:20:25.243: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+  *Nov  7 11:20:26.002: %IOSXE-2-PLATFORM: R0/0: kernel: Interface Gi4 features fdda1
+  *Nov  7 11:20:28.461: %VMAN-5-PACKAGE_SIGNING_LEVEL_ON_INSTALL: F0: vman:  Package 'iosxe-remote-mgmt.03.16.07b.S.155-3.S7b-ext.ova' for service container 'csr_mgmt' is 'Cisco signed', matches signing level cached on original install, signing level allowed is 'Cisco signed'
+  *Nov  7 11:20:28.511: %VIRT_SERVICE-5-INSTALL_STATE: Successfully installed virtual service csr_mgmt
+--- 23,33 ----
+  
+  No active filter modules.
+  
+!     Trap logging: level informational, 79 message lines logged
+          Logging Source-Interface:       VRF Name:
+  
+  Log Buffer (4096 bytes):
+! OFF: GDOI is OFF
+  *Nov  7 11:20:26.002: %IOSXE-2-PLATFORM: R0/0: kernel: Interface Gi4 features fdda1
+  *Nov  7 11:20:28.461: %VMAN-5-PACKAGE_SIGNING_LEVEL_ON_INSTALL: F0: vman:  Package 'iosxe-remote-mgmt.03.16.07b.S.155-3.S7b-ext.ova' for service container 'csr_mgmt' is 'Cisco signed', matches signing level cached on original install, signing level allowed is 'Cisco signed'
+  *Nov  7 11:20:28.511: %VIRT_SERVICE-5-INSTALL_STATE: Successfully installed virtual service csr_mgmt
+***************
+*** 68,71 ****
+--- 66,70 ----
+  *Nov  7 11:32:42.425: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
+  *Nov  7 11:42:58.575: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
+  *Nov  7 11:47:14.809: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
++ *Nov  7 11:55:20.026: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
+  
+*** "logs/before/R3-IOSXE/show mpls ldp neighbor.txt"	2018-11-07 11:47:38.819787000 +0000
+--- "logs/after/R3-IOSXE/show mpls ldp neighbor.txt"	2018-11-07 11:55:43.847771500 +0000
+***************
+*** 1,9 ****
+  #show mpls ldp neighbor
+! No time source, *11:47:37.390 UTC Wed Nov 7 2018
+      Peer LDP Ident: 10.0.0.2:0; Local LDP Ident 10.0.0.3:0
+  	TCP connection: 10.0.0.2.646 - 10.0.0.3.34699
+! 	State: Oper; Msgs sent/rcvd: 187/161; Downstream
+! 	Up time: 00:26:07
+  	LDP discovery sources:
+  	  GigabitEthernet2, Src IP addr: 10.0.23.2
+          Addresses bound to peer LDP Ident:
+--- 1,9 ----
+  #show mpls ldp neighbor
+! No time source, *11:55:42.413 UTC Wed Nov 7 2018
+      Peer LDP Ident: 10.0.0.2:0; Local LDP Ident 10.0.0.3:0
+  	TCP connection: 10.0.0.2.646 - 10.0.0.3.34699
+! 	State: Oper; Msgs sent/rcvd: 243/209; Downstream
+! 	Up time: 00:34:12
+  	LDP discovery sources:
+  	  GigabitEthernet2, Src IP addr: 10.0.23.2
+          Addresses bound to peer LDP Ident:
+*** "logs/before/R3-IOSXE/show proc cpu sort.txt.tmp"	2018-11-26 16:09:58.803965700 +0000
+--- "logs/after/R3-IOSXE/show proc cpu sort.txt.tmp"	2018-11-26 16:09:58.835996500 +0000
+***************
+*** 1,10 ****
+  #show proc cpu sort
+! No time source, *11:47:21.820 UTC Wed Nov 7 2018
+  
+! CPU utilization for five seconds: 0%/0%; one minute: 0%; five minutes: 0%
+   PID Runtime(ms)     Invoked      uSecs   5Sec   1Min   5Min TTY Process 
+!    9         471         221       2131  0.07%  0.03%  0.00%   0 Check heaps      
+!  188         748       49606         15  0.07%  0.03%  0.04%   0 IPAM Manager     
+     1           2          13        153  0.00%  0.00%  0.00%   0 Chunk Manager    
+!    2          21         325         64  0.00%  0.00%  0.00%   0 Load Meter       
+!    3           0           1          0  0.00%  0.00%  0.00%   0 ONEP Dispatch po 
+--- 1,10 ----
+  #show proc cpu sort
+! No time source, *11:55:27.084 UTC Wed Nov 7 2018
+  
+! CPU utilization for five seconds: 2%/0%; one minute: 0%; five minutes: 0%
+   PID Runtime(ms)     Invoked      uSecs   5Sec   1Min   5Min TTY Process 
+!  302          96         182        527  1.83%  0.14%  0.03%   1 SSH Process      
+!  188         939       64493         14  0.15%  0.04%  0.04%   0 IPAM Manager     
+!   27           9        2057          4  0.07%  0.00%  0.00%   0 IPC Periodic Tim 
+     1           2          13        153  0.00%  0.00%  0.00%   0 Chunk Manager    
+!    2          21         422         49  0.00%  0.00%  0.00%   0 Load Meter       
+*** "logs/before/R3-IOSXE/show proc mem sort.txt.tmp"	2018-11-26 16:09:58.949199300 +0000
+--- "logs/after/R3-IOSXE/show proc mem sort.txt.tmp"	2018-11-26 16:09:58.982956900 +0000
+***************
+*** 1,10 ****
+  #show proc mem sort
+! No time source, *11:47:23.460 UTC Wed Nov 7 2018
+  
+! Processor Pool Total:  705990864 Used:  321303488 Free:  384687376
+   lsmpi_io Pool Total:    6295128 Used:    6294296 Free:        832
+  
+   PID TTY  Allocated      Freed    Holding    Getbufs    Retbufs Process
+     0   0 2905089792 2642995664  241785504          0          0 *Init*          
+   572   0   34448104      52088   34772016          0          0 SBC main process
+!   75   0    5144480          0    5073344          0          0 IOSD ipc task   
+--- 1,10 ----
+  #show proc mem sort
+! No time source, *11:55:28.665 UTC Wed Nov 7 2018
+  
+! Processor Pool Total:  705990864 Used:  321304632 Free:  384686232
+   lsmpi_io Pool Total:    6295128 Used:    6294296 Free:        832
+  
+   PID TTY  Allocated      Freed    Holding    Getbufs    Retbufs Process
+     0   0 2905089792 2642995664  241785504          0          0 *Init*          
+   572   0   34448104      52088   34772016          0          0 SBC main process
+!   75   0    5282176          0    5073344          0          0 IOSD ipc task   
+*** "logs/before/R3-IOSXE/show processes cpu platform sorted.txt.tmp"	2018-11-26 16:09:59.115704200 +0000
+--- "logs/after/R3-IOSXE/show processes cpu platform sorted.txt.tmp"	2018-11-26 16:09:59.149944400 +0000
+***************
+*** 1,12 ****
+  #show processes cpu platform sorted
+! No time source, *11:47:24.513 UTC Wed Nov 7 2018
+! CPU utilization for five seconds:  1%, one minute:  0%, five minutes:  1%
+! Core 0: CPU utilization for five seconds:  1%, one minute:  0%, five minutes:  1%
+  Core 1: CPU utilization for five seconds:  0%, one minute:  0%, five minutes:  0%
+     Pid    PPid    5Sec    1Min    5Min  Status        Size  Name                  
+  --------------------------------------------------------------------------------
+   20550   20062      2%      2%      2%  S        769544192  qfp-ucode-csr         
+!  15083   14244      1%      2%      2%  S       2469142528  linux_iosd-imag       
+!  23838   14398      0%      0%      0%  S          1929216  sleep                 
+!  23786   12916      0%      0%      0%  S          1757184  inotifywait           
+!  23715   17735      0%      0%      0%  S          1757184  inotifywait           
+--- 1,12 ----
+  #show processes cpu platform sorted
+! No time source, *11:55:29.745 UTC Wed Nov 7 2018
+! CPU utilization for five seconds:  1%, one minute:  0%, five minutes:  0%
+! Core 0: CPU utilization for five seconds:  1%, one minute:  1%, five minutes:  1%
+  Core 1: CPU utilization for five seconds:  0%, one minute:  0%, five minutes:  0%
+     Pid    PPid    5Sec    1Min    5Min  Status        Size  Name                  
+  --------------------------------------------------------------------------------
+   20550   20062      2%      2%      2%  S        769544192  qfp-ucode-csr         
+!  15083   14244      1%      1%      1%  S       2469142528  linux_iosd-imag       
+!  24564   12916      0%      0%      0%  S          1757184  inotifywait           
+!  24493   17735      0%      0%      0%  S          1757184  inotifywait           
+!  24437   15637      0%      0%      0%  S          1929216  sleep                 
+*** "logs/before/R3-IOSXE/show processes memory platform sorted.txt.tmp"	2018-11-26 16:09:59.265200300 +0000
+--- "logs/after/R3-IOSXE/show processes memory platform sorted.txt.tmp"	2018-11-26 16:09:59.296480600 +0000
+***************
+*** 1,10 ****
+  #show processes memory platform sorted
+! No time source, *11:47:25.724 UTC Wed Nov 7 2018
+! System memory: 2505972K total, 2048200K used, 457772K free
+! Lowest: 38232K
+     Pid    Text      Data   Stack   Dynamic       RSS     Total              Name  
+  --------------------------------------------------------------------------------
+!  15083  348566    751808     220        56    752256   2411276   linux_iosd-imag  
+!  20048   11406    144380     200     19296    144384   1962548     fman_fp_image  
+!  18681      77    122880     124     18108    122884   1486196        cpp_cp_svr  
+   13901    6413     79808     184      1712     79808   1059600           fman_rp  
+--- 1,10 ----
+  #show processes memory platform sorted
+! No time source, *11:55:30.982 UTC Wed Nov 7 2018
+! System memory: 2505972K total, 2048212K used, 457760K free
+! Lowest: 38100K
+     Pid    Text      Data   Stack   Dynamic       RSS     Total              Name  
+  --------------------------------------------------------------------------------
+!  15083  348566    751812     220        56    752260   2411276   linux_iosd-imag  
+!  20048   11406    144388     200     19296    144392   1962548     fman_fp_image  
+!  18681      77    122912     124     18108    122916   1486196        cpp_cp_svr  
+   13901    6413     79808     184      1712     79808   1059600           fman_rp  
+*** "logs/before/R3-IOSXE/show ver.txt"	2018-11-07 11:47:22.699003300 +0000
+--- "logs/after/R3-IOSXE/show ver.txt"	2018-11-07 11:55:27.933030000 +0000
+***************
+*** 1,5 ****
+  #show ver
+! No time source, *11:47:21.216 UTC Wed Nov 7 2018
+  Cisco IOS XE Software, Version 03.16.07b.S - Extended Support Release
+  Cisco IOS Software, CSR1000V Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 15.5(3)S7b, RELEASE SOFTWARE (fc1)
+  Technical Support: http://www.cisco.com/techsupport
+--- 1,5 ----
+  #show ver
+! No time source, *11:55:26.453 UTC Wed Nov 7 2018
+  Cisco IOS XE Software, Version 03.16.07b.S - Extended Support Release
+  Cisco IOS Software, CSR1000V Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 15.5(3)S7b, RELEASE SOFTWARE (fc1)
+  Technical Support: http://www.cisco.com/techsupport
+***************
+*** 20,27 ****
+  
+  ROM: IOS-XE ROMMON
+  
+! R3 uptime is 27 minutes
+! Uptime for this control processor is 28 minutes
+  System returned to ROM by reload
+  System image file is "bootflash:packages.conf"
+  Last reload reason: <NULL>
+--- 20,27 ----
+  
+  ROM: IOS-XE ROMMON
+  
+! R3 uptime is 35 minutes
+! Uptime for this control processor is 36 minutes
+  System returned to ROM by reload
+  System image file is "bootflash:packages.conf"
+  Last reload reason: <NULL>

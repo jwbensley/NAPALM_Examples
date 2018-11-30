@@ -1,0 +1,3 @@
+#show bridge-domain
+No time source, *11:47:42.796 UTC Wed Nov 7 2018
+

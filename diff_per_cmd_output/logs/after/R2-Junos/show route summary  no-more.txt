@@ -1,0 +1,24 @@
+#show route summary | no-more
+
+Router ID: 10.0.0.2
+
+inet.0: 10 destinations, 11 routes (10 active, 0 holddown, 0 hidden)
+              Direct:      4 routes,      4 active
+               Local:      3 routes,      3 active
+                OSPF:      2 routes,      2 active
+               IS-IS:      2 routes,      1 active
+
+inet.3: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+                 LDP:      2 routes,      2 active
+
+MGMT.inet.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+              Direct:      1 routes,      1 active
+               Local:      1 routes,      1 active
+
+iso.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+              Direct:      1 routes,      1 active
+
+mpls.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+                 LDP:      2 routes,      2 active
+
+

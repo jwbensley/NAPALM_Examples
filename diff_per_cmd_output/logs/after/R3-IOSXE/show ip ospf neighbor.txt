@@ -1,0 +1,7 @@
+#show ip ospf neighbor
+No time source, *11:55:38.728 UTC Wed Nov 7 2018
+
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+10.0.0.2          0   FULL/  -        00:00:38    10.0.23.2       GigabitEthernet2
+

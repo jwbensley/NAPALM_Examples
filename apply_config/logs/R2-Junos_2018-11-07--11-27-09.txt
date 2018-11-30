@@ -1,0 +1,5 @@
+#R2-Junos
+[edit interfaces ge-0/0/2]
+-   description test-description;
++   description vMX-ge-0/0/2:csr1000v-gi3;
+

@@ -1,0 +1,149 @@
+#show configuration | no-more
+
+## Last commit: 2018-11-07 11:27:45 UTC by napalm
+version 14.1R1.10;
+system {
+    host-name vMX-NAPALM;
+    root-authentication {
+        encrypted-password "$1$iiqdh9ru$CBQygri2MkpfgtgdGo8GO1"; ## SECRET-DATA
+    }
+    login {
+        user lab {
+            uid 2000;
+            class super-user;
+            authentication {
+                encrypted-password "$1$oW1NeMUu$N7IVMfy8GfJ02jzQzJ39h/"; ## SECRET-DATA
+            }
+        }
+        user napalm {
+            uid 2001;
+            class super-user;
+            authentication {
+                encrypted-password "$1$yCmjZ4ZH$.nCrI/fjo2I4Xwhggq9yJ0"; ## SECRET-DATA
+            }
+        }
+    }
+    services {
+        ssh;
+        telnet {
+            connection-limit 5;
+        }
+    }
+    syslog {
+        user * {
+            any emergency;
+        }
+        file messages {
+            any notice;
+            authorization info;
+        }
+        file interactive-commands {
+            interactive-commands any;
+        }
+    }
+}
+interfaces {
+    ge-0/0/1 {
+        description vMX-ge-0/0/1:R1-Fa0/0;
+        unit 0 {
+            family inet {
+                address 10.0.12.2/24;
+            }
+            family iso;
+            family mpls;
+        }
+    }
+    ge-0/0/2 {
+        description vMX-ge-0/0/2:csr1000v-gi3;
+        unit 0 {
+            family inet {
+                address 10.0.23.2/24;
+            }
+            family iso;
+            family mpls;
+        }
+    }
+    ge-0/0/3 {
+        unit 0 {
+            family inet {
+                address 192.168.223.12/24;
+            }
+        }
+    }
+    em0 {
+        unit 0 {
+            family inet {
+                address 192.168.56.10/24;
+            }
+        }
+    }
+    lo0 {
+        unit 0 {
+            family inet {
+                address 10.0.0.2/32;
+            }
+            family iso {
+                address 49.0000.0010.0000.0200.0000;
+            }
+        }
+    }
+}
+routing-options {
+    router-id 10.0.0.2;
+}
+protocols {
+    bgp {
+        group iBGP {
+            family inet {
+                unicast;
+            }
+            peer-as 1;
+            local-as 1;
+            neighbor 10.0.0.1;
+            neighbor 10.0.0.3;
+        }
+    }
+    isis {
+        interface ge-0/0/1.0 {
+            point-to-point;
+        }
+        interface ge-0/0/2.0 {
+            point-to-point;
+        }
+        interface lo0.0 {
+            passive;
+        }
+    }
+    ospf {
+        area 0.0.0.0 {
+            interface ge-0/0/1.0 {
+                interface-type p2p;
+                ldp-synchronization;
+            }
+            interface ge-0/0/2.0 {
+                interface-type p2p;
+                ldp-synchronization;
+            }
+            interface lo0.0 {
+                passive;
+            }
+        }
+    }
+    ldp {
+        interface ge-0/0/1.0;
+        interface ge-0/0/2.0;
+    }
+}
+routing-instances {
+    MGMT {
+        instance-type vrf;
+        interface ge-0/0/3.0;
+        route-distinguisher 1:1;
+        vrf-target {
+            import target:1:1;
+            export target:1:1;
+        }
+    }
+}
+
+

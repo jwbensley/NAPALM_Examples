@@ -1,0 +1,3 @@
+#show bfd neighbors
+No time source, *11:47:36.766 UTC Wed Nov 7 2018
+

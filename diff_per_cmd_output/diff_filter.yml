@@ -1,0 +1,33 @@
+head_cmds:
+  # Cisco IOS/XE
+  "show proc cpu sort": 10
+  "show proc mem sort": 10
+  "show processes cpu platform sorted": 12
+  "show processes memory platform sorted": 10
+  # Junos
+  "show system memory | no-more": 8
+exclude_cmds:
+  # Cisco IOS/XE
+  - 'show bgp all summary'
+  - 'show bridge-domain'
+  - 'show environment'
+  - 'show platform hardware pp active resource-usage summary 0'
+  - 'show platform hardware pp active tcam usage'
+  - 'show proc cpu hist'
+  - 'term exec prompt timestamp'
+  - 'term len 0'
+  - 'term mon'
+  # Junos
+  - 'file list detail /var/tmp | no-more'
+  - 'set cli timestamp'
+  - 'show krt queue | no-more'
+  - 'show pfe statistics error | no-more'
+  - 'show pfe statistics traffic | no-more'
+  - 'show route forwarding-table summary | no-more'
+  #- 'show route summary | no-more'
+  - 'show system boot-messages | no-more'
+  - 'show system commit | no-more'
+  - 'show system virtual-memory | no-more'
+  - 'show system processes extensive | no-more'
+  - 'show system queues | no-more'
+  - 'show system storage | no-more'

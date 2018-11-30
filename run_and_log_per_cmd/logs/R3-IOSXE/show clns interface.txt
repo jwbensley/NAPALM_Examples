@@ -1,0 +1,63 @@
+#show clns interface
+No time source, *11:47:35.535 UTC Wed Nov 7 2018
+
+GigabitEthernet1 is up, line protocol is up
+  Checksums enabled, MTU 1497, Encapsulation SAP
+  ERPDUs enabled, min. interval 10 msec.
+  CLNS fast switching enabled
+  CLNS SSE switching disabled
+  DEC compatibility mode OFF for this interface
+  Next ESH/ISH in 28 seconds
+  Routing Protocol: IS-IS (1)
+    Circuit Type: level-1-2
+    Interface number 0x1, local circuit ID 0x101
+    Level-1 Metric: 10, Priority: 64, Circuit ID: R3.01
+    Level-1 IPv6 Metric: 10
+    Number of active level-1 adjacencies: 0
+    Level-2 Metric: 10, Priority: 64, Circuit ID: R3.01
+    Level-2 IPv6 Metric: 10
+    Number of active level-2 adjacencies: 0
+    Next IS-IS Hello in 0 seconds
+    if state DOWN
+GigabitEthernet2 is up, line protocol is up
+  Checksums enabled, MTU 1497, Encapsulation SAP
+  ERPDUs enabled, min. interval 10 msec.
+  CLNS fast switching enabled
+  CLNS SSE switching disabled
+  DEC compatibility mode OFF for this interface
+  Next ESH/ISH in 57 seconds
+  Routing Protocol: IS-IS (1)
+    Circuit Type: level-1-2
+    Interface number 0x2, local circuit ID 0x102
+    Neighbor System-ID: vMX-NAPALM
+    Level-1 Metric: 10, Priority: 64, Circuit ID: R3.02
+    Level-1 IPv6 Metric: 10
+    Number of active level-1 adjacencies: 1
+    Level-2 Metric: 10, Priority: 64, Circuit ID: R3.02
+    Level-2 IPv6 Metric: 10
+    Number of active level-2 adjacencies: 1
+    Next IS-IS Hello in 5 seconds
+    if state UP
+GigabitEthernet3 is up, line protocol is up
+  CLNS protocol processing disabled
+GigabitEthernet4 is up, line protocol is up
+  CLNS protocol processing disabled
+Loopback0 is up, line protocol is up
+  Checksums enabled, MTU 1514, Encapsulation LOOPBACK
+  ERPDUs enabled, min. interval 10 msec.
+  CLNS fast switching disabled
+  CLNS SSE switching disabled
+  DEC compatibility mode OFF for this interface
+  Next ESH/ISH in 14 seconds
+  Routing Protocol: IS-IS (1)
+    Circuit Type: level-1-2
+    Interface number 0x0, local circuit ID 0x100
+    Level-1 Metric: 10, Priority: 64, Circuit ID: R3.00
+    Level-1 IPv6 Metric: 10
+    Number of active level-1 adjacencies: 0
+    Level-2 Metric: 10, Priority: 64, Circuit ID: R3.00
+    Level-2 IPv6 Metric: 10
+    Number of active level-2 adjacencies: 0
+    Next IS-IS Hello in 0 seconds
+    if state DOWN
+

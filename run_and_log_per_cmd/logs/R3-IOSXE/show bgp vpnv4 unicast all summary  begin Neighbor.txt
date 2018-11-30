@@ -1,0 +1,3 @@
+#show bgp vpnv4 unicast all summary | begin Neighbor
+
+

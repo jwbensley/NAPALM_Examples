@@ -1,0 +1,5 @@
+#show ip rsvp interface
+No time source, *11:47:38.579 UTC Wed Nov 7 2018
+
+interface    rsvp       allocated  i/f max  flow max sub max  VRF
+

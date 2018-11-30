@@ -1,0 +1,12 @@
+#show processes cpu platform sorted
+No time source, *11:55:29.745 UTC Wed Nov 7 2018
+CPU utilization for five seconds:  1%, one minute:  0%, five minutes:  0%
+Core 0: CPU utilization for five seconds:  1%, one minute:  1%, five minutes:  1%
+Core 1: CPU utilization for five seconds:  0%, one minute:  0%, five minutes:  0%
+   Pid    PPid    5Sec    1Min    5Min  Status        Size  Name                  
+--------------------------------------------------------------------------------
+ 20550   20062      2%      2%      2%  S        769544192  qfp-ucode-csr         
+ 15083   14244      1%      1%      1%  S       2469142528  linux_iosd-imag       
+ 24564   12916      0%      0%      0%  S          1757184  inotifywait           
+ 24493   17735      0%      0%      0%  S          1757184  inotifywait           
+ 24437   15637      0%      0%      0%  S          1929216  sleep                 

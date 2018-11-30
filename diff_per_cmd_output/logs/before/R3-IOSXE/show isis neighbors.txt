@@ -1,0 +1,10 @@
+#show isis neighbors
+No time source, *11:47:34.981 UTC Wed Nov 7 2018
+
+
+Tag 1:
+System Id       Type Interface     IP Address      State Holdtime Circuit Id
+vMX-NAPALM      L1L2 Gi2           10.0.23.2       UP    20       01
+
+Tag null:
+

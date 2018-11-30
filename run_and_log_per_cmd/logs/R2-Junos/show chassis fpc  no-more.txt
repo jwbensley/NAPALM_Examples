@@ -1,0 +1,7 @@
+#show chassis fpc | no-more
+
+                     Temp  CPU Utilization (%)   Memory    Utilization (%)
+Slot State            (C)  Total  Interrupt      DRAM (MB) Heap     Buffer
+  0  Online           Testing 100         0       512        21          0
+
+

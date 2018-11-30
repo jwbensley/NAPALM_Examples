@@ -1,0 +1,20 @@
+#show route forwarding-table summary family inet | no-more
+
+Routing table: default.inet
+Internet:
+         user:          3 routes
+         perm:          5 routes
+         intf:          7 routes
+         dest:         10 routes
+
+Routing table: __master.anon__.inet
+Internet:
+         perm:          5 routes
+
+Routing table: MGMT.inet
+Internet:
+         perm:          5 routes
+         intf:          2 routes
+         dest:          4 routes
+
+

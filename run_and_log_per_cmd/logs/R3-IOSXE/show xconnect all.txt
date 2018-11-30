@@ -1,0 +1,10 @@
+#show xconnect all
+No time source, *11:47:40.983 UTC Wed Nov 7 2018
+
+Legend:    XC ST=Xconnect State  S1=Segment1 State  S2=Segment2 State
+  UP=Up       DN=Down            AD=Admin Down      IA=Inactive
+  SB=Standby  HS=Hot Standby     RV=Recovering      NH=No Hardware
+
+XC ST  Segment 1                         S1 Segment 2                         S2
+------+---------------------------------+--+---------------------------------+--
+

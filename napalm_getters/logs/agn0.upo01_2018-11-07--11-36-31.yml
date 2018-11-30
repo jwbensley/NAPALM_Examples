@@ -1,0 +1,452 @@
+get_bgp_neighbors:
+  global:
+    peers:
+      10.100.200.1:
+        address_family:
+          ipv4:
+            accepted_prefixes: 2
+            received_prefixes: 2
+            sent_prefixes: 9
+        description: ''
+        is_enabled: true
+        is_up: true
+        local_as: 12345
+        remote_as: 12345
+        remote_id: 10.100.200.1
+        uptime: 1209600
+      10.100.200.2:
+        address_family:
+          ipv4:
+            accepted_prefixes: 2
+            received_prefixes: 2
+            sent_prefixes: 9
+        description: ''
+        is_enabled: true
+        is_up: true
+        local_as: 12345
+        remote_as: 12345
+        remote_id: 10.100.200.2
+        uptime: 77071
+      10.105.0.1:
+        address_family:
+          ipv4:
+            accepted_prefixes: 2
+            received_prefixes: 2
+            sent_prefixes: 13
+        description: ''
+        is_enabled: true
+        is_up: true
+        local_as: 12345
+        remote_as: 12345
+        remote_id: 10.105.0.1
+        uptime: 8035200
+      10.105.0.2:
+        address_family:
+          ipv4:
+            accepted_prefixes: 2
+            received_prefixes: 2
+            sent_prefixes: 13
+        description: ''
+        is_enabled: true
+        is_up: true
+        local_as: 12345
+        remote_as: 12345
+        remote_id: 10.105.0.2
+        uptime: 8035200
+      10.105.0.3:
+        address_family:
+          ipv4:
+            accepted_prefixes: 2
+            received_prefixes: 2
+            sent_prefixes: 13
+        description: ''
+        is_enabled: true
+        is_up: true
+        local_as: 12345
+        remote_as: 12345
+        remote_id: 10.105.0.3
+        uptime: 3024000
+      10.105.0.7:
+        address_family:
+          ipv4:
+            accepted_prefixes: 2
+            received_prefixes: 2
+            sent_prefixes: 13
+        description: ''
+        is_enabled: true
+        is_up: true
+        local_as: 12345
+        remote_as: 12345
+        remote_id: 10.105.0.7
+        uptime: 8035200
+    router_id: 10.105.0.0
+get_environment:
+  cpu:
+    0:
+      '%usage': 7.0
+  fans:
+    invalid:
+      status: true
+  memory:
+    available_ram: 940563372
+    used_ram: 246183176
+  power:
+    invalid:
+      capacity: -1.0
+      output: -1.0
+      status: true
+  temperature:
+    invalid:
+      is_alert: false
+      is_critical: false
+      temperature: -1.0
+get_facts:
+  fqdn: agn0.upo01
+  hostname: agn0.upo01
+  interface_list:
+  - Te0/0/0
+  - Te0/0/1
+  - Te0/1/0
+  - Te0/1/1
+  - Te0/2/0
+  - Te0/2/1
+  - GigabitEthernet0
+  - Loopback0
+  - Loopback99
+  model: ASR-902
+  os_version: ASR900  Software (PPC_LINUX_IOSD-UNIVERSALK9_NPE-M), Version 15.6(2)SP3,
+    RELEASE SOFTWARE (fc4)
+  serial_number: XXXXXXXX
+  uptime: 8041080
+  vendor: Cisco
+get_interfaces:
+  GigabitEthernet0:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: C4:44:A0:93:9D:24
+    speed: 10
+  Loopback0:
+    description: Global Loopback
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: ''
+    speed: 8000
+  Loopback99:
+    description: Management loopback
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: ''
+    speed: 8000
+  TenGigabitEthernet0/0/0:
+    description: 'mx960 xe-2/2/5'
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: C4:44:A0:93:9D:00
+    speed: 10000
+  TenGigabitEthernet0/0/1:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: C4:44:A0:93:9D:01
+    speed: 10000
+  TenGigabitEthernet0/1/0:
+    description: 'fan0.upo Te0/0/27 '
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: C4:44:A0:93:9D:09
+    speed: 10000
+  TenGigabitEthernet0/1/1:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: C4:44:A0:93:9D:0A
+    speed: 10000
+  TenGigabitEthernet0/2/0:
+    description: 'fan0.chu Te0/0/27 '
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: C4:44:A0:93:9D:12
+    speed: 10000
+  TenGigabitEthernet0/2/1:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: C4:44:A0:93:9D:13
+    speed: 10000
+get_interfaces_counters:
+  GigabitEthernet0:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  Loopback0:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  Loopback99:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  TenGigabitEthernet0/0/0:
+    rx_broadcast_packets: 21986
+    rx_discards: -1
+    rx_errors: 13
+    rx_multicast_packets: 0
+    rx_octets: 82649728526716
+    rx_unicast_packets: 62294076678
+    tx_broadcast_packets: -1
+    tx_discards: -1
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 6194409766709
+    tx_unicast_packets: 27333463324
+  TenGigabitEthernet0/0/1:
+    rx_broadcast_packets: 0
+    rx_discards: -1
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: -1
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  TenGigabitEthernet0/1/0:
+    rx_broadcast_packets: 3
+    rx_discards: -1
+    rx_errors: 1
+    rx_multicast_packets: 0
+    rx_octets: 3019417726851
+    rx_unicast_packets: 13439273015
+    tx_broadcast_packets: -1
+    tx_discards: -1
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 39360448237189
+    tx_unicast_packets: 30143432238
+  TenGigabitEthernet0/1/1:
+    rx_broadcast_packets: 0
+    rx_discards: -1
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: -1
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  TenGigabitEthernet0/2/0:
+    rx_broadcast_packets: 1
+    rx_discards: -1
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 3339610847988
+    rx_unicast_packets: 14746509822
+    tx_broadcast_packets: -1
+    tx_discards: -1
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 43376346243053
+    tx_unicast_packets: 33048887719
+  TenGigabitEthernet0/2/1:
+    rx_broadcast_packets: 0
+    rx_discards: -1
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: -1
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+get_interfaces_ip:
+  Loopback0:
+    ipv4:
+      10.105.0.0:
+        prefix_length: 32
+  Loopback99:
+    ipv4:
+      10.105.6.0:
+        prefix_length: 32
+  TenGigabitEthernet0/0/0:
+    ipv4:
+      10.104.1.254:
+        prefix_length: 31
+  TenGigabitEthernet0/1/0:
+    ipv4:
+      10.104.1.0:
+        prefix_length: 31
+  TenGigabitEthernet0/2/0:
+    ipv4:
+      10.104.1.2:
+        prefix_length: 31
+get_network_instances:
+  Mgmt-intf:
+    interfaces:
+      interface:
+        Gi0: {}
+    name: Mgmt-intf
+    state:
+      route_distinguisher: ''
+    type: L3VRF
+  default:
+    interfaces:
+      interface:
+        GigabitEthernet0: {}
+        Loopback0: {}
+        Loopback99: {}
+        Te0/0/0: {}
+        Te0/0/1: {}
+        Te0/1/0: {}
+        Te0/1/1: {}
+        Te0/2/0: {}
+        Te0/2/1: {}
+    name: default
+    state:
+      route_distinguisher: ''
+    type: DEFAULT_INSTANCE
+  management:
+    interfaces:
+      interface:
+        Lo99: {}
+    name: management
+    state:
+      route_distinguisher: 10.105.0.0:20
+    type: L3VRF
+get_ntp_servers:
+  172.16.0.64: {}
+  172.16.0.66: {}
+get_ntp_stats:
+- delay: 5.928
+  hostpoll: 1024
+  jitter: 1.138
+  offset: 10.006
+  reachability: 377
+  referenceid: 192.168.28.34
+  remote: 172.16.0.64
+  stratum: 2
+  synchronized: true
+  type: '-'
+  when: '474'
+- delay: 6.937
+  hostpoll: 1024
+  jitter: 1.128
+  offset: 9.37
+  reachability: 377
+  referenceid: 192.168.28.34
+  remote: 172.16.0.66
+  stratum: 2
+  synchronized: false
+  type: '-'
+  when: '461'
+get_optics:
+  TenGigabitEthernet0/0/0:
+    physical_channels:
+      channel:
+      - index: 0
+        state:
+          input_power:
+            avg: -100.0
+            instant: -1.9
+            max: -100.0
+            min: -100.0
+          laser_bias_current:
+            avg: 0.0
+            instant: 0.0
+            max: 0.0
+            min: 0.0
+          output_power:
+            avg: -100.0
+            instant: 31.3
+            max: -100.0
+            min: -100.0
+  TenGigabitEthernet0/1/0:
+    physical_channels:
+      channel:
+      - index: 0
+        state:
+          input_power:
+            avg: -100.0
+            instant: -2.8
+            max: -100.0
+            min: -100.0
+          laser_bias_current:
+            avg: 0.0
+            instant: 0.0
+            max: 0.0
+            min: 0.0
+          output_power:
+            avg: -100.0
+            instant: 31.5
+            max: -100.0
+            min: -100.0
+  TenGigabitEthernet0/2/0:
+    physical_channels:
+      channel:
+      - index: 0
+        state:
+          input_power:
+            avg: -100.0
+            instant: -2.6
+            max: -100.0
+            min: -100.0
+          laser_bias_current:
+            avg: 0.0
+            instant: 0.0
+            max: 0.0
+            min: 0.0
+          output_power:
+            avg: -100.0
+            instant: 29.8
+            max: -100.0
+            min: -100.0
+get_snmp_information:
+  chassis_id: XXXXXXX
+  community:
+    SNMPv3isforme:
+      acl: SMNP
+      mode: ro
+  contact: for@bar.com
+  location: agn00.upo00

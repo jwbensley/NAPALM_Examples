@@ -1,0 +1,5 @@
+#show vfi
+No time source, *11:47:41.581 UTC Wed Nov 7 2018
+
+Legend: RT=Route-target, S=Split-horizon, Y=Yes, N=No
+

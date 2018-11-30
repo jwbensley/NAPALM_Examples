@@ -1,0 +1,288 @@
+#show system virtual-memory | no-more
+
+         Type InUse MemUse HighUse Requests  Size(s)
+       module   269    17K       -      269  64,128,256
+     mtx_pool     1     8K       -        1  64,128,256
+        DEVFS     7     1K       -        8  16,128
+      subproc   410   765K       -     4163  32768,4194304
+         proc     2     1K       -        2  524288
+      session    10     2K       -       51  2048
+         pgrp    10     1K       -       51  128
+         cred    67     8K       -   106293  1024
+      uidinfo     4     1K       -      200  32,2048
+       plimit    24     6K       -      617  32768
+    sysctltmp     0     0K       -     2434  16,32,2048,4096
+    sysctloid  1807    53K       -     1807  16,32,64,128,256
+         umtx   588    28K       -      588  64
+     ifa_list     8     1K       -        8  16
+vpls_lc_instance     1     2K       -        1 2097152
+         ddos     6   282K       -        6  32,256,1048576
+        devrt     8    29K       -        8  32,524288
+   ifl_st_ctl     4     1K       -        4  16
+   mesh-group     4     1K       -        4  256
+InterFaceBridgeDomain     1     1K       -        1 1024
+       rtsmsg     0     0K       -       25  4194304
+          idl     1    12K       -       66  16,64,2048,4096,16384,524288,4194304
+          jsr     2     1K       -       16  16
+       gencfg   326    44K       -      905  16,32,64,128,256,512,2048,524288,1048576,2097152
+      pfestat   112    30K       -     1269  16,32,1024,2048,4096,4194304
+          pic     2     1K       -        2  128,16384
+           lr     1     1K       -        1  524288
+     itable32   180    12K       -      180  128
+     itable16   369    71K       -      378  4096,131072
+      ifstate  3426   110K       -    21645  16,32,64,128,256,512,1024,4096,32768,524288,1048576
+      pfe_ipc     0     0K       -     2750  16,32,64,128,256,512,4096,8192,16384,32768,65536,262144,524288,1048576,2097152,4194304
+         mkey   491     8K       -     6192  16,256
+       ifaddr    26     2K       -       26  32,64,256
+       sysctl     0     0K       -  1083001  16,32,64,128,131072,524288,1048576
+       rtable   125    17K       -      145  16,32,256,512,4096,8192,524288
+      ifmaddr    93     3K       -       93  16,32
+         ipfw    48    25K       -      103  16,32,64,128,256,1024,4096,16384,32768,131072,262144,524288,1048576,2097152,4194304
+       ifstat  1544  5743K       -     1604  16,32,64,512,2048,524288,2097152,4194304
+     ifdevice     7     1K       -        7  16
+        tagnh     7     1K       -        7  16,32,4096
+       rcache     4     8K       -        4  2097152
+        rnode    56     2K       -       72  16,32
+    ingrentry     6     1K       -        6  64
+    inifmulti     2     1K       -        2  64
+      metrics     5     1K       -       22  1024
+    rtnexthop   146    20K       -      146  16,32,2048,4096,8192,65536,524288
+     iffamily    51     5K       -       51  16,32,1024,4096
+    iflogical    21     5K       -       21  128,65536,131072
+    schedhist     1   160K       -        1  128,65536,131072
+  NULLFS hash     1     1K       -        1  128
+         SWAP     2   957K       -        2  64
+       bus-sc    34    26K       -      696  16,32,64,128,2048,4096,8192,32768,262144,524288,2097152,4194304
+          bus   568    66K       -     1720  16,32,64,128,512,1048576
+      devstat    20    41K       -       20  16,4194304
+ eventhandler    64     3K       -       64  32,256,512
+         kobj   100   200K       -      118  2097152
+    pfs_nodes    25     2K       -       25  256
+  pfs_vncache   526    17K       -      644  32
+         rman    64     4K       -      437  16,32,128
+         sbuf     0     0K       -     3388  16,32,128,2048,131072,524288,1048576,2097152,4194304
+         GEOM   470    29K       -     2215  16,32,128,256,512,1024,2048,16384,524288,1048576,4194304
+    taskqueue    17     2K       -       17  16,256
+   turnstiles   589    37K       -      589  128
+       Unitno     6     1K       -       16  16,64
+          iov     0     0K       -    96228  16,32,64,128,512,1024,2048,4096,16384,4194304
+     ioctlops     0     0K       -     7485  16,64,256,262144,524288,2097152,4194304
+          msg     4    25K       -        4  1048576,4194304
+          sem     4     7K       -        4  524288,1048576,4194304
+          shm    13    76K       -       33  4194304
+         ttys   208    43K       -      483  2048,1048576
+     mbuf_tag     0     0K       -     8475  32
+          pcb   368    95K       -      827  16,32,64,128,256,8192,16384,65536,131072,524288,1048576,2097152
+       soname   157    17K       -    27588  16,32,64,256,1024
+   BIO buffer   104   208K       -     1145  2097152
+     vfscache     1   256K       -        1  2097152
+cluster_save buffer     0     0K       -       13 32,64,128
+     VFS hash     1   128K       -        1  32,64,128
+       vnodes     1     1K       -        1  2048
+  vnodemarker     0     0K       -     1299  262144
+        mount   810    70K       -     2062  16,32,64,128,512,1024,131072,1048576
+      MD disk    46    92K       -       46  2097152
+          BPF    24  6146K       -       24  128,32768
+      ibitmap     8    67K       -       12  16,32,131072,1048576
+  ifl_idx_mgr     3     1K       -        3  16,32,128
+CAM dev queue     1     1K       -        1  128
+    CAM queue     3     1K       -        3  16
+   ISOFS node  2363   222K       -     2488  512
+  ISOFS mount    44     6K       -       87  2048
+  ata_generic     1     1K       -        1  1048576
+    ad_driver     1     1K       -        1  1024
+      CAM SIM     1     1K       -        1  64
+          STP    37     8K       -       37  16,1024,2048,524288
+   CAM periph     1     1K       -        1  256
+     syncache     1     8K       -        1  256
+      ata_dma     2     1K       -        2  1024
+     tlv_stat     0     0K       -      186  1024
+nhack_info_entries     3     1K       -        3 16
+Bridge Domain     2     1K       -        2  16,524288
+   NFS daemon     1     8K       -        1  16,524288
+     p1003.1b     1     1K       -        1  16
+         cdev    22     3K       -       22  1024
+      CAM XPT     6     1K       -        9  16,64,524288
+        sigio     1     1K       -       54  32
+     filedesc   215    47K       -     4546  16,4096,16384,524288,1048576
+      kdtrace   732   150K       -     4489  128,131072
+         kenv    40     6K       -       43  16,32,64,128,4194304
+       kqueue    28    14K       -       96  32,4096,131072,1048576
+    proc-args    70     3K       -     3272  32,64,128,256,512,1024,2048,4096,8192
+       zombie     1     1K       -     3754  256
+      ithread    79     6K       -       79  16,64,2048
+       newblk     1     1K       -        1  131072
+     inodedep     1   128K       -        1  131072
+      pagedep     1    32K       -        1  131072
+    UFS mount    15    32K       -       15  32768,2097152,4194304
+      UMAHash     1     8K       -        6  131072,524288,1048576,2097152,4194304
+      entropy  1024    48K       -     1024  64
+       KTRACE   100     8K       -      100  256
+       linker   563  2343K       -     1313  16,32,64,131072,1048576,4194304
+        lockf    60     4K       -    65342  128
+    VM pgdata     2    65K       -        2  128
+     atkbddev     2     1K       -        2  32
+       isadev    22     2K       -       22  64
+         temp  1739   228K       -    19416  16,32,64,128,256,512,1024,2048,4096,16384,65536,131072,524288,1048576,2097152,4194304
+     I/O APIC     1     1K       -        1  1048576
+    legacydrv     4     1K       -        4  16
+     MP Table     1     1K       -        1  16
+     nexusdev     2     1K       -        2  16
+       devbuf   956  6933K       -      973  16,32,64,128,256,512,1024,2048,4096,8192,16384,65536,131072,262144,524288,1048576,2097152,4194304
+         $PIR     4     1K       -        4  32
+       DEVFS1   120    28K       -      120  32768
+       DEVFS3   127    15K       -      128  1024
+         bmeb     9   303K       -        9  16,32,4096,2097152,4194304
+ITEM            SIZE     LIMIT     USED    FREE  REQUESTS
+UMA Kegs:        136,        0,      82,     14,       82
+UMA Zones:       120,        0,      82,      8,       82
+UMA Slabs:        64,        0,    1433,     42,     2884
+UMA RCntSlabs:   104,        0,    1111,     73,     1177
+UMA Hash:        128,        0,       4,     26,        5
+16 Bucket:        76,        0,      28,     22,       35
+32 Bucket:       140,        0,      31,     25,       40
+64 Bucket:       268,        0,      26,     16,       40
+128 Bucket:      524,        0,     148,      6,      175
+VM OBJECT:       128,        0,    5741,    169,   118046
+MAP:             160,        0,       7,     41,        7
+KMAP ENTRY:       68,    35224,      19,    149,     7598
+MAP ENTRY:        68,        0,    4518,    466,   332857
+PV ENTRY:         24,   508080,  125708,  14652,  6972112
+DP fakepg:        72,        0,      10,     96,       10
+mt_zone:          64,        0,     265,     89,      265
+16:               16,        0,    6112,    181,  1121519
+32:               32,        0,    1824,    210,    28612
+48:               48,        0,    2812,    152,    95270
+64:               64,        0,    1721,    108,    71995
+80:               80,        0,     605,     67,     5143
+96:               96,        0,    4597,     83,     7085
+120:             120,        0,     418,     62,   131701
+128:             128,        0,     652,     38,     1480
+160:             160,        0,     333,     27,      597
+176:             176,        0,     119,     13,      502
+208:             208,        0,     248,     37,     4120
+232:             232,        0,     398,     10,     1079
+240:             240,        0,      20,     28,     3176
+256:             256,        0,     815,     25,      870
+296:             296,        0,       3,     23,     1325
+512:             512,        0,     316,     12,     1088
+1024:           1024,        0,     181,     11,    10942
+2048:           2048,        0,     821,      1,     3710
+4096:           4096,        0,     459,     46,     6493
+Files:            72,        0,     889,    118,   104002
+MAC labels:       20,        0,    7151,    116,   131398
+PROC:            568,        0,     177,     54,     3930
+THREAD:          528,        0,     555,     33,      559
+KSEGRP:           92,        0,     555,      5,      559
+UPCALL:           44,        0,       0,      0,        0
+SLEEPQUEUE:       32,        0,     589,    202,      589
+VMSPACE:         264,        0,      69,     21,     3815
+mbuf_packet:     256,   180000,       0,    128,    24557
+mbuf:            256,   180000,    2054,    383,  9901820
+mbuf_cluster:   2048,    25108,    2179,     43,    29065
+mbuf_jumbo_pagesize:  4096,        0,       0,      0,        0
+mbuf_jumbo_9k:  9216,        0,       0,      0,        0
+mbuf_jumbo_16k: 16384,        0,       0,      0,        0
+g_bio:           132,        0,       0,    203,   247398
+ata_request:     228,        0,       0,     85,    26418
+ata_composite:   192,        0,       0,      0,        0
+vtblk_request:    32,        0,       0,      0,        0
+vtnet_tx_hdr:     16,        0,       0,    203,    14169
+GENCFG:           72,  1000004,      80,     79,       80
+VNODE:           288,        0,    5050,      7,     5630
+VNODEPOLL:        72,        0,       0,      0,        0
+NAMEI:          1024,        0,       0,     32,   294167
+S VFS Cache:      68,        0,    4448,     32,     9462
+L VFS Cache:     291,        0,     166,     68,      353
+NFSMOUNT:        480,        0,       0,      0,        0
+NFSNODE:         460,        0,       0,      0,        0
+PIPE:            404,        0,      42,     12,     2185
+AIO:              84,        0,       0,      0,        0
+AIOP:             16,        0,       0,      0,        0
+AIOCB:           128,        0,       0,      0,        0
+AIOL:             64,        0,       0,      0,        0
+AIOLIO:           40,        0,       0,      0,        0
+KNOTE:            72,        0,      99,    113,    51827
+socket:          412,    25110,     489,     24,     6189
+unpcb:           144,    25110,     254,     43,     3367
+ipq:              52,      216,       0,      0,        0
+udp_inpcb:       260,    25110,      32,     28,       58
+tcp_inpcb:       260,    25110,      47,     13,     2235
+tcpcb:           532,    25109,      47,      9,     2235
+sackhole:         20,        0,       0,      0,        0
+tcptw:            60,     5040,       0,      0,        0
+syncache:        128,    15360,       0,     60,       17
+tcpreass:         20,     1690,       0,      0,        0
+ripcb:           260,    25110,       7,     23,        7
+SWAPMETA:        276,    94430,     147,     35,      147
+FFS inode:       132,        0,    2081,     65,     2417
+FFS1 dinode:     128,        0,    2081,     19,     2417
+FFS2 dinode:     256,        0,       0,      0,        0
+ 38748173 cpu context switches
+   273087 device interrupts
+ 11700952 software interrupts
+  1339674 traps
+103870344 system calls
+      109 kernel threads created
+     3499  fork() calls
+      322 vfork() calls
+        0 rfork() calls
+        2 swap pager pageins
+        2 swap pager pages paged in
+      288 swap pager pageouts
+     4445 swap pager pages paged out
+    57100 vnode pager pageins
+    57316 vnode pager pages paged in
+      673 vnode pager pageouts
+     7788 vnode pager pages paged out
+       13 page daemon wakeups
+   630254 pages examined by the page daemon
+    63048 pages reactivated
+   761134 copy-on-write faults
+       29 copy-on-write optimized faults
+   308161 zero fill pages zeroed
+   245423 zero fill pages prezeroed
+      300 intransit blocking page faults
+  1308170 total VM faults taken
+        0 pages affected by kernel thread creation
+   416045 pages affected by  fork()
+    53576 pages affected by vfork()
+        0 pages affected by rfork()
+  1532283 pages freed
+        5 pages freed by daemon
+   884815 pages freed by exiting process
+   100968 pages active
+    57233 pages inactive
+     5863 pages in VM cache
+    19917 pages wired down
+     4617 pages free
+     4096 bytes per page
+     4445 swap pages used
+     4445 peak swap pages used
+  1299542 total name lookups
+           cache hits (93% pos + 5% neg) system 0% per-directory
+           deletions 0%, falsehits 0%, toolong 0%
+interrupt                          total       rate
+irq1: atkbd0                           2          0
+irq4: sio0                          2959          1
+irq9: virtio_pci0+                     9          0
+irq10: virtio_pci3+                 1006          0
+irq11: virtio_pci1*                14952          6
+irq14: ata0                        26418         12
+cpu0: timer                       867803        399
+!                             3232369347    1488199
+P                             3232369347    1488199
+                             3232369123    1488199
+                             3232373064    1488201
+                             3232372813    1488201
+                                     21          0
+                                     32          0
+                                     31          0
+                                     24          0
+P                                      3          0
+2                                      2          0
+Total                              32768         15
+                            117685881638   54183186
+vm.kmem_map_free: 219889664
+
+

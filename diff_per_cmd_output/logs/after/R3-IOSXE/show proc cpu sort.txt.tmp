@@ -1,0 +1,10 @@
+#show proc cpu sort
+No time source, *11:55:27.084 UTC Wed Nov 7 2018
+
+CPU utilization for five seconds: 2%/0%; one minute: 0%; five minutes: 0%
+ PID Runtime(ms)     Invoked      uSecs   5Sec   1Min   5Min TTY Process 
+ 302          96         182        527  1.83%  0.14%  0.03%   1 SSH Process      
+ 188         939       64493         14  0.15%  0.04%  0.04%   0 IPAM Manager     
+  27           9        2057          4  0.07%  0.00%  0.00%   0 IPC Periodic Tim 
+   1           2          13        153  0.00%  0.00%  0.00%   0 Chunk Manager    
+   2          21         422         49  0.00%  0.00%  0.00%   0 Load Meter       

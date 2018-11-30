@@ -1,0 +1,18 @@
+#file list detail /var/tmp | no-more
+
+
+/var/tmp:
+total blocks: 40
+drwxr-xr-x  2 root  929          512 Jun 18  2014 gres-tp 
+-rw-r--r--  1 root  field          4 Nov 7  11:19 idp_license_info
+drwxrwxrwx  2 root  wheel        512 Jun 18  2014 install 
+-rw-r--r--  1 root  929           79 Nov 7  11:19 kmdchk.log
+drwxrwxrwx  2 root  wheel        512 Jun 18  2014 pics 
+srwxr-xr-x  1 root  field          0 Nov 7  11:19 riot 3000 
+srwxr-xr-x  1 root  field          0 Nov 7  11:19 riot 3001 
+drwxr-xr-x  2 root  field        512 Jun 18  2014 rtsdb 
+drwxr-xr-x  3 root  field        512 Jun 18  2014 sec-download 
+drwxrwxrwt  2 root  wheel        512 Jun 18  2014 vi.recover 
+total files: 4
+
+

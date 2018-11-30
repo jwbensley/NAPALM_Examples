@@ -1,0 +1,3 @@
+# Working config
+set interfaces xe-9/9/9 unit 0 description "core|cr2.uk.net|Gi1/2/3|internal|abc123|10G|Link to UK cr2 router"
+set interfaces xe-9/9/9 unit 0 family inet address 10.0.0.1/24

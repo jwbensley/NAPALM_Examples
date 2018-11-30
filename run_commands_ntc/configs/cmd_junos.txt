@@ -1,0 +1,40 @@
+set cli timestamp
+show chassis alarms | no-more
+show chassis environment | no-more
+show log messages | last 200 | no-more
+show system alarms | no-more
+show system boot-messages | no-more
+show system memory | no-more
+show system processes extensive | no-more
+show system resource-monitor summary
+show system storage | no-more
+show system virtual-memory | no-more
+show chassis fpc | no-more
+show pfe statistics error | no-more
+show pfe statistics traffic | no-more
+show chassis hardware detail | no-more
+show chassis routing-engine | no-more
+file list detail /var/tmp | no-more
+show system processes brief | no-more
+show version | no-more
+show interfaces descriptions | no-more
+show interfaces terse routing-instance all | no-more 
+show bgp summary | no-more
+show ospf neighbor | no-more
+show ospf interface | no-more
+show rsvp neighbor | no-more
+show rsvp interface | no-more
+show isis adjacency | no-more
+show isis interface | no more
+show ldp session | no-more
+show ldp interface | no more
+show bfd session | no-more
+show bfd session summary | no-more
+show mpls interface | no-more 
+show route summary | no-more
+show route forwarding-table summary | no-more
+show route forwarding-table summary family inet | no-more
+show route forwarding-table summary family inet6 | no-more
+show system commit | no-more
+show configuration | no-more
+show configuration | display set | no-more

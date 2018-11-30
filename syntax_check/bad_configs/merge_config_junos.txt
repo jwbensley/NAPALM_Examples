@@ -1,0 +1,53 @@
+set system ports auxiliary insecure
+
+# Exaxmple invalid interface xe-9/9/9/9
+# Interface name xe-9/9/9/9 is more than 3 forward slash characters
+set interfaces xe-9/9/9/9 description "core|cr2.uk.net|Gi1/2/3|internal|abc123|10G|Link to UK cr2 router"
+
+# Interface description doesn't match our expected convention
+set interfaces xe-9/9/9 description "link to your mum"
+
+# 10.20.300.44/24 has invalid octet "300", value is 3 digits but to high
+set interfaces xe-9/9/9 unit 0 family inet address 10.20.300.44/24
+
+# 10.0.1/30 is missing an octet
+# too high
+set interfaces xe-9/9/9 unit 0 family inet address 10.0.1/30
+
+# 10.100.0.1/0 has valid IP but we never want to set a mask to /0 even though
+# it is syntactically valid, semantically invalid
+set interfaces xe-9/9/9 unit 0 family inet address 10.100.0.1/0
+
+# 10.100.0.1/33 is a valid IP but a mask value of /33 is too high
+set interfaces xe-9/9/9 unit 0 family inet address 10.100.0.1/33
+
+# Valid mask, syntactically invalid IPv6 address
+set interfaces xe-9/9/9 unit 0 family inet6 address xyz::1/64
+
+# Valid mask, semantically invalid IPv6 address, we would never practically use this
+set interfaces xe-9/9/9 unit 0 family inet6 address ::0/64
+
+# Valid IP, syntactically invalid IPv6 mask
+set interfaces xe-9/9/9 unit 0 family inet6 address fe::1/zz
+
+# Valid IP, semantically invalid IPv6 mask
+set interfaces xe-9/9/9 unit 0 family inet6 address fe::1/129
+
+# VLAN IDs are to high/low/non-numeric
+set interfaces xe-9/9/9 unit 10 vlan-id 4096
+set interfaces xe-9/9/9 unit 10 vlan-id 0
+set interfaces xe-9/9/9 unit 10 vlan-id a
+# Permissible VLAN ID
+set interfaces xe-9/9/9 unit 10 vlan-id 100
+
+# VLAN id list has value greater than 4095
+set interfaces xe-9/9/9 unit 10 family bridge interface-mode trunk
+set interfaces xe-9/9/9 unit 10 family bridge vlan-id-list 4096
+
+# VLAN id list has value 0, techically valid but we would never use it
+set interfaces xe-9/9/9 unit 10 family bridge interface-mode trunk
+set interfaces xe-9/9/9 unit 10 family bridge vlan-id-list 0
+
+# Working config
+set interfaces xe-9/9/9 unit 0 description "core|cr2.uk.net|Gi1/2/3|internal|abc123|10G|Link to UK cr2 router"
+set interfaces xe-9/9/9 unit 0 family inet address 10.0.0.1/24

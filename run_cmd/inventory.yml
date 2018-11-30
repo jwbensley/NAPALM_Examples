@@ -1,0 +1,15 @@
+R1-IOS:
+  hostname: 192.168.223.11
+  os: ios
+  username: napalm
+  password: napalm
+R2-Junos:
+  hostname: 192.168.223.12
+  os: junos
+  username: napalm
+  password: napalm1
+R3-IOSXE:
+  hostname: 192.168.223.13
+  os: ios
+  username: napalm
+  password: napalm

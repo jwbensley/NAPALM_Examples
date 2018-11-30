@@ -1,0 +1,5 @@
+#show rsvp neighbor | no-more
+
+RSVP not configured
+
+

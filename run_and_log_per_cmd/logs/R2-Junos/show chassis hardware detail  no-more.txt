@@ -1,0 +1,15 @@
+#show chassis hardware detail | no-more
+
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                                  VMX
+Midplane        
+Routing Engine                                           RE-VMX
+  ad0   20480 MB  VBOX HARDDISK        VBcb642440-c948723a Hard Disk
+CB 0                                                     VMX SCB
+FPC 0                                                    10x1G FPC
+  CPU            Rev. 1.0 RIOT         123XYZ987        
+  MIC 0                                                  Virtual 10x1GE PIC
+    PIC 0                 BUILTIN      BUILTIN           Virtual 10x1GE PIC
+
+

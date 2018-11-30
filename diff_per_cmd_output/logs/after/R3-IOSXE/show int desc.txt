@@ -1,0 +1,10 @@
+#show int desc
+No time source, *11:55:35.712 UTC Wed Nov 7 2018
+
+Interface                      Status         Protocol Description
+Gi1                            up             up       CSR1000v-Gi1:R1-Fa0/1
+Gi2                            up             up       CSR1000v-Gi2:vMX-ge-0/0/2
+Gi3                            up             up       csr1000v-gi3:vmx-ge-0/0/2
+Gi4                            up             up       MGMT
+Lo0                            up             up
+

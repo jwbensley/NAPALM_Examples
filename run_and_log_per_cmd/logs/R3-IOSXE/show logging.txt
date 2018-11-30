@@ -1,0 +1,71 @@
+#show logging
+No time source, *11:47:30.088 UTC Wed Nov 7 2018
+
+Syslog logging: enabled (0 messages dropped, 7 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: level debugging, 71 messages logged, xml disabled,
+                     filtering disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+        Logging to: vty1(0)
+    Buffer logging:  level debugging, 76 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (4096 bytes)
+    Count and timestamp logging messages: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 78 message lines logged
+        Logging Source-Interface:       VRF Name:
+
+Log Buffer (4096 bytes):
+s fdda1
+*Nov  7 11:20:25.243: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Nov  7 11:20:25.243: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Nov  7 11:20:26.002: %IOSXE-2-PLATFORM: R0/0: kernel: Interface Gi4 features fdda1
+*Nov  7 11:20:28.461: %VMAN-5-PACKAGE_SIGNING_LEVEL_ON_INSTALL: F0: vman:  Package 'iosxe-remote-mgmt.03.16.07b.S.155-3.S7b-ext.ova' for service container 'csr_mgmt' is 'Cisco signed', matches signing level cached on original install, signing level allowed is 'Cisco signed'
+*Nov  7 11:20:28.511: %VIRT_SERVICE-5-INSTALL_STATE: Successfully installed virtual service csr_mgmt
+*Nov  7 11:20:28.616: %ONEP_BASE-6-SS_ENABLED: ONEP: Service set Base was enabled by Default
+*Nov  7 11:20:32.972: %LINK-3-UPDOWN: Interface GigabitEthernet1, changed state to up
+*Nov  7 11:20:33.005: %LINK-3-UPDOWN: Interface GigabitEthernet2, changed state to up
+*Nov  7 11:20:33.011: %LINK-3-UPDOWN: Interface GigabitEthernet3, changed state to up
+*Nov  7 11:20:33.015: %LINK-3-UPDOWN: Interface GigabitEthernet4, changed state to up
+*Nov  7 11:20:34.017: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1, changed state to up
+*Nov  7 11:20:34.017: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to up
+*Nov  7 11:20:34.017: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet3, changed state to up
+*Nov  7 11:20:34.017: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet4, changed state to up
+*Nov  7 11:20:34.645: %CONFIG_CSRLXC-5-CONFIG_DONE: Configuration was applied and saved to NVRAM. See bootflash:/csrlxc-cfg.log for more details.
+*Nov  7 11:21:24.516: %LDP-5-INFO: GigabitEthernet1: LDP started
+*Nov  7 11:21:24.516: %LDP-5-INFO: GigabitEthernet2: LDP started
+*Nov  7 11:21:24.516: %LDP-5-INFO: GigabitEthernet3: LDP started
+*Nov  7 11:21:24.546: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet2 from DOWN to INIT, Received Hello
+*Nov  7 11:21:24.546: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet2 from INIT to 2WAY, 2-Way Received
+*Nov  7 11:21:24.546: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet2 from 2WAY to EXSTART, AdjOK?
+*Nov  7 11:21:24.572: %CLNS-5-ADJCHANGE: ISIS (1): Adjacency to 1000.0002.0000 (GigabitEthernet2) Up, new adjacency
+*Nov  7 11:21:29.303: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet2 from EXSTART to EXCHANGE, Negotiation Done
+*Nov  7 11:21:29.355: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet2 from EXCHANGE to LOADING, Exchange Done
+*Nov  7 11:21:29.356: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet2 from LOADING to FULL, Loading Done
+*Nov  7 11:21:30.093: %LDP-5-NBRCHG: LDP Neighbor 10.0.0.2:0 (1) is UP
+*Nov  7 11:21:30.272: %BGP-5-ADJCHANGE: neighbor 10.0.0.2 Up 
+*Nov  7 11:22:22.751: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
+*Nov  7 11:23:03.779: %SYS-5-CONFIG_I: Configured from console by napalm on vty0 (192.168.223.1)
+*Nov  7 11:23:16.489: %SYS-5-CONFIG_I: Configured from console by napalm on vty0 (192.168.223.1)
+*Nov  7 11:25:19.054: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
+*Nov  7 11:25:41.887: %SYS-5-CONFIG_I: Configured from console by napalm on vty0 (192.168.223.1)
+*Nov  7 11:25:54.790: %SYS-5-CONFIG_I: Configured from console by napalm on vty0 (192.168.223.1)
+*Nov  7 11:26:27.983: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
+*Nov  7 11:26:51.089: %SYS-5-CONFIG_I: Configured from console by napalm on vty0 (192.168.223.1)
+*Nov  7 11:27:03.776: %SYS-5-CONFIG_I: Configured from console by napalm on vty0 (192.168.223.1)
+*Nov  7 11:31:07.220: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
+*Nov  7 11:32:42.425: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
+*Nov  7 11:42:58.575: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
+*Nov  7 11:47:14.809: %AAA-3-BADSERVERTYPEERROR: Cannot process authentication server type tacacs+ (UNKNOWN)
+

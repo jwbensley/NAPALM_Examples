@@ -1,0 +1,12 @@
+R2-Junos:
+  hostname: 192.168.223.12
+  os: junos
+  username: napalm
+  password: napalm1
+  optional_args:
+    config_lock: True
+R3-IOSXE:
+  hostname: 192.168.223.13
+  os: ios
+  username: napalm
+  password: napalm

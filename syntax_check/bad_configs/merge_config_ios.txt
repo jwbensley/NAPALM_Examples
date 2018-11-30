@@ -1,0 +1,79 @@
+login on-failure log
+
+! Interface name more than 4 forward slashes
+interface Gi1/1/1/1/1/1
+ description peering|as12345-abr1|xe-1/2/3|dc|xyz456|100G|Peering with AS12345 over IXP
+
+! 10.20.300.44/24 has invalid octet "300", value is 3 digits but to high
+interface Gi1/1/1
+ ip address 10.20.300.44 255.255.255.0
+
+! 10.0.1/30 is missing an octet
+! too high
+interface Gi1/1/1
+ ip address 10.0.1 255.255.255.0
+
+! 10.100.0.1/0 has valid IP but we never want to set a mask to /0 even though
+! it is syntactically valid, semantically invalid
+interface Gi1/1/1
+ ip address 10.100.0.1 0.0.0.0
+
+! Subnet mask has more than 3 digits in the third octet
+interface Gi1/1/1
+ ip address 10.100.0.1 255.255.2555.0
+
+! Subnet mask has 3 digits in the third octet, but value 256 is too high
+interface Gi1/1/1
+ ip address 10.100.0.1 255.255.256.0
+
+! Valid mask, syntactically invalid IPv6 address
+ ipv6 address xyz::1/64
+
+! Valid mask, semantically invalid IPv6 address, we would never practically use this
+ ipv6 address ::0/64
+
+! Valid IP, syntactically invalid IPv6 mask
+ ipv6 address fe::1/zz
+
+! Valid IP, semantically invalid IPv6 mask
+ ipv6 address fe::1/129
+
+! Valid interface config
+interface Gi1/1/1
+ description link_type|remote_device_hostname|remote_interface_name|circuit_provider|circuit_ref|circuit_speed|free_text
+ ip address 10.0.0.1 255.255.255.0
+ ipv6 address fe::10:0:0:1/64
+
+vrf definition bad_rd_1
+ rd 1.2.3.999:100
+
+vrf definition bad_rd_2
+ rd 1.2.3.4:65536
+
+vrf definition bad_rt_1
+ rd 1.2.3.4:100
+ address-family ipv4
+  route-target both 65536:65536
+ exit-address-family
+
+vrf definition bad_rt_2
+ rd 1.2.3.4:100
+ address-family ipv4
+  route-target both 4294967296:1
+ exit-address-family
+
+vrf definition bad_rt_3
+ rd 1.2.3.4:100
+ address-family ipv4
+  route-target both 1:4294967296
+ exit-address-family
+
+vrf definition good
+ rd 1.2.3.4:100
+ address-family ipv4
+  route-target both 1:2
+ exit-address-family
+
+bridge-domain 4096
+bridge-domain 0
+bridge-domain 4000

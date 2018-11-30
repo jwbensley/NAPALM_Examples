@@ -1,0 +1,62 @@
+#show route forwarding-table summary | no-more
+
+Routing table: default.inet
+Internet:
+         user:          3 routes
+         perm:          5 routes
+         intf:          7 routes
+         dest:         10 routes
+
+Routing table: __master.anon__.inet
+Internet:
+         perm:          5 routes
+
+Routing table: MGMT.inet
+Internet:
+         perm:          5 routes
+         intf:          2 routes
+         dest:          4 routes
+
+Routing table: default.iso
+ISO:
+         perm:          1 routes
+         intf:          1 routes
+
+Routing table: __master.anon__.iso
+ISO:
+         perm:          1 routes
+
+Routing table: MGMT.iso
+ISO:
+         perm:          1 routes
+
+Routing table: default.inet6
+Internet6:
+         perm:          4 routes
+
+Routing table: __master.anon__.inet6
+Internet6:
+         perm:          4 routes
+
+Routing table: MGMT.inet6
+Internet6:
+         perm:          4 routes
+
+Routing table: default.mpls
+MPLS:
+         user:          2 routes
+         perm:          1 routes
+
+Routing table: __mpls-oam__.mpls
+MPLS:
+         perm:          1 routes
+
+Routing table: default-switch.bridge
+VPLS:
+         perm:          1 routes
+
+Routing table: default.dhcp-snooping
+DHCP Snooping:
+         perm:          1 routes
+
+

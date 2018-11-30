@@ -1,0 +1,11 @@
+#show mpls ldp neighbor
+No time source, *11:55:42.413 UTC Wed Nov 7 2018
+    Peer LDP Ident: 10.0.0.2:0; Local LDP Ident 10.0.0.3:0
+	TCP connection: 10.0.0.2.646 - 10.0.0.3.34699
+	State: Oper; Msgs sent/rcvd: 243/209; Downstream
+	Up time: 00:34:12
+	LDP discovery sources:
+	  GigabitEthernet2, Src IP addr: 10.0.23.2
+        Addresses bound to peer LDP Ident:
+          10.0.12.2       10.0.23.2
+

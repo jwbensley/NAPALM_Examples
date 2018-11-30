@@ -1,0 +1,13 @@
+! Valid interface config
+interface Gi1/1/1
+ description link_type|remote_device_hostname|remote_interface_name|circuit_provider|circuit_ref|circuit_speed|free_text
+ ip address 10.0.0.1 255.255.255.0
+ ipv6 address fe::10:0:0:1/64
+
+vrf definition good
+ rd 1.2.3.4:100
+ address-family ipv4
+  route-target both 1:2
+ exit-address-family
+
+bridge-domain 4000

@@ -1,0 +1,11 @@
+#show inventory
+No time source, *11:55:33.282 UTC Wed Nov 7 2018
+NAME: "Chassis", DESCR: "Cisco CSR1000V Chassis"
+PID: CSR1000V          , VID: V00, SN: 9FRKD2WR7R7
+
+NAME: "module R0", DESCR: "Cisco CSR1000V Route Processor"
+PID: CSR1000V          , VID: V00, SN: JAB1303001C
+
+NAME: "module F0", DESCR: "Cisco CSR1000V Embedded Services Processor"
+PID: CSR1000V          , VID:    , SN:
+

@@ -1,0 +1,5 @@
+https://github.com/solarwinds/OrionSDK/wiki/REST
+http://solarwinds.github.io/OrionSDK/schema/index.html
+https://support.solarwinds.com/Success_Center/Network_Performance_Monitor_(NPM)/Knowledgebase_Articles/How_to_use_SolarWinds_Query_Language_SWQL
+https://github.com/solarwinds/OrionSDK/wiki/SWQL-Functions
+https://github.com/solarwinds/orionsdk-python/blob/master/orionsdk/swisclient.py

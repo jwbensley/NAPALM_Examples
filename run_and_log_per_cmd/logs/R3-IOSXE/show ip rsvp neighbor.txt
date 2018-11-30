@@ -1,0 +1,8 @@
+#show ip rsvp neighbor
+No time source, *11:47:39.153 UTC Wed Nov 7 2018
+
+Neighbor        Encapsulation  Time since msg rcvd/sent
+
+* Neighbors inactive for more than one hour are not shown.
+  Use the "inactive" keyword to display them.
+

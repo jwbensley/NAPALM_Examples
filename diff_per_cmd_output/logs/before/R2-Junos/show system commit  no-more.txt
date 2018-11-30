@@ -1,0 +1,59 @@
+#show system commit | no-more
+
+0   2018-11-07 11:27:45 UTC by napalm via netconf
+1   2018-11-07 11:24:42 UTC by lab via cli
+2   2018-11-02 15:05:09 UTC by lab via cli
+3   2018-11-02 14:48:20 UTC by lab via cli
+4   2018-10-25 11:18:42 UTC by lab via cli
+5   2018-10-24 11:43:25 UTC by napalm via cli
+    CR333333
+6   2018-10-24 11:43:21 UTC by napalm via cli
+    CR2222222
+7   2018-10-24 11:43:17 UTC by napalm via cli
+    CR111111
+8   2018-10-24 11:39:12 UTC by napalm via cli
+    CR12345
+9   2018-10-24 11:38:56 UTC by napalm via cli commit confirmed, rollback in 5mins
+10  2018-10-24 11:23:46 UTC by napalm via cli
+11  2018-10-24 11:23:14 UTC by napalm via cli
+12  2018-10-24 11:21:45 UTC by napalm via cli
+    CR123456
+13  2018-10-24 11:21:18 UTC by napalm via cli commit confirmed, rollback in 5mins
+14  2018-10-24 11:05:58 UTC by napalm via cli
+15  2018-10-24 11:04:40 UTC by napalm via cli
+16  2018-10-24 11:03:17 UTC by napalm via cli
+17  2018-10-24 11:02:40 UTC by napalm via cli
+18  2018-10-23 11:52:40 UTC by napalm via netconf
+19  2018-10-23 11:09:48 UTC by lab via cli
+20  2018-10-12 12:18:30 UTC by lab via cli
+21  2018-10-12 12:16:32 UTC by lab via cli
+22  2018-10-12 12:10:33 UTC by lab via cli
+23  2018-10-12 12:10:05 UTC by lab via cli
+24  2018-10-12 12:07:43 UTC by lab via cli
+25  2018-10-12 12:07:04 UTC by lab via cli
+26  2018-10-12 12:05:21 UTC by lab via cli
+27  2018-10-12 12:02:16 UTC by lab via cli
+28  2018-10-12 11:59:53 UTC by lab via cli
+29  2018-10-12 11:58:59 UTC by lab via cli
+30  2018-10-12 11:57:46 UTC by lab via cli
+31  2018-10-12 11:57:00 UTC by lab via cli
+32  2018-10-12 11:56:30 UTC by lab via cli
+33  2018-10-12 11:56:00 UTC by lab via cli
+34  2018-10-12 11:55:41 UTC by lab via cli
+35  2018-10-12 11:55:07 UTC by lab via cli
+36  2018-10-12 11:54:48 UTC by lab via cli
+37  2018-10-12 11:54:20 UTC by lab via cli
+38  2018-10-12 11:54:10 UTC by lab via cli
+39  2018-10-12 11:53:19 UTC by lab via cli
+40  2018-10-12 11:04:17 UTC by napalm via netconf
+41  2018-10-12 11:00:22 UTC by napalm via cli
+42  2018-10-12 10:59:42 UTC by lab via cli
+43  2018-10-12 10:57:15 UTC by lab via cli
+44  2018-10-12 10:44:48 UTC by lab via cli
+45  2018-10-12 10:41:39 UTC by lab via cli
+46  2018-10-12 10:41:25 UTC by lab via cli
+47  2018-10-12 10:39:43 UTC by lab via cli
+48  2018-10-12 10:39:30 UTC by lab via cli
+49  2018-10-12 10:36:51 UTC by lab via cli
+
+

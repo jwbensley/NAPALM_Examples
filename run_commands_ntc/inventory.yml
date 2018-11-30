@@ -1,0 +1,27 @@
+R1-IOS:
+  hostname: 192.168.223.11
+  os: ios
+  username: napalm
+  password: napalm
+  optional_args:
+    transport: telnet
+    timeout: 5
+R2-Junos:
+  hostname: 192.168.223.12
+  os: junos
+  username: napalm
+  password: napalm1
+  optional_args:
+    config_lock: True
+R3-IOSXE:
+  hostname: 192.168.223.13
+  os: ios
+  username: napalm
+  password: napalm
+  timeout: 5
+  optional_args:
+    verbose: True
+    timeout: 5
+ALD01:
+  hostname: 172.16.7.132
+  os: km

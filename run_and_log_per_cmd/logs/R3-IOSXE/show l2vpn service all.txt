@@ -1,0 +1,11 @@
+#show l2vpn service all
+No time source, *11:47:42.219 UTC Wed Nov 7 2018
+
+Legend: St=State    XC St=State in the L2VPN Service      Prio=Priority
+        UP=Up       DN=Down            AD=Admin Down      IA=Inactive
+        SB=Standby  HS=Hot Standby     RV=Recovering      NH=No Hardware
+        m=manually selected
+
+  Interface          Group       Encapsulation                   Prio  St  XC St
+  ---------          -----       -------------                   ----  --  -----
+

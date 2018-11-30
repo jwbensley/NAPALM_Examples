@@ -1,0 +1,7 @@
+#show ip pim interface
+No time source, *11:47:40.385 UTC Wed Nov 7 2018
+
+
+Address          Interface                Ver/   Nbr    Query  DR         DR
+                                          Mode   Count  Intvl  Prior
+

@@ -1,0 +1,12 @@
+#show system processes brief | no-more
+
+last pid:  3943;  load averages:  0.12,  0.05,  0.08  up 0+00:36:44    11:54:53
+502 processes: 4 running, 478 sleeping, 1 zombie, 19 waiting
+
+Mem: 394M Active, 224M Inact, 78M Wired, 23M Cache, 69M Buf, 18M Free
+Swap: 6756M Total, 17M Used, 6739M Free
+
+
+
+
+

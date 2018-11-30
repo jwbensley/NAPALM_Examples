@@ -1,0 +1,3 @@
+#show ldp interface | no more
+invalid command: show ldp interface  | no more: RpcError(severity: error, bad_element: more, message: syntax error, expecting <command>)
+

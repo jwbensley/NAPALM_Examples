@@ -1,0 +1,5 @@
+#show bgp ipv4 unicast summary | begin Neighbor
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.0.0.1        4            1       0       0        1    0    0 never    Idle
+10.0.0.2        4            1      60      59        1    0    0 00:26:01        0
+

@@ -1,0 +1,8 @@
+#show ospf interface | no-more
+
+Interface           State   Area            DR ID           BDR ID          Nbrs
+ge-0/0/1.0          PtToPt  0.0.0.0         0.0.0.0         0.0.0.0            0
+ge-0/0/2.0          PtToPt  0.0.0.0         0.0.0.0         0.0.0.0            1
+lo0.0               DRother 0.0.0.0         0.0.0.0         0.0.0.0            0
+
+

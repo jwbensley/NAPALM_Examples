@@ -1,0 +1,9 @@
+mx960:
+  hostname: 172.16.0.179
+  os: junos
+agn0.upo01:
+  hostname: 10.105.6.0
+  os: ios
+fan0.chu01:
+  hostname: 10.105.6.2
+  os: ios

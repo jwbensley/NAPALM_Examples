@@ -1,0 +1,10 @@
+#show processes memory platform sorted
+No time source, *11:55:30.982 UTC Wed Nov 7 2018
+System memory: 2505972K total, 2048212K used, 457760K free
+Lowest: 38100K
+   Pid    Text      Data   Stack   Dynamic       RSS     Total              Name  
+--------------------------------------------------------------------------------
+ 15083  348566    751812     220        56    752260   2411276   linux_iosd-imag  
+ 20048   11406    144388     200     19296    144392   1962548     fman_fp_image  
+ 18681      77    122912     124     18108    122916   1486196        cpp_cp_svr  
+ 13901    6413     79808     184      1712     79808   1059600           fman_rp  

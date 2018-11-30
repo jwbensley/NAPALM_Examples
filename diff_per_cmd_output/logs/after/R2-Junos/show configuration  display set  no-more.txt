@@ -1,0 +1,52 @@
+#show configuration | display set | no-more
+
+set version 14.1R1.10
+set system host-name vMX-NAPALM
+set system root-authentication encrypted-password "$1$iiqdh9ru$CBQygri2MkpfgtgdGo8GO1"
+set system login user lab uid 2000
+set system login user lab class super-user
+set system login user lab authentication encrypted-password "$1$oW1NeMUu$N7IVMfy8GfJ02jzQzJ39h/"
+set system login user napalm uid 2001
+set system login user napalm class super-user
+set system login user napalm authentication encrypted-password "$1$yCmjZ4ZH$.nCrI/fjo2I4Xwhggq9yJ0"
+set system services ssh
+set system services telnet connection-limit 5
+set system syslog user * any emergency
+set system syslog file messages any notice
+set system syslog file messages authorization info
+set system syslog file interactive-commands interactive-commands any
+set interfaces ge-0/0/1 description vMX-ge-0/0/1:R1-Fa0/0
+set interfaces ge-0/0/1 unit 0 family inet address 10.0.12.2/24
+set interfaces ge-0/0/1 unit 0 family iso
+set interfaces ge-0/0/1 unit 0 family mpls
+set interfaces ge-0/0/2 description vMX-ge-0/0/2:csr1000v-gi3
+set interfaces ge-0/0/2 unit 0 family inet address 10.0.23.2/24
+set interfaces ge-0/0/2 unit 0 family iso
+set interfaces ge-0/0/2 unit 0 family mpls
+set interfaces ge-0/0/3 unit 0 family inet address 192.168.223.12/24
+set interfaces em0 unit 0 family inet address 192.168.56.10/24
+set interfaces lo0 unit 0 family inet address 10.0.0.2/32
+set interfaces lo0 unit 0 family iso address 49.0000.0010.0000.0200.0000
+set routing-options router-id 10.0.0.2
+set protocols bgp group iBGP family inet unicast
+set protocols bgp group iBGP peer-as 1
+set protocols bgp group iBGP local-as 1
+set protocols bgp group iBGP neighbor 10.0.0.1
+set protocols bgp group iBGP neighbor 10.0.0.3
+set protocols isis interface ge-0/0/1.0 point-to-point
+set protocols isis interface ge-0/0/2.0 point-to-point
+set protocols isis interface lo0.0 passive
+set protocols ospf area 0.0.0.0 interface ge-0/0/1.0 interface-type p2p
+set protocols ospf area 0.0.0.0 interface ge-0/0/1.0 ldp-synchronization
+set protocols ospf area 0.0.0.0 interface ge-0/0/2.0 interface-type p2p
+set protocols ospf area 0.0.0.0 interface ge-0/0/2.0 ldp-synchronization
+set protocols ospf area 0.0.0.0 interface lo0.0 passive
+set protocols ldp interface ge-0/0/1.0
+set protocols ldp interface ge-0/0/2.0
+set routing-instances MGMT instance-type vrf
+set routing-instances MGMT interface ge-0/0/3.0
+set routing-instances MGMT route-distinguisher 1:1
+set routing-instances MGMT vrf-target import target:1:1
+set routing-instances MGMT vrf-target export target:1:1
+
+

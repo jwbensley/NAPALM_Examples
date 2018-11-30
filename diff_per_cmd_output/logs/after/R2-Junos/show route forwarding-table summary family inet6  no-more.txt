@@ -1,0 +1,15 @@
+#show route forwarding-table summary family inet6 | no-more
+
+Routing table: default.inet6
+Internet6:
+         perm:          4 routes
+
+Routing table: __master.anon__.inet6
+Internet6:
+         perm:          4 routes
+
+Routing table: MGMT.inet6
+Internet6:
+         perm:          4 routes
+
+

@@ -1,0 +1,5 @@
+#show mpls interface | no-more
+
+MPLS not configured
+
+

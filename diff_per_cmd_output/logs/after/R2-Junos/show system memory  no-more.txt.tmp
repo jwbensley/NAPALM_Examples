@@ -1,0 +1,8 @@
+#show system memory | no-more
+
+System memory usage distribution:
+       Total memory:  769440 Kbytes (100%)
+    Reserved memory:   14072 Kbytes (  1%)
+       Wired memory:   79712 Kbytes ( 10%)
+      Active memory:  401452 Kbytes ( 52%)
+    Inactive memory:  228896 Kbytes ( 29%)

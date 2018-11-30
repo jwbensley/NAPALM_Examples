@@ -1,0 +1,1126 @@
+get_bgp_neighbors:
+  global:
+    peers:
+      10.105.0.0:
+        address_family:
+          ipv4:
+            accepted_prefixes: 11
+            received_prefixes: 11
+            sent_prefixes: 2
+        description: ''
+        is_enabled: true
+        is_up: true
+        local_as: 12345
+        remote_as: 12345
+        remote_id: 10.105.0.0
+        uptime: 8035200
+    router_id: 10.105.0.2
+get_environment:
+  cpu:
+    0:
+      '%usage': 5.0
+  fans:
+    invalid:
+      status: true
+  memory:
+    available_ram: 928071816
+    used_ram: 247170044
+  power:
+    invalid:
+      capacity: -1.0
+      output: -1.0
+      status: true
+  temperature:
+    invalid:
+      is_alert: false
+      is_critical: false
+      temperature: -1.0
+get_facts:
+  fqdn: fan0.chu01
+  hostname: fan0.chu01
+  interface_list:
+  - GigabitEthernet0/0/0
+  - GigabitEthernet0/0/1
+  - GigabitEthernet0/0/2
+  - GigabitEthernet0/0/3
+  - GigabitEthernet0/0/4
+  - GigabitEthernet0/0/5
+  - GigabitEthernet0/0/6
+  - GigabitEthernet0/0/7
+  - GigabitEthernet0/0/8
+  - GigabitEthernet0/0/9
+  - GigabitEthernet0/0/10
+  - GigabitEthernet0/0/11
+  - GigabitEthernet0/0/12
+  - GigabitEthernet0/0/13
+  - GigabitEthernet0/0/14
+  - GigabitEthernet0/0/15
+  - GigabitEthernet0/0/16
+  - GigabitEthernet0/0/17
+  - GigabitEthernet0/0/18
+  - GigabitEthernet0/0/19
+  - GigabitEthernet0/0/20
+  - GigabitEthernet0/0/21
+  - GigabitEthernet0/0/22
+  - GigabitEthernet0/0/23
+  - Te0/0/24
+  - Te0/0/25
+  - Te0/0/26
+  - Te0/0/27
+  - GigabitEthernet0
+  - BDI70
+  - BDI80
+  - BDI99
+  - BDI200
+  - BDI201
+  - BDI300
+  - BDI400
+  - Loopback0
+  - Loopback99
+  - Virtual-PPP4001
+  model: ASR-920-24SZ-M
+  os_version: ASR920 Software (PPC_LINUX_IOSD-UNIVERSALK9_NPE-M), Version 15.6(2)SP3,
+    RELEASE SOFTWARE (fc4)
+  serial_number: XXXXXX
+  uptime: 8041920
+  vendor: Cisco
+get_interfaces:
+  BDI200:
+    description: CHU01-RES-DYN-VLAN-200
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:BF
+    speed: 1000
+  BDI201:
+    description: CHU01-RES-DYN-VLAN-201
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:BF
+    speed: 1000
+  BDI300:
+    description: CHU01-RES-FIX-VLAN-300
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:BF
+    speed: 1000
+  BDI400:
+    description: CHU01-BUS-VLAN-400
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:BF
+    speed: 1000
+  BDI70:
+    description: 'cpemanagement '
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:BF
+    speed: 1000
+  BDI80:
+    description: management
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:BF
+    speed: 1000
+  BDI99:
+    description: 'provisioning '
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:BF
+    speed: 1000
+  GigabitEthernet0:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:B8
+    speed: 10
+  GigabitEthernet0/0/0:
+    description: ELtek
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:80
+    speed: 100
+  GigabitEthernet0/0/1:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:81
+    speed: 1000
+  GigabitEthernet0/0/10:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:8A
+    speed: 1000
+  GigabitEthernet0/0/11:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:8B
+    speed: 1000
+  GigabitEthernet0/0/12:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:8C
+    speed: 1000
+  GigabitEthernet0/0/13:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:8D
+    speed: 1000
+  GigabitEthernet0/0/14:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:8E
+    speed: 1000
+  GigabitEthernet0/0/15:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:8F
+    speed: 1000
+  GigabitEthernet0/0/16:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:90
+    speed: 1000
+  GigabitEthernet0/0/17:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:91
+    speed: 1000
+  GigabitEthernet0/0/18:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:92
+    speed: 1000
+  GigabitEthernet0/0/19:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:93
+    speed: 1000
+  GigabitEthernet0/0/2:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:82
+    speed: 1000
+  GigabitEthernet0/0/20:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:94
+    speed: 1000
+  GigabitEthernet0/0/21:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:95
+    speed: 1000
+  GigabitEthernet0/0/22:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:96
+    speed: 1000
+  GigabitEthernet0/0/23:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:97
+    speed: 1000
+  GigabitEthernet0/0/3:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:83
+    speed: 1000
+  GigabitEthernet0/0/4:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:84
+    speed: 1000
+  GigabitEthernet0/0/5:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:85
+    speed: 1000
+  GigabitEthernet0/0/6:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:86
+    speed: 1000
+  GigabitEthernet0/0/7:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:87
+    speed: 1000
+  GigabitEthernet0/0/8:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:88
+    speed: 1000
+  GigabitEthernet0/0/9:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:89
+    speed: 1000
+  Loopback0:
+    description: Global loopback
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: ''
+    speed: 8000
+  Loopback99:
+    description: Management loopback
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: ''
+    speed: 8000
+  TenGigabitEthernet0/0/24:
+    description: COGE11P1
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:98
+    speed: 10000
+  TenGigabitEthernet0/0/25:
+    description: COGE13P1
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:99
+    speed: 10000
+  TenGigabitEthernet0/0/26:
+    description: fan0.sw-fds Te0/0/27
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:9A
+    speed: 10000
+  TenGigabitEthernet0/0/27:
+    description: 'agn0.upo Te0/1/0 '
+    is_enabled: true
+    is_up: true
+    last_flapped: -1.0
+    mac_address: 28:AC:9E:6B:EC:9B
+    speed: 10000
+  Virtual-PPP4001:
+    description: ''
+    is_enabled: true
+    is_up: false
+    last_flapped: -1.0
+    mac_address: ''
+    speed: 10
+get_interfaces_counters:
+  BDI200:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 2
+    rx_octets: 1430756426629
+    rx_unicast_packets: 6045861365
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 18488654020832
+    tx_unicast_packets: 13888908872
+  BDI201:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 9
+    rx_octets: 1007395110506
+    rx_unicast_packets: 5643398506
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 18993904372515
+    tx_unicast_packets: 13730422529
+  BDI300:
+    rx_broadcast_packets: 0
+    rx_discards: 279
+    rx_errors: 0
+    rx_multicast_packets: 1
+    rx_octets: 236653606630
+    rx_unicast_packets: 881665038
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 2422492831858
+    tx_unicast_packets: 1840734656
+  BDI400:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 7
+    rx_octets: 32842872087
+    rx_unicast_packets: 138180183
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 359181659696
+    tx_unicast_packets: 287245597
+  BDI70:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 1
+    rx_octets: 160891151522
+    rx_unicast_packets: 332464414
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 161000808063
+    tx_unicast_packets: 329776267
+  BDI80:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 40608736981
+    rx_unicast_packets: 199053106
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 19412428919
+    tx_unicast_packets: 206219092
+  BDI99:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 8
+    rx_octets: 64956847
+    rx_unicast_packets: 348811
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 149390455
+    tx_unicast_packets: 302019
+  GigabitEthernet0:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/0:
+    rx_broadcast_packets: 85
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 830390427
+    rx_unicast_packets: 7743848
+    tx_broadcast_packets: -1
+    tx_discards: 146363859
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 865015606
+    tx_unicast_packets: 8486006
+  GigabitEthernet0/0/1:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/10:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/11:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/12:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/13:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/14:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/15:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/16:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/17:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/18:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/19:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/2:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/20:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/21:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/22:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/23:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/3:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/4:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/5:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/6:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/7:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/8:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  GigabitEthernet0/0/9:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  Loopback0:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  Loopback99:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+  TenGigabitEthernet0/0/24:
+    rx_broadcast_packets: 174155551
+    rx_discards: -1
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 87155992797
+    rx_unicast_packets: 247822811
+    tx_broadcast_packets: -1
+    tx_discards: -1
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 89583715903
+    tx_unicast_packets: 273505660
+  TenGigabitEthernet0/0/25:
+    rx_broadcast_packets: 181037756
+    rx_discards: -1
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 2823491394902
+    rx_unicast_packets: 13018503519
+    tx_broadcast_packets: -1
+    tx_discards: -1
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 40358541504127
+    tx_unicast_packets: 30055425721
+  TenGigabitEthernet0/0/26:
+    rx_broadcast_packets: 2
+    rx_discards: -1
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 528080939731
+    rx_unicast_packets: 1725612916
+    tx_broadcast_packets: -1
+    tx_discards: -1
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 3072447599115
+    tx_unicast_packets: 2977452749
+  TenGigabitEthernet0/0/27:
+    rx_broadcast_packets: 4
+    rx_discards: -1
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 43376226801669
+    rx_unicast_packets: 33048823014
+    tx_broadcast_packets: -1
+    tx_discards: -1
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 3339578463833
+    tx_unicast_packets: 14746491415
+  Virtual-PPP4001:
+    rx_broadcast_packets: 0
+    rx_discards: 0
+    rx_errors: 0
+    rx_multicast_packets: 0
+    rx_octets: 0
+    rx_unicast_packets: 0
+    tx_broadcast_packets: -1
+    tx_discards: 0
+    tx_errors: 0
+    tx_multicast_packets: -1
+    tx_octets: 0
+    tx_unicast_packets: 0
+get_interfaces_ip:
+  BDI200:
+    ipv4:
+      11.22.33.190:
+        prefix_length: 26
+  BDI201:
+    ipv4:
+      11.22.33.254:
+        prefix_length: 26
+  BDI300:
+    ipv4:
+      11.22.33.134:
+        prefix_length: 29
+  BDI400:
+    ipv4:
+      11.22.33.14:
+        prefix_length: 29
+  BDI70:
+    ipv4:
+      10.9.3.254:
+        prefix_length: 23
+  BDI80:
+    ipv4:
+      172.16.12.14:
+        prefix_length: 29
+  BDI99:
+    ipv4:
+      172.16.144.126:
+        prefix_length: 26
+  Loopback0:
+    ipv4:
+      10.105.0.2:
+        prefix_length: 32
+  Loopback99:
+    ipv4:
+      10.105.6.2:
+        prefix_length: 32
+  TenGigabitEthernet0/0/26:
+    ipv4:
+      10.104.1.14:
+        prefix_length: 31
+  TenGigabitEthernet0/0/27:
+    ipv4:
+      10.104.1.3:
+        prefix_length: 31
+get_network_instances:
+  Mgmt-intf:
+    interfaces:
+      interface:
+        Gi0: {}
+    name: Mgmt-intf
+    state:
+      route_distinguisher: ''
+    type: L3VRF
+  business:
+    interfaces:
+      interface:
+        BD400: {}
+    name: business
+    state:
+      route_distinguisher: 10.105.0.2:400
+    type: L3VRF
+  cpe-management:
+    interfaces:
+      interface:
+        BD70: {}
+    name: cpe-management
+    state:
+      route_distinguisher: 10.105.0.2:70
+    type: L3VRF
+  default:
+    interfaces:
+      interface:
+        BDI200: {}
+        BDI201: {}
+        BDI300: {}
+        BDI400: {}
+        BDI70: {}
+        BDI80: {}
+        BDI99: {}
+        GigabitEthernet0: {}
+        GigabitEthernet0/0/0: {}
+        GigabitEthernet0/0/1: {}
+        GigabitEthernet0/0/10: {}
+        GigabitEthernet0/0/11: {}
+        GigabitEthernet0/0/12: {}
+        GigabitEthernet0/0/13: {}
+        GigabitEthernet0/0/14: {}
+        GigabitEthernet0/0/15: {}
+        GigabitEthernet0/0/16: {}
+        GigabitEthernet0/0/17: {}
+        GigabitEthernet0/0/18: {}
+        GigabitEthernet0/0/19: {}
+        GigabitEthernet0/0/2: {}
+        GigabitEthernet0/0/20: {}
+        GigabitEthernet0/0/21: {}
+        GigabitEthernet0/0/22: {}
+        GigabitEthernet0/0/23: {}
+        GigabitEthernet0/0/3: {}
+        GigabitEthernet0/0/4: {}
+        GigabitEthernet0/0/5: {}
+        GigabitEthernet0/0/6: {}
+        GigabitEthernet0/0/7: {}
+        GigabitEthernet0/0/8: {}
+        GigabitEthernet0/0/9: {}
+        Loopback0: {}
+        Loopback99: {}
+        Te0/0/24: {}
+        Te0/0/25: {}
+        Te0/0/26: {}
+        Te0/0/27: {}
+        Virtual-PPP4001: {}
+    name: default
+    state:
+      route_distinguisher: ''
+    type: DEFAULT_INSTANCE
+  management:
+    interfaces:
+      interface:
+        BD80: {}
+        Lo99: {}
+    name: management
+    state:
+      route_distinguisher: 10.105.0.2:20
+    type: L3VRF
+  provisioning:
+    interfaces:
+      interface:
+        BD99: {}
+    name: provisioning
+    state:
+      route_distinguisher: 10.105.0.2:99
+    type: L3VRF
+  residential:
+    interfaces:
+      interface:
+        BD200: {}
+        BD201: {}
+        BD300: {}
+    name: residential
+    state:
+      route_distinguisher: 10.105.0.2:200
+    type: L3VRF
+get_ntp_servers:
+  172.16.0.64: {}
+  172.16.0.66: {}
+get_ntp_stats:
+- delay: 5.925
+  hostpoll: 1024
+  jitter: 1.143
+  offset: 2.786
+  reachability: 377
+  referenceid: 192.168.28.34
+  remote: 172.16.0.64
+  stratum: 2
+  synchronized: true
+  type: '-'
+  when: '271'
+- delay: 6.946
+  hostpoll: 1024
+  jitter: 1.121
+  offset: 2.555
+  reachability: 377
+  referenceid: 192.168.28.34
+  remote: 172.16.0.66
+  stratum: 2
+  synchronized: false
+  type: '-'
+  when: '1003'
+get_optics:
+  TenGigabitEthernet0/0/24:
+    physical_channels:
+      channel:
+      - index: 0
+        state:
+          input_power:
+            avg: -100.0
+            instant: -2.2
+            max: -100.0
+            min: -100.0
+          laser_bias_current:
+            avg: 0.0
+            instant: 0.0
+            max: 0.0
+            min: 0.0
+          output_power:
+            avg: -100.0
+            instant: 26.9
+            max: -100.0
+            min: -100.0
+  TenGigabitEthernet0/0/25:
+    physical_channels:
+      channel:
+      - index: 0
+        state:
+          input_power:
+            avg: -100.0
+            instant: -3.0
+            max: -100.0
+            min: -100.0
+          laser_bias_current:
+            avg: 0.0
+            instant: 0.0
+            max: 0.0
+            min: 0.0
+          output_power:
+            avg: -100.0
+            instant: 30.5
+            max: -100.0
+            min: -100.0
+  TenGigabitEthernet0/0/26:
+    physical_channels:
+      channel:
+      - index: 0
+        state:
+          input_power:
+            avg: -100.0
+            instant: -1.3
+            max: -100.0
+            min: -100.0
+          laser_bias_current:
+            avg: 0.0
+            instant: 0.0
+            max: 0.0
+            min: 0.0
+          output_power:
+            avg: -100.0
+            instant: 30.0
+            max: -100.0
+            min: -100.0
+  TenGigabitEthernet0/0/27:
+    physical_channels:
+      channel:
+      - index: 0
+        state:
+          input_power:
+            avg: -100.0
+            instant: -1.8
+            max: -100.0
+            min: -100.0
+          laser_bias_current:
+            avg: 0.0
+            instant: 0.0
+            max: 0.0
+            min: 0.0
+          output_power:
+            avg: -100.0
+            instant: 30.2
+            max: -100.0
+            min: -100.0
+get_snmp_information:
+  chassis_id: XXXXXXX
+  community:
+    SNMPv3isforme:
+      acl: SMNP
+      mode: ro
+  contact: foo@bar.com
+  location: agn00.upo00

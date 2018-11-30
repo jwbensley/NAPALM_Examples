@@ -1,0 +1,25 @@
+#show interfaces terse routing-instance all | no-more
+
+Interface        Admin Link Proto  Local                Instance
+lc-0/0/0.32769   up    up   vpls                        __juniper_private1__
+pfe-0/0/0.16383  up    up   inet  
+                            inet6                       __juniper_private1__
+pfh-0/0/0.16383  up    up   inet                        __juniper_private1__
+ge-0/0/1.0       up    up   inet   10.0.12.2/24        
+                            iso   
+                            mpls  
+                            multiservice                default
+ge-0/0/2.0       up    up   inet   10.0.23.2/24        
+                            iso   
+                            mpls  
+                            multiservice                default
+ge-0/0/3.0       up    up   inet   192.168.223.12/24   
+                            multiservice                MGMT
+em0.0            up    up   inet   192.168.56.10/24     default
+lo0.0            up    up   inet   10.0.0.2            
+                            iso    49.0000.0010.0000.0200.00 default
+lo0.16384        up    up   inet   127.0.0.1            __juniper_private2__
+lo0.16385        up    up   inet   128.0.0.4           
+                            inet6  fe80::200:f:fc00:0   __juniper_private1__
+
+

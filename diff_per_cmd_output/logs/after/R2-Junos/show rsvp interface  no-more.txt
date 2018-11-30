@@ -1,0 +1,5 @@
+#show rsvp interface | no-more
+
+RSVP not configured
+
+

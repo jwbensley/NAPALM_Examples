@@ -1,0 +1,11 @@
+#show mpls ldp discovery
+No time source, *11:55:43.022 UTC Wed Nov 7 2018
+ Local LDP Identifier:
+    10.0.0.3:0
+    Discovery Sources:
+    Interfaces:
+	GigabitEthernet1 (ldp): xmit
+	GigabitEthernet2 (ldp): xmit/recv
+	    LDP Id: 10.0.0.2:0
+	GigabitEthernet3 (ldp): xmit
+

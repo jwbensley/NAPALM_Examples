@@ -1,0 +1,6 @@
+#show ldp session | no-more
+
+  Address           State        Connection     Hold time  Adv. Mode
+10.0.0.3            Operational  Open             24         DU
+
+

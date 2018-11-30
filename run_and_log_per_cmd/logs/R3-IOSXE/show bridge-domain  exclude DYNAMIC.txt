@@ -1,0 +1,3 @@
+#show bridge-domain | exclude DYNAMIC
+No time source, *11:47:43.461 UTC Wed Nov 7 2018
+

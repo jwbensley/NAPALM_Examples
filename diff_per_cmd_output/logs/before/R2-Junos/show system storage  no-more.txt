@@ -1,0 +1,56 @@
+#show system storage | no-more
+
+Filesystem              Size       Used      Avail  Capacity   Mounted on
+/dev/ad0s1a             3.5G       484M       2.8G       14%  /
+devfs                   1.0K       1.0K         0B      100%  /dev
+/dev/md0                 76M        76M         0B      100%  /packages/mnt/jbase
+/dev/md1                 27M        27M         0B      100%  /packages/mnt/jkernel-14.1R1.10
+/dev/md2                127M       127M         0B      100%  /packages/mnt/jpfe-M320-14.1R1.10
+/dev/md3                5.4M       5.4M         0B      100%  /packages/mnt/jdocs-14.1R1.10
+/dev/md4                116M       116M         0B      100%  /packages/mnt/jroute-14.1R1.10
+/dev/md5                 44M        44M         0B      100%  /packages/mnt/jcrypto-14.1R1.10
+/dev/md6                 70M        70M         0B      100%  /packages/mnt/jpfe-common-14.1R1.10
+/dev/md7                500M       500M         0B      100%  /packages/mnt/jruntime-14.1R1.10
+/dev/md8                152K       152K         0B      100%  /packages/mnt/jservices-aacl-pic-14.1R1.10
+/dev/md9                1.9M       1.9M         0B      100%  /packages/mnt/jservices-alg-pic-14.1R1.10
+/dev/md10               1.0M       1.0M         0B      100%  /packages/mnt/jservices-alg-xlp64-14.1R1.10
+/dev/md11               1.0M       1.0M         0B      100%  /packages/mnt/jservices-alg-xlr64-14.1R1.10
+/dev/md12               1.4M       1.4M         0B      100%  /packages/mnt/jservices-appid-pic-14.1R1.10
+/dev/md13               982K       982K         0B      100%  /packages/mnt/jservices-appid-xlr64-14.1R1.10
+/dev/md14                11M        11M         0B      100%  /packages/mnt/jservices-bgf-pic-14.1R1.10
+/dev/md15               280K       280K         0B      100%  /packages/mnt/jservices-cpcd-pic-14.1R1.10
+/dev/md16               4.8M       4.8M         0B      100%  /packages/mnt/jservices-crypto-base-pic-14.1R1.10
+/dev/md17               2.5M       2.5M         0B      100%  /packages/mnt/jservices-crypto-base-xlp64-14.1R1.10
+/dev/md18               2.5M       2.5M         0B      100%  /packages/mnt/jservices-crypto-base-xlr64-14.1R1.10
+/dev/md19               416K       416K         0B      100%  /packages/mnt/jservices-hcm-pic-14.1R1.10
+/dev/md20               290K       290K         0B      100%  /packages/mnt/jservices-hcm-xlr64-14.1R1.10
+/dev/md21               3.5M       3.5M         0B      100%  /packages/mnt/jservices-idp-pic-14.1R1.10
+/dev/md22                11M        11M         0B      100%  /packages/mnt/jservices-ipsec-pic-14.1R1.10
+/dev/md23               218K       218K         0B      100%  /packages/mnt/jservices-ipsec-xlp64-14.1R1.10
+/dev/md24               214K       214K         0B      100%  /packages/mnt/jservices-ipsec-xlr64-14.1R1.10
+/dev/md25               216K       216K         0B      100%  /packages/mnt/jservices-jflow-pic-14.1R1.10
+/dev/md26               150K       150K         0B      100%  /packages/mnt/jservices-jflow-xlp64-14.1R1.10
+/dev/md27               458K       458K         0B      100%  /packages/mnt/jservices-llpdf-pic-14.1R1.10
+/dev/md28                29M        29M         0B      100%  /packages/mnt/jservices-mobile-pic-14.1R1.10
+/dev/md29                28M        28M         0B      100%  /packages/mnt/jservices-mobile-xlr64-14.1R1.10
+/dev/md30               1.2M       1.2M         0B      100%  /packages/mnt/jservices-mss-xlr-14.1R1.10
+/dev/md31               852K       852K         0B      100%  /packages/mnt/jservices-mss-xlr64-14.1R1.10
+/dev/md32               794K       794K         0B      100%  /packages/mnt/jservices-nat-pic-14.1R1.10
+/dev/md33               464K       464K         0B      100%  /packages/mnt/jservices-nat-xlp64-14.1R1.10
+/dev/md34               464K       464K         0B      100%  /packages/mnt/jservices-nat-xlr64-14.1R1.10
+/dev/md35               548K       548K         0B      100%  /packages/mnt/jservices-ptsp-pic-14.1R1.10
+/dev/md36               134K       134K         0B      100%  /packages/mnt/jservices-rpm-pic-14.1R1.10
+/dev/md37               108K       108K         0B      100%  /packages/mnt/jservices-rpm-xlp64-14.1R1.10
+/dev/md38               362K       362K         0B      100%  /packages/mnt/jservices-sfw-pic-14.1R1.10
+/dev/md39               188K       188K         0B      100%  /packages/mnt/jservices-sfw-xlp64-14.1R1.10
+/dev/md40               188K       188K         0B      100%  /packages/mnt/jservices-sfw-xlr64-14.1R1.10
+/dev/md41               516K       516K         0B      100%  /packages/mnt/jservices-ssl-pic-14.1R1.10
+/dev/md42                68M        68M         0B      100%  /packages/mnt/jservices-voice-bsg-14.1R1.10
+/dev/md43               139M       139M         0B      100%  /packages/mnt/jsim-vmx-14.1R1.10
+/dev/md44               6.5G        46K       6.0G        0%  /tmp
+/dev/md45               6.5G       1.2M       6.0G        0%  /mfs
+procfs                  4.0K       4.0K         0B      100%  /proc
+/dev/ad0s1e            1006M        36K       926M        0%  /config
+/dev/ad0s1f             8.7G        33M       7.9G        0%  /var
+
+

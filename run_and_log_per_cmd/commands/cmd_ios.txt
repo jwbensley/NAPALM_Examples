@@ -1,0 +1,39 @@
+term mon
+term len 0
+term exec prompt timestamp
+show ver
+show proc cpu sort
+show proc cpu hist
+show proc mem sort
+show processes cpu platform sorted
+show processes memory platform sorted
+show platform hardware pp active resource-usage summary 0
+show platform hardware pp active tcam usage
+show inventory
+show environment
+show environment | exclude mV
+show logging
+show int desc
+show bgp all summary
+show bgp ipv4 unicast summary | begin Neighbor
+show bgp vpnv4 unicast all summary | begin Neighbor
+show bgp l2vpn vpls all summary | begin Neighbor
+show ip ospf neighbor
+show ip ospf interface brief
+show isis neighbors
+show clns interface
+show bfd summary
+show bfd neighbors
+show mpls ldp neighbor
+show mpls ldp discovery
+show ip rsvp interface
+show ip rsvp neighbor
+show ip pim neighbor
+show ip pim interface
+show xconnect all
+show vfi
+show l2vpn service all
+show bridge-domain
+show bridge-domain | exclude DYNAMIC
+show standby brief
+show standby | inc last
