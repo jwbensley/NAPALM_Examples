@@ -4,7 +4,7 @@ This repo contains scripts that use the NAPALM library to interact with network
 devices for running commands, pushing config, gathering stats etc. They are  
 example of how to use NAPALM to automate basic network operations.  
 The [network_change/network_change.py](network_change) script is a culmination  
-of these scripts which ties them together to automate config automation.  
+of these scripts which ties them together to automate config deployment.  
 
 ### Contents
 * [Install](#install)
